@@ -1,0 +1,205 @@
+  
+\documentclass[12pt]{report}
+
+\textheight=22.6cm
+\textwidth=17cm 
+\voffset-1.5cm
+\hoffset-1.5cm
+
+\setlength{\parskip}{4mm}
+\usepackage{color}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts} 
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{makeidx}
+\usepackage{mathrsfs}
+\usepackage{indentfirst}
+\usepackage[Conny]{fncychap}
+\usepackage{amsmath}
+\usepackage{float}
+
+\newcommand{\ru}{\rule{3mm}{3mm}}
+\newtheorem{definicao}{Definição}[section]
+\newtheorem{exemplo}{Exemplo}[section]
+
+
+\begin{document} 
+	
+	\thispagestyle{empty}
+	\begin{center}UNIVERSIDADE ESTADUAL PAULISTA JÚLIO DE MESQUITA
+		FILHO\\
+		Faculdade de Engenharia de Ilha Solteira\\
+		Departamento de Matemática 
+	\end{center}
+		
+	\vspace*{4cm} 
+	\begin{center} 
+		{\LARGE \textbf{Propriedades Dinâmicas e Topológicas do Mapa Logístico}}. 
+	\end{center} 
+	\vspace*{2cm}
+	\begin{center}
+		{\large Aluno: Pedro Henrique da Silva Zonta, pedro.zonta@unesp.br}
+	\end{center} 
+	\begin{center}
+		{\large Orientador: Prof. Dr. Danilo Antonio Caprio, danilo.caprio@unesp.br }
+	\end{center} 
+	\vspace*{2cm}
+	\begin{flushright}
+		\begin{minipage}{12cm}
+			Relatório Parcial do projeto de Iniciação Científica orientado
+			pela Prof. Dr. Danilo Antonio Caprio, realizado no Departamento de Matemática
+			da  Universidade Estadual Paulista ``Júlio de Mesquita Filho'' - Faculdade de Engenharia
+			de Ilha Solteira.
+		\end{minipage}
+	\end{flushright}
+	\vspace*{3cm} 
+	\begin{center} Ilha Solteira - SP, Outubro/2025 \end{center}
+		
+	\newpage
+	\vspace*{0.75\textheight}
+	\pagenumbering{roman} 
+	
+	\chapter*{Plano de Trabalho:}
+	
+	\begin{center}
+		\begin{tabular}{|c|l|} \hline
+			& {\bf Uma Introdução a Sistemas Dinâmicos Caóticos} \\ \hline
+			01 & Exemplos de sistemas dinâmicos \\ \hline
+			02 & Definições elementares na teoria dos sistemas dinâmicos discretos \\ \hline
+			03 & Hiperbolicidade \\ \hline
+			04 & A família quadrática \\ \hline
+			05 & Dinâmica simbólica \\ \hline
+			06 & Conjugação topológica \\ \hline
+			07 & Caos \\ \hline
+		\end{tabular}
+	\end{center}
+	
+	\newpage
+	{\LARGE\textbf{Resumo}}
+	
+	Neste projeto inicialmente estudaremos exemplos de sistemas dinâmicos para entendermos sua aplicabilidade e como um sistema desse tipo pode ser analisado. Essa análise será explanada posteriormente pelo estudo do comportamento assintótico da função que rege o sistema, que significa analisar o que acontece com o sistema com o passar do tempo.
+	
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+	
+	{\LARGE\textbf{Introdução}}
+	
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+	
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+	
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	
+	\chapter{Sistemas dinâmicos discretos}
+	
+	\section{Exemplos de sistemas dinâmicos discretos}
+	
+	\begin{definicao}
+		Tomemos (X, f) como um sistema dinâmico, onde X é o conjunto de todas as possibilidades de estado do sistema e f a função que regra o desenvolvimento desse conjunto X.
+	\end{definicao}
+	
+	Tomando uma condição inicial $x_0 \in \mathbb{X}$, temos que a função f é dada por $x_t = kx_t-1$, ou seja, ($x_0, f(x_0), f(f(x_0), f(f(f(x_0))), ...$). Essa função também pode ser dada por outra notação ($x_0, f(x_0), f^2(x_0), f^3(x_0), ..., f^n(x_0), ...$) que é comumente mais utilizada, onde $n$ indica a quantidade de iteradas em f.
+	
+	\begin{exemplo}
+		Um sistema dinâmico do tipo mais simples é uma função do tipo $f(x) = kx, k \in \mathbb{R}$.
+	\end{exemplo}
+	
+	No entanto, esse é um tipo de função que restringe o sistema a três possibilidades:
+	\begin{enumerate}
+		\item Crescimento infinito da população, quando $k > 1$; \vspace{-2mm}
+		\item População constante, quando $k = 1$; \vspace{-2mm}
+		\item Extinção da população, quando $k < 1$. \vspace{-2mm}
+	\end{enumerate}
+	
+	Assim sendo, um sistema dinâmico mais robusto que contempla um crescimento/decrescimento com mais variáveis e regras é dado por $f(x) = kx(1 - L)$, onde $k \in \mathbb{R}$ e $L$ é o limite populacional suportado pelo sistema. Nesse caso, trabalhamos L como porcentagem. Esse formato de sistema dinâmico é denominado família logística.
+	
+	\begin{exemplo}\label{exemplo1DeSistemaDinamico}
+		Seja $f(x) = 3.12x(1 - x)$. Tomando uma condição inicial $x_0 = 0.33$ (33\% da capacidade limite), as iteradas em $f$ nos dá a população em cada geração.
+		$\\f(x_0) = 0.689832 \\f^2(x_0) = 0.667567092741 \\f^3(x_0) = 0.6923943606225 \\f^4(x_0) = 0.6645113592021$\\
+		Nas quatro primeiras gerações, vemos que a população fica ente 66\% e 69\% da capacidade.
+	\end{exemplo}
+	
+	Quando um sistema dinâmico é da forma $f(x) = kx(1 - L)$, pequenas variações na entrada ou na constante $k$ geram imprevisibilidade quanto ao comportamento do sistema perante a esses novos dados. A dinâmica do estudo desses sistemas consiste em entender órbitas, pontos com características específicas e análise de caos.
+	
+	\begin{exemplo}
+		Seja $f(x) = 3.92x(1 - x)$ e a condição inicial $x_0 = 0.33$.
+		$\\f(x_0) = 0.866712 \\f^2(x_0) = 0.4528474514995 \\f^3(x_0) = 0.971284417706 \\f^4(x_0) = 0.1093327106997$\\
+		Essa pequena variação no parâmetro $k$ comparado com o exemplo \ref{exemplo1DeSistemaDinamico} e gerou resultados menos previsíveis e um intervalo populacional maior, entre 10\% e 97\% de capacidade em um número pequeno de iterações.
+	\end{exemplo}
+	
+	\chapter{Definições elementares}
+	
+	\section{Definições elementares na teoria dos sistemas dinâmicos discretos}
+	
+	No estudo de sistemas dinâmicos, temos definições que auxiliam não só a entender o comportamento do sistema, mas também a fazer previsões e estudar diferentes possibilidades ao fazer uma mudança mínima nas condições que regem a função.
+	
+	\begin{definicao}
+		Se $f(x_0) = x_0$, então $x_0$ é um ponto fixo.
+	\end{definicao}
+	\begin{exemplo}
+		Seja $f(x) = x$, então todo ponto $x$ é fixo.
+	\end{exemplo}
+	\begin{definicao}
+		Seja $n \in \mathbb{N}$. Se $f^n(x_0) = x_0$, então $x_0$ é um ponto periódico de período $n$.
+	\end{definicao}
+	\begin{exemplo}
+		Seja $f(x) = -x$ e $x_0 \neq 0$, então $x_0$ é periódico de período $2$ $\forall x$. Ou seja, $f(x_0) = f^2(x_0) = f^4(x_0) = ... = f^{2n}(x_0), n \in \mathbb{N}$.
+	\end{exemplo}
+	\begin{exemplo}
+		Seja $f(\theta) = 2\theta$. O termo genérico dessa função é da forma $f^n(\theta) = 2^n\theta$. Como estamos em uma circunferência, temos que $\theta + 2k\pi = \theta$, ou seja, voltamos ao mesmo ponto depois de $k$ voltas, $k \in \mathbb{Z}$. Assim, os pontos periódicos dessa função são aqueles que satisfazem $2^n\theta = \theta + 2k\pi$.\\
+		Resolvendo: $\theta(2^n - 1) = 2k\pi \implies \theta = \dfrac{2k\pi}{2^n - 1}$
+	\end{exemplo}
+	\begin{definicao}
+		Seja $n, i \in \mathbb{N}$. Se $f^{n+i}(x_0) = f^i(x_0)$, $x_0$ é um ponto eventualmente periódico de período $i$, sendo que são necessárias primeiramente $n$ iteradas para se chegar até o ciclo.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\textwidth]{imagens/desenho_eventualmente_periodico.png}
+			\caption{Ponto eventualmente periódico.}
+		\end{figure}
+	\end{definicao}
+	\begin{definicao}
+		Seja $n \in \mathbb{N}$ e $p$ um ponto periódico de período n. Chamamos um ponto $x_0$ de futuramente assintótico a $p$ se $$\lim_{i \longrightarrow \infty} f^{in}(x_0) = p$$
+		Caso p não seja periódico, definimos um ponto $x_0$ como futuramente assintótico a $p$ se $$|f^i(x_0) - f^i(p)| \longrightarrow 0, i \longrightarrow \infty$$
+		Esses pontos futuramente assintóticos compõem o que chamamos de conjunto estável do ponto $p$, denotado por $W^s(p)$. Caso a função $f$ admita inversa, chamamos de conjunto instável (pontos antigamente assintóticos) do ponto $p$, denotado por $W^u(p)$, aqueles pontos que satisfazem essas condições, mas com $i \longrightarrow -\infty$.
+	\end{definicao}
+	\begin{exemplo}
+		Seja $f(x) = x^3$. O conjunto estável do ponto $x = 0$ é dado por $W^s(0) = (-1, 1)$, pois ao analisar a órbita nesse intervalo aberto, os pontos convergem para zero, tornando o comportamento previsível.
+		Analisando a inversa de $f$, ou seja, $f^{-1}(x) = \sqrt[3]{x}$, vemos que todos os pontos no eixo real positivo tem órbita convergindo para 1. Já os pontos no eixo real negativo tem órbita convergindo para -1. Assim, $W^u(1) = \{x \in \mathbb{X} \mid x > 0\}$ e $W^u(-1) = \{x \in \mathbb{X} \mid x < 0\}$.
+	\end{exemplo}
+	\begin{definicao}
+		Se $f'(x_0) = 0$, chamamos esse ponto $x_0$ de ponto crítico da função. E ainda classificamos esse ponto como não degenerado, caso $f''(x_0) \neq 0$, ou degenerado, caso $f''(x_0) = 0$.
+	\end{definicao}
+	
+	Essas definições são utilizadas no estudo das órbitas dos pontos.
+	
+	\section{Órbitas}
+	
+	\begin{definicao}
+		A órbita futuramente assintótica de um ponto $x_0$ que é regido por uma função é denotada por $O^+(x_0) = \{x_0, f(x_0), f^2(x_0), f^3(x_0), ...\}$. Ou seja, essa órbita é o conjunto que abriga os pontos resultantes das iteradas da função $f$.
+		Caso $f$ seja um homeomorfismo, isto é, $f$ é contínua, bijetora e com inversa contínua, definimos a órbita completa de um ponto $x_0$ (tanto futura quanto antigamente assintótico) por $O(x_0) = \{..., f^{-2}(x_0), f^{-1}(x_0), x_0, f(x_0), f^2(x_0), ...\}$. Se formos analisar apenas a órbita antigamente assintótica, denotamos o conjunto por $O^-(x_0)$.
+	\end{definicao}
+	
+	Uma forma de analisar a órbitas dos pontos de uma função é através de estudos por meio de seu gráfico. Ao traçar a reta $y = x$, podemos aplicar uma técnica geométrica de análise que auxilia a entender o comportamento e a realizar estudos algébricos. Para aplicar essa técnica, traçamos uma linha vertical no ponto inicial $(x_0, x_0)$ até encontrar o gráfico no ponto $(x_0, f(x_0))$. Então, agora fazemos uma linha horizontal iniciando em $(x_0, f(x_0))$ indo até encontrar a diagonal em $(f(x_0), f(x_0))$. Repetimos nesse momento a tração da linha vertical, e após isso a da linha horizontal, sucessivamente. É nessa reta $y = x$ que conseguimos ter uma ideia inicial do que acontece com a órbita dos pontos.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{imagens/desenho_orbita.png}
+		\caption{Análise da órbita pelo gráfico da função.}
+	\end{figure}
+	
+	\begin{exemplo}
+		Seja $f(x) = x^3$. Temos que os pontos no intervalo aberto $-1 < x < 1$ convergem para o ponto fixo $x = 0$, conforme tomamos uma condição inicial $x_0$ nesse intervalo, pois $|f^i(x_0) - f^i(0)| \longrightarrow 0, i \longrightarrow \infty$.
+	\end{exemplo}
+	
+	\chapter{Hiperbolicidade}
+
+\end{document}
