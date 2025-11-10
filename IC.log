@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.13)  31 OCT 2025 09:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.13)  9 NOV 2025 23:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -299,13 +299,13 @@ Overfull \hbox (24.06902pt too wide) in paragraph at lines 141--141
 din^amicos
  []
 
-<imagens/desenho_eventualmente_periodico.png, id=33, 1260.96094pt x 530.73282pt
->
+<imagens/desenho_eventualmente_periodico.png, id=34, 959.08313pt x 399.74344pt>
+
 File: imagens/desenho_eventualmente_periodico.png Graphic file (type png)
 <use imagens/desenho_eventualmente_periodico.png>
 Package pdftex.def Info: imagens/desenho_eventualmente_periodico.png  used on i
 nput line 165.
-(pdftex.def)             Requested size: 483.69684pt x 203.58366pt.
+(pdftex.def)             Requested size: 483.69684pt x 201.6035pt.
 [7
 
 ] [8 <./imagens/desenho_eventualmente_periodico.png>]
@@ -325,10 +325,10 @@ L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3891 strings out of 474485
- 65150 string characters out of 5743261
- 1935542 words of memory out of 5000000
- 26129 multiletter control sequences out of 15000+600000
+ 3892 strings out of 474485
+ 65181 string characters out of 5743261
+ 1934542 words of memory out of 5000000
+ 26130 multiletter control sequences out of 15000+600000
  565978 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,7n,65p,765b,304s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -345,7 +345,7 @@ Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8
 .pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmti12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/symbols/msbm10.pfb>
-Output written on IC.pdf (12 pages, 195832 bytes).
+Output written on IC.pdf (12 pages, 187358 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
