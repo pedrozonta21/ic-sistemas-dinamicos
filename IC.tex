@@ -104,7 +104,7 @@
 	\section{Exemplos de sistemas dinâmicos discretos}
 	
 	\begin{definicao}
-		Tomemos (X, f) como um sistema dinâmico, onde X é o conjunto de todas as possibilidades de estado do sistema e f a função que regra o desenvolvimento desse conjunto X.
+		Um sistema dinâmico é definido por (X, f), onde X é um espaço métrico que possui todas as possibilidades de estado do sistema. Sistema esse que é regrado por uma função $f: \mathbb{X} \rightarrow \mathbb{X}$.
 	\end{definicao}
 	
 	Tomando uma condição inicial $x_0 \in \mathbb{X}$, temos que a função f é dada por $x_t = kx_t-1$, ou seja, ($x_0, f(x_0), f(f(x_0), f(f(f(x_0))), ...$). Essa função também pode ser dada por outra notação ($x_0, f(x_0), f^2(x_0), f^3(x_0), ..., f^n(x_0), ...$) que é comumente mais utilizada, onde $n$ indica a quantidade de iteradas em f.
@@ -167,9 +167,9 @@
 		\end{figure}
 	\end{definicao}
 	\begin{definicao}
-		Seja $n \in \mathbb{N}$ e $p$ um ponto periódico de período n. Chamamos um ponto $x_0$ de futuramente assintótico a $p$ se $$\lim_{i \longrightarrow \infty} f^{in}(x_0) = p$$
-		Caso p não seja periódico, definimos um ponto $x_0$ como futuramente assintótico a $p$ se $$|f^i(x_0) - f^i(p)| \longrightarrow 0, i \longrightarrow \infty$$
-		Esses pontos futuramente assintóticos compõem o que chamamos de conjunto estável do ponto $p$, denotado por $W^s(p)$. Caso a função $f$ admita inversa, chamamos de conjunto instável (pontos antigamente assintóticos) do ponto $p$, denotado por $W^u(p)$, aqueles pontos que satisfazem essas condições, mas com $i \longrightarrow -\infty$.
+		Seja $n \in \mathbb{N}$ e $p$ um ponto periódico de período n. Chamamos um ponto $x_0$ de futuramente assintótico a $p$ se $$\lim_{i \rightarrow \infty} f^{in}(x_0) = p$$
+		Caso p não seja periódico, definimos um ponto $x_0$ como futuramente assintótico a $p$ se $$|f^i(x_0) - f^i(p)| \rightarrow 0, i \rightarrow \infty$$
+		Esses pontos futuramente assintóticos compõem o que chamamos de conjunto estável do ponto $p$, denotado por $W^s(p)$. Caso a função $f$ admita inversa, chamamos de conjunto instável (pontos antigamente assintóticos) do ponto $p$, denotado por $W^u(p)$, aqueles pontos que satisfazem essas condições, mas com $i \rightarrow -\infty$.
 	\end{definicao}
 	\begin{exemplo}
 		Seja $f(x) = x^3$. O conjunto estável do ponto $x = 0$ é dado por $W^s(0) = (-1, 1)$, pois ao analisar a órbita nesse intervalo aberto, os pontos convergem para zero, tornando o comportamento previsível.
