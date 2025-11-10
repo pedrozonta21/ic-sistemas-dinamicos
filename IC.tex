@@ -104,23 +104,23 @@
 	\section{Exemplos de sistemas dinâmicos discretos}
 	
 	\begin{definicao}
-		Um sistema dinâmico é definido por (X, f), onde X é um espaço métrico que possui todas as possibilidades de estado do sistema. Sistema esse que é regrado por uma função $f: \mathbb{X} \rightarrow \mathbb{X}$.
+		Um sistema dinâmico é definido pelo par (X, f), onde X é um espaço métrico que possui todas as possibilidades de estado do sistema e $f: \mathbb{X} \rightarrow \mathbb{X}$ é a função que rege o desenvolvimento desse sistema ao longo do tempo.
 	\end{definicao}
 	
-	Tomando uma condição inicial $x_0 \in \mathbb{X}$, temos que a função f é dada por $x_t = kx_t-1$, ou seja, ($x_0, f(x_0), f(f(x_0), f(f(f(x_0))), ...$). Essa função também pode ser dada por outra notação ($x_0, f(x_0), f^2(x_0), f^3(x_0), ..., f^n(x_0), ...$) que é comumente mais utilizada, onde $n$ indica a quantidade de iteradas em f.
+	Tomando uma condição inicial $x_0 \in \mathbb{X}$, temos que a função $f$ é dada por $f(x_t) = f(x_{t-1})$, onde $t \in \mathbb{N}$. Assim, o conjunto das gerações futuras de $x_0$ é dado pelas iteradas da função $f$ na condição inicial, ou seja, $\{x_0, f(x_0), f^2(x_0), f^3(x_0), ..., f^n(x_0), ...\}$, onde $n \in \mathbb{N}$ indica a quantidades de iteradas de $f(x_0)$.
 	
-	\begin{exemplo}
-		Um sistema dinâmico do tipo mais simples é uma função do tipo $f(x) = kx, k \in \mathbb{R}$.
+	\begin{exemplo}\label{exemploSimplesSistemaDinamico}
+		Um sistema dinâmico do tipo mais simples é dado por $(\mathbb{R}, f)$, sendo $f(x) = kx$.
 	\end{exemplo}
 	
-	No entanto, esse é um tipo de função que restringe o sistema a três possibilidades:
+	No entanto a função do Exemplo $\ref{exemploSimplesSistemaDinamico}$ restringe o sistema a três possibilidades:
 	\begin{enumerate}
 		\item Crescimento infinito da população, quando $k > 1$; \vspace{-2mm}
 		\item População constante, quando $k = 1$; \vspace{-2mm}
 		\item Extinção da população, quando $k < 1$. \vspace{-2mm}
 	\end{enumerate}
 	
-	Assim sendo, um sistema dinâmico mais robusto que contempla um crescimento/decrescimento com mais variáveis e regras é dado por $f(x) = kx(1 - L)$, onde $k \in \mathbb{R}$ e $L$ é o limite populacional suportado pelo sistema. Nesse caso, trabalhamos L como porcentagem. Esse formato de sistema dinâmico é denominado família logística.
+	Assim sendo, um sistema dinâmico mais robusto que contempla um crescimento/decrescimento com mais variáveis é dado por $f(x) = kx(1 - L)$, onde $k \in \mathbb{R}$ e $L$ é o limite populacional suportado pelo sistema. Nesse caso, trabalhamos L como porcentagem. Esse formato de sistema dinâmico é denominado família logística.
 	
 	\begin{exemplo}\label{exemplo1DeSistemaDinamico}
 		Seja $f(x) = 3.12x(1 - x)$. Tomando uma condição inicial $x_0 = 0.33$ (33\% da capacidade limite), as iteradas em $f$ nos dá a população em cada geração.
