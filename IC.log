@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.13)  9 NOV 2025 23:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.13)  22 DEC 2025 23:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -304,7 +304,7 @@ din^amicos
 File: imagens/desenho_eventualmente_periodico.png Graphic file (type png)
 <use imagens/desenho_eventualmente_periodico.png>
 Package pdftex.def Info: imagens/desenho_eventualmente_periodico.png  used on i
-nput line 165.
+nput line 166.
 (pdftex.def)             Requested size: 483.69684pt x 201.6035pt.
 [7
 
@@ -312,9 +312,9 @@ nput line 165.
 <imagens/desenho_orbita.png, id=44, 696.35156pt x 584.93532pt>
 File: imagens/desenho_orbita.png Graphic file (type png)
 <use imagens/desenho_orbita.png>
-Package pdftex.def Info: imagens/desenho_orbita.png  used on input line 195.
-(pdftex.def)             Requested size: 386.95894pt x 325.04459pt.
- [9 <./imagens/desenho_orbita.png>] [10]
+Package pdftex.def Info: imagens/desenho_orbita.png  used on input line 201.
+(pdftex.def)             Requested size: 314.39998pt x 264.09314pt.
+ [9] [10 <./imagens/desenho_orbita.png>]
 Cap\'{\i }tulo 3.
 [11
 
@@ -327,11 +327,11 @@ L3 programming layer <2024-01-04>
 Here is how much of TeX's memory you used:
  3892 strings out of 474485
  65181 string characters out of 5743261
- 1934542 words of memory out of 5000000
+ 1935542 words of memory out of 5000000
  26130 multiletter control sequences out of 15000+600000
  565978 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,7n,65p,765b,304s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,7n,65p,817b,304s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmbx12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmmi12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type
@@ -345,7 +345,7 @@ Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8
 .pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmti12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/symbols/msbm10.pfb>
-Output written on IC.pdf (12 pages, 187358 bytes).
+Output written on IC.pdf (12 pages, 188645 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
