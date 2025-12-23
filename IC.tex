@@ -155,13 +155,12 @@
 		Se $f(x) = -x$, $x_0 \neq 0$ e $n \in \mathbb{N}$, então $x_0$ é periódico de período $2$, pois $f(x_0) = f^2(x_0) = f^4(x_0) = ... = f^{2n}(x_0)$.
 	\end{exemplo}
 	\begin{exemplo}
-		Considere o sistema dinâmico $(S^1, f)$, onde $S^1 = \{(\cos{\theta}, \sin{\theta}) : 0 \leq \theta \leq 2\pi\}$ e $f(\theta) = 2\theta$.
-		
+		Considere o sistema dinâmico $(S^1, f)$, onde $S^1 = \{(\cos{\theta}, \sin{\theta}) : 0 \leq \theta \leq 2\pi\}$ e $f(\theta) = 2\theta$.		
 		O termo genérico dessa função é da forma $f^n(\theta) = 2^n\theta$. Como estamos em $S^1$, temos que $\theta + 2k\pi = \theta$, ou seja, voltamos ao mesmo ponto $\theta$ depois de $k$ voltas, onde $k \in \mathbb{Z}$. Assim, os pontos periódicos dessa função são aqueles que satisfazem $2^n\theta = \theta + 2k\pi$.\\
-		Resolvendo: $\theta(2^n - 1) = 2k\pi \implies \theta = \dfrac{2k\pi}{2^n - 1}$
+		Resolvendo: $\theta(2^n - 1) = 2k\pi \implies \theta = \dfrac{2k\pi}{2^n - 1}$.
 	\end{exemplo}
 	\begin{definicao}
-		Seja $n, i \in \mathbb{N}$. Se $f^{n+i}(x_0) = f^i(x_0)$, $x_0$ é um ponto eventualmente periódico de período $i$, sendo que são necessárias primeiramente $n$ iteradas para se chegar até o ciclo.
+		Seja $n, i \in \mathbb{N}$ e $x_0 \in \mathbb{X}$. Se $f^{n+i}(x_0) = f^i(x_0)$, então $x_0$ é um ponto eventualmente periódico de período $i$, sendo que são necessárias primeiramente $n$ iteradas para se chegar até o ciclo.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\textwidth]{imagens/desenho_eventualmente_periodico.png}
