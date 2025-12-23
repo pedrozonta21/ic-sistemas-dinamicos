@@ -106,16 +106,20 @@
 	\begin{definicao}
 		Um sistema dinâmico é definido pelo par (X, f), onde X é um espaço métrico que possui todas as possibilidades de estado do sistema e $f: \mathbb{X} \rightarrow \mathbb{X}$ é a função que rege o desenvolvimento desse sistema ao longo do tempo.
 	\end{definicao}
+	
 	Tomando uma condição inicial $x_0 \in \mathbb{X}$, temos que a função $f$ é dada por $f(x_t) = f(x_{t-1})$, onde $t \in \mathbb{N}$. Assim, o conjunto das gerações futuras de $x_0$ é dado pelas iteradas da função $f$ na condição inicial, ou seja, $\{x_0, f(x_0), f^2(x_0), f^3(x_0), ..., f^n(x_0), ...\}$, onde $n \in \mathbb{N}$ indica a quantidades de iteradas de $f(x_0)$.
+	
 	\begin{exemplo}\label{exemploSimplesSistemaDinamico}
 		Um sistema dinâmico do tipo mais simples é dado por $(\mathbb{R}, f)$, sendo $f(x) = kx$.
 	\end{exemplo}
+	
 	Essa função do Exemplo $\ref{exemploSimplesSistemaDinamico}$, tem como característica a restrição do sistema para três possibilidades:
 	\begin{enumerate}
 		\item Crescimento infinito da população, quando $k > 1$; \vspace{-2mm}
 		\item População constante, quando $k = 1$; \vspace{-2mm}
 		\item Extinção da população, quando $k < 1$. \vspace{-2mm}
 	\end{enumerate}
+	
 	Assim sendo, um sistema dinâmico mais robusto que contempla um crescimento/decrescimento com mais variáveis é dado por $f(x) = kx(1 - L)$, onde $k \in \mathbb{R}$ e $L$ é o limite populacional suportado pelo sistema. Nesse caso, utilizamos L como proporção. Esse formato de sistema dinâmico é denominado família logística.
 	
 	\begin{exemplo}\label{exemplo1DeSistemaDinamico}
