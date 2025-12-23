@@ -156,7 +156,7 @@
 	\end{exemplo}
 	\begin{exemplo}
 		Considere o sistema dinâmico $(S^1, f)$, onde $S^1 = \{(\cos{\theta}, \sin{\theta}) : 0 \leq \theta \leq 2\pi\}$ e $f(\theta) = 2\theta$.		
-		O termo genérico dessa função é da forma $f^n(\theta) = 2^n\theta$. Como estamos em $S^1$, temos que $\theta + 2k\pi = \theta$, ou seja, voltamos ao mesmo ponto $\theta$ depois de $k$ voltas, onde $k \in \mathbb{Z}$. Assim, os pontos periódicos dessa função são aqueles que satisfazem $2^n\theta = \theta + 2k\pi$.\\
+		O termo genérico dessa função é da forma $f^n(\theta) = 2^n\theta$. Como estamos em $S^1$, temos que $\theta + 2k\pi = \theta$, ou seja, voltamos ao mesmo ponto $\theta$ depois de $k$ voltas no círculo, onde $k \in \mathbb{Z}$. Assim, os pontos periódicos dessa função são aqueles que satisfazem $2^n\theta = \theta + 2k\pi$.\\
 		Resolvendo: $\theta(2^n - 1) = 2k\pi \implies \theta = \dfrac{2k\pi}{2^n - 1}$.
 	\end{exemplo}
 	\begin{definicao}
@@ -168,13 +168,13 @@
 		\end{figure}
 	\end{definicao}
 	\begin{definicao}
-		Seja $n \in \mathbb{N}$ e $p$ um ponto periódico de período n. Chamamos um ponto $x_0$ de futuramente assintótico a $p$ se $$\lim_{i \rightarrow \infty} f^{in}(x_0) = p$$
+		Seja $n \in \mathbb{N}$ e p um ponto periódico de período n. Chamamos um ponto $x_0$ de futuramente assintótico a $p$ se $$\lim_{i \rightarrow \infty} f^{in}(x_0) = p$$
 		Caso p não seja periódico, definimos um ponto $x_0$ como futuramente assintótico a $p$ se $$|f^i(x_0) - f^i(p)| \rightarrow 0, i \rightarrow \infty$$
-		Esses pontos futuramente assintóticos compõem o que chamamos de conjunto estável do ponto $p$, denotado por $W^s(p)$. Caso a função $f$ admita inversa, chamamos de conjunto instável (pontos antigamente assintóticos) do ponto $p$, denotado por $W^u(p)$, aqueles pontos que satisfazem essas condições, mas com $i \rightarrow -\infty$.
+		Esses pontos futuramente assintóticos compõem o que chamamos de conjunto estável do ponto $p$, denotado por $W^s(p)$. Caso a função $f$ admita inversa, chamamos de conjunto instável (pontos antigamente assintóticos) do ponto $p$, denotado por $W^u(p)$, aqueles pontos que satisfazem essas mesmas condições, porém com $i \rightarrow -\infty$.
 	\end{definicao}
 	\begin{exemplo}
-		Seja $f(x) = x^3$. O conjunto estável do ponto $x = 0$ é dado por $W^s(0) = (-1, 1)$, pois ao analisar a órbita nesse intervalo aberto, os pontos convergem para zero, tornando o comportamento previsível.
-		Analisando a inversa de $f$, ou seja, $f^{-1}(x) = \sqrt[3]{x}$, vemos que todos os pontos no eixo real positivo tem órbita convergindo para 1. Já os pontos no eixo real negativo tem órbita convergindo para -1. Assim, $W^u(1) = \{x \in \mathbb{X} \mid x > 0\}$ e $W^u(-1) = \{x \in \mathbb{X} \mid x < 0\}$.
+		Considere um sistema dinâmico $(\mathbb{R}, f)$, onde $f(x) = x^3$. O conjunto estável do ponto $x = 0$ é dado por $W^s(0) = (-1, 1)$, pois ao analisar a órbita nesse intervalo aberto, os pontos convergem para zero quando iterados na função, tornando o comportamento previsível.
+		Analisando a inversa de $f$, ou seja, $f^{-1}(x) = \sqrt[3]{x}$, vemos que todos os pontos no eixo real positivo tem órbita convergindo para 1. Já os pontos no eixo real negativo tem órbita convergindo para -1. Assim, $W^u(1) = \{x \in \mathbb{R} \mid x > 0\}$ e $W^u(-1) = \{x \in \mathbb{R} \mid x < 0\}$.
 	\end{exemplo}
 	\begin{definicao}
 		Se $f'(x_0) = 0$, chamamos esse ponto $x_0$ de ponto crítico da função. E ainda classificamos esse ponto como não degenerado, caso $f''(x_0) \neq 0$, ou degenerado, caso $f''(x_0) = 0$.
