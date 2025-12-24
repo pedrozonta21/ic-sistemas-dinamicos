@@ -174,7 +174,7 @@
 	\end{definicao}
 	\begin{exemplo}
 		Considere o sistema dinâmico $(\mathbb{R}, f)$, onde $f(x) = x^3$. O conjunto estável do ponto $x = 0$ é dado por $W^s(0) = (-1, 1)$, pois ao analisar a órbita nesse intervalo aberto, os pontos convergem para zero quando iterados na função, tornando o comportamento previsível.
-		Analisando a inversa de $f$, ou seja, $f^{-1}(x) = \sqrt[3]{x}$, vemos que todos os pontos no eixo real positivo tem órbita convergindo para 1. Já os pontos no eixo real negativo tem órbita convergindo para -1. Assim, $W^u(1) = \{x \in \mathbb{R} \mid x > 0\}$ e $W^u(-1) = \{x \in \mathbb{R} \mid x < 0\}$.
+		Analisando a inversa de $f$, ou seja, $f^{-1}(x) = \sqrt[3]{x}$, vemos que todos os pontos no eixo real positivo tem órbita convergindo para $1$. Já os pontos no eixo real negativo tem órbita convergindo para $-1$. Assim, $W^u(1) = \{x \in \mathbb{R} \mid x > 0\}$ e $W^u(-1) = \{x \in \mathbb{R} \mid x < 0\}$.
 	\end{exemplo}
 	\begin{definicao}
 		Se $f'(x_0) = 0$, chamamos esse ponto $x_0$ de ponto crítico da função. E ainda classificamos esse ponto como não degenerado, caso $f''(x_0) \neq 0$, ou degenerado, caso $f''(x_0) = 0$.
@@ -189,18 +189,17 @@
 		Caso $f$ seja um homeomorfismo, isto é, $f$ contínua, bijetora e com inversa contínua, definimos a órbita completa de um ponto $x_0$ (tanto futura quanto antigamente assintótico) por $O(x_0) = \{..., f^{-2}(x_0), f^{-1}(x_0), x_0, f(x_0), f^2(x_0), ...\}$. Se formos analisar apenas a órbita antigamente assintótica, denotamos o conjunto por $O^-(x_0)$.	
 	\end{definicao}
 
-	Uma forma de analisar a órbitas dos pontos de uma função é através de estudos por meio de seu gráfico. Ao traçar a reta $y = x$, podemos aplicar uma técnica geométrica de análise chamada retrato de fase, que auxilia a entender o comportamento assintótico dos pontos e a realizar os estudos algébricos. Para aplicar essa técnica, traçamos uma linha vertical no ponto inicial $(x_0, x_0)$ até encontrar o gráfico no ponto $(x_0, f(x_0))$. Então, agora fazemos uma linha horizontal iniciando em $(x_0, f(x_0))$ indo até encontrar a diagonal em $(f(x_0), f(x_0))$. Repetimos nesse momento a tração da linha vertical, e após isso a da linha horizontal, sucessivamente. É nessa reta $y = x$ que conseguimos ter uma ideia inicial do que acontece com a órbita dos pontos.
+	Uma forma de analisar a órbitas dos pontos de uma função é através de estudos por meio de seu gráfico. Ao traçar a reta $y = x$, podemos aplicar uma técnica geométrica de análise chamada retrato de fase, que auxilia a entender o comportamento assintótico dos pontos e a realizar os estudos algébricos. Para aplicar essa técnica, traçamos uma linha vertical no ponto inicial $(x_0, x_0)$ até encontrar o gráfico no ponto $(x_0, f(x_0))$. Então, agora fazemos uma linha horizontal iniciando em $(x_0, f(x_0))$ indo até encontrar a diagonal em $(f(x_0), f(x_0))$. Repetimos nesse momento a tração da linha vertical, e após isso a da linha horizontal, sucessivamente. É nessa reta $y = x$ que conseguimos ter uma ideia do que acontece com a órbita dos pontos.
 	
 	\begin{exemplo}
-		Seja $f(x) = x^3$. Temos que os pontos no intervalo aberto $-1 < x < 1$ convergem para o ponto fixo $x = 0$, conforme tomamos uma condição inicial $x_0$ nesse intervalo, pois $|f^i(x_0) - f^i(0)| \rightarrow 0, i \rightarrow \infty$.
-		
-		---melhorar
+		Considere $(\mathbb{R}, f)$, sendo $f(x) = x^3$ e um ponto $x_0$ do domínio no intervalo aberto $-1 < x < 1$. Temos que os pontos nesse intervalo convergem para o ponto fixo $x = 0$, pois $|f^i(x_0) - f^i(0)| \rightarrow 0, i \rightarrow \infty$.
 		
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.65\textwidth]{imagens/desenho_orbita.png}
+			\includegraphics[width=0.9\textwidth]{imagens/desenho_orbita.png}
 			\caption{Análise da órbita pelo gráfico da função $f(x) = x^3$.}
 		\end{figure}
+Já se $x_0 \in (-\infty, 1)$, temos que a órbita desse ponto converge para $-\infty$ ao fazermos o processo de retrato de fase. Se $x_0$.
 	\end{exemplo}
 	
 	\chapter{Hiperbolicidade}
