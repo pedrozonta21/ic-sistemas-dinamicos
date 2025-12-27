@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.13)  22 DEC 2025 23:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.13)  27 DEC 2025 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -309,12 +309,20 @@ nput line 166.
 [7
 
 ] [8 <./imagens/desenho_eventualmente_periodico.png>]
-<imagens/desenho_orbita.png, id=44, 696.35156pt x 584.93532pt>
-File: imagens/desenho_orbita.png Graphic file (type png)
-<use imagens/desenho_orbita.png>
-Package pdftex.def Info: imagens/desenho_orbita.png  used on input line 201.
-(pdftex.def)             Requested size: 314.39998pt x 264.09314pt.
- [9] [10 <./imagens/desenho_orbita.png>]
+<imagens/desenho_orbita_x3.png, id=44, 461.92575pt x 431.211pt>
+File: imagens/desenho_orbita_x3.png Graphic file (type png)
+<use imagens/desenho_orbita_x3.png>
+Package pdftex.def Info: imagens/desenho_orbita_x3.png  used on input line 199.
+
+(pdftex.def)             Requested size: 290.22105pt x 270.934pt.
+ [9 <./imagens/desenho_orbita_x3.png>]
+<imagens/desenho_orbita_inversa_x3.png, id=49, 508.90125pt x 472.76625pt>
+File: imagens/desenho_orbita_inversa_x3.png Graphic file (type png)
+<use imagens/desenho_orbita_inversa_x3.png>
+Package pdftex.def Info: imagens/desenho_orbita_inversa_x3.png  used on input l
+ine 213.
+(pdftex.def)             Requested size: 338.5863pt x 314.55873pt.
+ [10 <./imagens/desenho_orbita_inversa_x3.png>]
 Cap\'{\i }tulo 3.
 [11
 
@@ -325,29 +333,30 @@ L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3892 strings out of 474485
- 65181 string characters out of 5743261
+ 3904 strings out of 474485
+ 65622 string characters out of 5743261
  1935542 words of memory out of 5000000
- 26130 multiletter control sequences out of 15000+600000
- 565978 words of font info for 66 fonts, out of 8000000 for 9000
+ 26141 multiletter control sequences out of 15000+600000
+ 566315 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,7n,65p,817b,304s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmmi12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Cyborg/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Cyborg/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Cyborg/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Cybo
-rg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
-Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmti12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/symbols/msbm10.pfb>
-Output written on IC.pdf (12 pages, 188645 bytes).
+ 57i,8n,65p,761b,336s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Cyborg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
+m1200.pk><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmbx12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyborg/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Cyborg/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Cyborg/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Cybor
+g/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Use
+rs/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmti12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb>
+Output written on IC.pdf (12 pages, 235759 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
+ 108 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

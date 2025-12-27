@@ -202,11 +202,11 @@
 		
 		Portanto, podemos definir a órbita futuramente assintótica de um ponto $x_0 \in (-1, 1)$ por $O^+(x_0) = \{x_0, f(x_0), f^2(x_0), f^3(x_0), ..., 0\}$
 		
-		Já se $x_0 \in (-\infty, 1)$, temos que a órbita desse ponto converge para $-\infty$ pelo processo de retrato de fase. Isso nos dá a intuição geométrica do resultado $|f^i(x_0) - f(-1)| \rightarrow -\infty, i \rightarrow \infty$.
+		Já se $x_0 \in (-\infty, -1)$, temos que a órbita desse ponto converge para $-\infty$ pelo processo de retrato de fase. Isso nos dá a intuição geométrica do resultado $|f^i(x_0) - f(-1)| \rightarrow -\infty, i \rightarrow \infty$. Quando $x_0 \in (1, \infty)$., a órbita converge para $\infty$.
 	\end{exemplo}
 	
 	\begin{exemplo}
-		Considerando o mesmo sistema dinâmico do Exemplo \ref{exemploSistemaDinamicoX^3}, temos que sua função inversa é dada por $f(x) = \sqrt[3]{x}$. Nessa função, a dinâmica dos pontos convergem para $-1$ quando tomamos $x_0 \in (-\infty, 0)$. Já se $x_0 \in (0, \infty)$, a dinâmica converge para $1$. Nós podemos fazer essa análise pelo fato de $f(x) = x^3$ ser contínua, bijetora e possuir sua inversa contínua. Obs: Provar esse fato???
+		Considerando o mesmo sistema dinâmico do Exemplo \ref{exemploSistemaDinamicoX^3}, temos que sua função inversa é dada por $f(x) = \sqrt[3]{x}$. Nessa função, a dinâmica dos pontos convergem para $-1$ quando tomamos $x_0 \in (-\infty, 0)$. Já se $x_0 \in (0, \infty)$, a dinâmica converge para $1$. Nós podemos fazer essa análise pelo fato de $f(x) = x^3$ ser contínua, bijetora e possuir sua inversa contínua.
 		
 		\begin{figure}[H]
 			\centering
@@ -214,7 +214,12 @@
 			\caption{Análise da órbita pelo gráfico da função $f(x) = \sqrt[3]{x}$.}
 		\end{figure}
 		
-		Como $f(x) = \sqrt[3]{x}$ é contínua
+		Desse modo, definimos nesse sistema dinâmico a órbita antigamente assintótica dos pontos fixos $x = 1, x = 0, x = -1$ da seguinte forma:
+		\begin{itemize}
+			\item $O^-(1) = \{..., f^{-2}(1), f^{-1}(1), 1\}$.
+			\item $O^-(0) = \{0\}$.
+			\item $O^-(-1) = \{..., f^{-2}(-1), f^{-1}(-1), -1\}$.
+		\end{itemize}
 	\end{exemplo}
 	
 	\chapter{Hiperbolicidade}
