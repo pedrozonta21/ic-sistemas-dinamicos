@@ -186,12 +186,12 @@
 	
 	\begin{definicao}
 		A órbita futuramente assintótica de um ponto $x_0$ que é regido por uma função é denotada por $O^+(x_0) = \{x_0, f(x_0), f^2(x_0), f^3(x_0), ...\}$. Ou seja, essa órbita é o conjunto que abriga os pontos resultantes das iteradas da função $f$.
-		Caso $f$ seja um homeomorfismo, isto é, $f$ contínua, bijetora e com inversa contínua, definimos a órbita completa de um ponto $x_0$ (tanto futura quanto antigamente assintótico) por $O(x_0) = \{..., f^{-2}(x_0), f^{-1}(x_0), x_0, f(x_0), f^2(x_0), ...\}$. Se formos analisar apenas a órbita antigamente assintótica, denotamos o conjunto por $O^-(x_0)$.	
+		Caso $f$ seja um homeomorfismo, isto é, $f$ contínua, bijetora e com inversa contínua, definimos a órbita completa de um ponto $x_0$ (tanto futura quanto antigamente assintótica) por $O(x_0) = \{..., f^{-2}(x_0), f^{-1}(x_0), x_0, f(x_0), f^2(x_0), ...\}$. Se formos analisar apenas a órbita antigamente assintótica, denotamos o conjunto por $O^-(x_0)$.	
 	\end{definicao}
 
 	Uma forma de analisar a órbitas dos pontos de uma função é através de estudos por meio de seu gráfico. Ao traçar a reta diagonal $y = x$, podemos aplicar uma técnica geométrica chamada retrato de fase, que auxilia a entender o comportamento assintótico dos pontos e a identificar os pontos fixos (que são aqueles onde a reta intersecta o gráfico). Para aplicar essa técnica, traçamos uma linha vertical no ponto inicial $(x_0, x_0)$ até encontrar o gráfico no ponto $(x_0, f(x_0))$. Então, agora fazemos uma linha horizontal iniciando em $(x_0, f(x_0))$ indo até encontrar a diagonal em $(f(x_0), f(x_0))$. Repetimos nesse momento a tração da linha vertical, e após isso a da linha horizontal, sucessivamente.
 	
-	\begin{exemplo}
+	\begin{exemplo}\label{exemploSistemaDinamicoX^3}
 		Considere o sistema dinâmico $(\mathbb{R}, f)$, sendo $f(x) = x^3$ e um ponto $x_0$ do domínio no intervalo aberto $-1 < x < 1$. Temos que os pontos nesse intervalo convergem para o ponto fixo $x = 0$, pois $|f^i(x_0) - f(0)| \rightarrow 0, i \rightarrow \infty$.
 		
 		\begin{figure}[H]
@@ -200,13 +200,21 @@
 			\caption{Análise da órbita pelo gráfico da função $f(x) = x^3$.}
 		\end{figure}
 		
+		Portanto, podemos definir a órbita futuramente assintótica de um ponto $x_0 \in (-1, 1)$ por $O^+(x_0) = \{x_0, f(x_0), f^2(x_0), f^3(x_0), ..., 0\}$
+		
 		Já se $x_0 \in (-\infty, 1)$, temos que a órbita desse ponto converge para $-\infty$ pelo processo de retrato de fase. Isso nos dá a intuição geométrica do resultado $|f^i(x_0) - f(-1)| \rightarrow -\infty, i \rightarrow \infty$.
+	\end{exemplo}
+	
+	\begin{exemplo}
+		Considerando o mesmo sistema dinâmico do Exemplo \ref{exemploSistemaDinamicoX^3}, temos que sua função inversa é dada por $f(x) = \sqrt[3]{x}$. Nessa função, a dinâmica dos pontos convergem para $-1$ quando tomamos $x_0 \in (-\infty, 0)$. Já se $x_0 \in (0, \infty)$, a dinâmica converge para $1$. Nós podemos fazer essa análise pelo fato de $f(x) = x^3$ ser contínua, bijetora e possuir sua inversa contínua. Obs: Provar esse fato???
 		
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.7\textwidth]{imagens/desenho_orbita_inversa_x3.png}
 			\caption{Análise da órbita pelo gráfico da função $f(x) = \sqrt[3]{x}$.}
 		\end{figure}
+		
+		Como $f(x) = \sqrt[3]{x}$ é contínua
 	\end{exemplo}
 	
 	\chapter{Hiperbolicidade}
