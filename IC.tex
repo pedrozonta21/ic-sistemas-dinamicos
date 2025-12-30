@@ -224,16 +224,24 @@
 	
 	\chapter{Hiperbolicidade}
 	
+	Até aqui, estamos estudando funções simples e conhecidas como mapas de um sistema, que muitas vezes nos dão um comportamento previsível e simples no estudo das iterações, ou seja, podemos descrever facilmente a dinâmica da função. No entanto, sistemas dinâmicos abrangem comportamentos mais robustos, onde pontos fixos/periódicos estão mais espalhados ao longo do sistema. Mapas com pontos hiperbólicos são mais comuns, e por isso classificaremos esses pontos neste capítulo.
+	
 	\section{Tipos de pontos periódicos}
 	
+	Vamos considerar funções de classe $C^1$, com $f'(x)$ contínua.
 	
+	\begin{definicao}
+		Seja $p$ um ponto periódico de período $n$. Chamamos $p$ de hiperbólico se $|(f^n)'(p)| \neq 1$.
+	\end{definicao}
 	
-	
-	
-	
-	
-	
-	
+	\begin{exemplo}
+		Considere a função $f(x) = -\dfrac{x^3}{2}-\dfrac{x}{2}$ com derivada $f'(x) = -\dfrac{3x^2}{2} - \dfrac{1}{2}$. Temos que $x_1 = 0$ é ponto fixo, enquanto $x_2 = 1, x_3 = -1$ são pontos periódicos de período 2.
+		\begin{itemize}
+			\item $x_1$ é hiperbólico, pois $|f'(x_1)| = \dfrac{1}{2}$.
+			\item $x_2$ é hiperbólico, pois $|f'(x_2)| = 2$.
+			\item $x_3$ é hiperbólico, pois $|f'(x_3)| = 2$.
+		\end{itemize}
+	\end{exemplo}
 	
 	
 	
