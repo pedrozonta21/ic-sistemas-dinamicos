@@ -23,6 +23,10 @@
 \newcommand{\ru}{\rule{3mm}{3mm}}
 \newtheorem{definicao}{Definição}[section]
 \newtheorem{exemplo}{Exemplo}[section]
+\newtheorem{proposicao}{Proposição}[section]
+\newenvironment{prova}
+{\par\noindent\textbf{Prova}\ }
+{\hfill$\square$\par}
 
 
 \begin{document} 
@@ -235,11 +239,72 @@
 	\end{definicao}
 	
 	\begin{exemplo}
-		Considere a função $f(x) = -\dfrac{x^3}{2}-\dfrac{x}{2}$ com derivada $f'(x) = -\dfrac{3x^2}{2} - \dfrac{1}{2}$. Temos que $x_1 = 0$ é ponto fixo, enquanto $x_2 = 1, x_3 = -1$ são pontos periódicos de período 2.
+		Considere a função $f(x) = -\dfrac{x^3}{2}-\dfrac{x}{2}$. Temos que $x_1 = 0$ é ponto fixo, enquanto $x_2 = 1, x_3 = -1$ são pontos periódicos de período $2$. Desse modo, tomemos $f'(x) = -\dfrac{3x^2}{2} - \dfrac{1}{2}$ e $(f^{2})'(x)=\dfrac{\left(\dfrac{3}{4}(x^{3}+x)^{2}+1\right)(3x^{2}+1)}{4}$.
 		\begin{itemize}
 			\item $x_1$ é hiperbólico, pois $|f'(x_1)| = \dfrac{1}{2}$.
-			\item $x_2$ é hiperbólico, pois $|f'(x_2)| = 2$.
-			\item $x_3$ é hiperbólico, pois $|f'(x_3)| = 2$.
+			\item $x_2$ é hiperbólico, pois $|(f^2)'(x_2)| = 4$.
+			\item $x_3$ é hiperbólico, pois $|(f^2)'(x_3)| = 4$.
+		\end{itemize}
+	\end{exemplo}
+	
+	\begin{definicao}
+		Um ponto fixo $p$ é chamado de ponto fixo atrator quando $|f'(p)| < 1$.
+	\end{definicao}
+	
+	\begin{proposicao}
+		Considere $p$ um ponto fixo hiperbólico com $|f'(p)| < 1$. Portanto, existe um intervalo $I$ sobre $p$ de modo que, se $x_0 \in I$, então $$\lim_{n \rightarrow \infty} f^n(x_0) = p$$.
+	\end{proposicao}
+	
+	\begin{prova}
+		conteúdo...
+	\end{prova}
+	
+		\begin{definicao}
+		Um ponto fixo $p$ é chamado de ponto fixo repulsor quando $|f'(p)| > 1$.
+	\end{definicao}
+	
+	\begin{proposicao}
+		Considere $p$ um ponto fixo hiperbólico com $|f'(p)| > 1$. Portanto, existe um intervalo $I$ sobre $p$ de modo que, se $x_0 \in I$, sendo $x_0 \neq p$, então existe um $k > 0$ tal que $$\lim_{n \rightarrow \infty} f^k(x_0) \notin I$$.
+	\end{proposicao}
+	
+	\begin{prova}
+		conteúdo...
+	\end{prova}
+	
+	\section{Uma ideia sobre Bifurcação}
+	
+	Vimos na seção anterior sobre pontos hiperbólicos, que definem atração ou repulsão quando $|f(p)| \neq 1$. Já os pontos não-hiperbólicos trazem um estudo sobre a alteração de comportamento nesses pontos, o que chamamos de bifurcação. Eles ditam uma alteração na dinâmica do sistema, onde pontos periódicos podem surgir ou desaparecer. Alterações no parâmetro da função do sistema causam as mudanças na estrutura.
+	
+	Consideremos o parâmetro $\mu$ na função $f_\mu(x,\mu)=x+\mu$. Note que a existência de pontos fixos reais na função depende do parâmetro. Existe um determinado valor para $\mu$ tal que o gráfico da função não intersecta mais a reta $y = x$, fazendo com que pontos fixos deixem de existir. Portanto, mesmo uma pequena variação de $\mu$ pode mudar totalmente a estrutura de pontos fixos do sistema.
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.85\textwidth]{imagens/desenho_familia_quadratica_com_parametro.png}
+		\caption{Análise da parábola com parâmetro $\mu$}
+	\end{figure}
+	
+	\begin{exemplo}
+		Tomemos o sistema dinâmico $(\mathbb{R}, f)$, onde $f_\mu(x,\mu)=x+\mu$. Logo, os pontos fixos da função são aqueles que satisfazem $x^2+\mu=x$. Por Bháskara, temos que esses pontos são
+		$$x_1 = \dfrac{1+\sqrt{1-4\mu}}{2}, x_2 = \dfrac{1-\sqrt{1-4\mu}}{2}$$
+Como $f: \mathbb{R} \rightarrow \mathbb{R}$, precisamos garantir $\mu$ tal que a raiz seja real. $1-4\mu \geq 0 \implies \mu \leq \dfrac{1}{4}$.
+		\begin{itemize}
+			\item $\mu > \dfrac{1}{4}$: 
+			
+			Resulta $x_1$ e $x_2$ como pontos fixos complexos, o que significa que o gráfico da função está acima da reta $y=x$.
+			
+			\item $\mu = \dfrac{1}{4}$:
+			
+			Temos que $x_1 = x_2 = \dfrac{1}{2}$, portanto, um ponto fixo apenas.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.3\textwidth]{imagens/desenho_quadratica_1-4.png}
+				\caption{Análise da parábola com parâmetro $\mu = \dfrac{1}{4}$}
+			\end{figure}
+			Para o ponto fixo $x=\dfrac{1}{2}$, temos que ele é não-hiperbólico, pois $f_\mu'\left(\dfrac{1}{2}\right)=2 \left(\dfrac{1}{2}\right) = 1$.
+			
+			
+			\item $x_3$ é hiperbólico, pois $|(f^2)'(x_3)| = 4$.
 		\end{itemize}
 	\end{exemplo}
 	
