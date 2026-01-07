@@ -206,7 +206,7 @@
 		
 		Portanto, podemos definir a órbita futuramente assintótica de um ponto $x_0 \in (-1, 1)$ por $O^+(x_0) = \{x_0, f(x_0), f^2(x_0), f^3(x_0), ..., 0\}$
 		
-		Já se $x_0 \in (-\infty, -1)$, temos que a órbita desse ponto converge para $-\infty$ pelo processo de retrato de fase. Isso nos dá a intuição geométrica do resultado $|f^i(x_0) - f(-1)| \rightarrow -\infty, i \rightarrow \infty$. Quando $x_0 \in (1, \infty)$., a órbita converge para $\infty$.
+		Já se $x_0 \in (-\infty, -1)$, temos que a órbita desse ponto converge para $-\infty$ pelo processo de retrato de fase. Isso nos dá a intuição geométrica do resultado $|f^i(x_0) - f(-1)| \rightarrow -\infty, i \rightarrow \infty$. Quando $x_0 \in (1, \infty)$, a órbita converge para $\infty$.
 	\end{exemplo}
 	
 	\begin{exemplo}
@@ -285,7 +285,7 @@
 	\end{figure}
 	
 	\begin{exemplo}
-		Tomemos o sistema dinâmico $(\mathbb{R}, f)$, onde $f_\mu(x,\mu)=x+\mu$. Logo, os pontos fixos da função são aqueles que satisfazem $x^2+\mu=x$. Por Bháskara, temos que esses pontos são
+		Tomemos o sistema dinâmico $(\mathbb{R}, f)$, onde $f_\mu(x,\mu)=x+\mu$ com sua derivada dada por $f_\mu'(x, \mu)=2x$. Logo, os pontos fixos da função são aqueles que satisfazem $x^2+\mu=x$. Por Bháskara, temos que esses pontos são
 		$$x_1 = \dfrac{1+\sqrt{1-4\mu}}{2}, x_2 = \dfrac{1-\sqrt{1-4\mu}}{2}$$
 Como $f: \mathbb{R} \rightarrow \mathbb{R}$, precisamos garantir $\mu$ tal que a raiz seja real. $1-4\mu \geq 0 \implies \mu \leq \dfrac{1}{4}$.
 		\begin{itemize}
@@ -296,15 +296,19 @@ Como $f: \mathbb{R} \rightarrow \mathbb{R}$, precisamos garantir $\mu$ tal que a
 			\item $\mu = \dfrac{1}{4}$:
 			
 			Temos que $x_1 = x_2 = \dfrac{1}{2}$, portanto, um ponto fixo apenas.
+		
+			Para o ponto fixo $x=\dfrac{1}{2}$, temos que ele é não-hiperbólico, pois $f_\mu'\left(\dfrac{1}{2}\right)=1$. Portanto, temos uma bifurcação nesse ponto.
 			\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.3\textwidth]{imagens/desenho_quadratica_1-4.png}
 				\caption{Análise da parábola com parâmetro $\mu = \dfrac{1}{4}$}
 			\end{figure}
-			Para o ponto fixo $x=\dfrac{1}{2}$, temos que ele é não-hiperbólico, pois $f_\mu'\left(\dfrac{1}{2}\right)=2 \left(\dfrac{1}{2}\right) = 1$.
 			
 			
-			\item $x_3$ é hiperbólico, pois $|(f^2)'(x_3)| = 4$.
+			\item $\mu < \dfrac{1}{4}$:
+			
+			Resulta que o gráfico da função passa a se encontrar abaixo da reta $y=x$, agora com dois pontos fixos, isto é, $x_1 \neq x_2$.
+			
 		\end{itemize}
 	\end{exemplo}
 	
