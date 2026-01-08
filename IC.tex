@@ -63,7 +63,7 @@
 		
 	\newpage
 	\vspace*{0.75\textheight}
-	\pagenumbering{roman} 
+	\pagenumbering{arabic} 
 	
 	\chapter*{Plano de Trabalho:}
 	
@@ -285,31 +285,28 @@
 	\end{figure}
 	
 	\begin{exemplo}
-		Tomemos o sistema dinâmico $(\mathbb{R}, f)$, onde $f_\mu(x,\mu)=x+\mu$ com sua derivada dada por $f_\mu'(x, \mu)=2x$. Logo, os pontos fixos da função são aqueles que satisfazem $x^2+\mu=x$. Por Bháskara, temos que esses pontos são
+		Tomemos o sistema dinâmico $(\mathbb{R}, f)$, onde $f_\mu(x,\mu)=x+\mu$ com sua derivada dada por $f_\mu'(x)=2x$. Logo, os pontos fixos da função são aqueles que satisfazem $x^2+\mu=x$. Por Bháskara, temos que esses pontos são
 		$$x_1 = \dfrac{1+\sqrt{1-4\mu}}{2}, x_2 = \dfrac{1-\sqrt{1-4\mu}}{2}$$
 Como $f: \mathbb{R} \rightarrow \mathbb{R}$, precisamos garantir $\mu$ tal que a raiz seja real. $1-4\mu \geq 0 \implies \mu \leq \dfrac{1}{4}$.
 		\begin{itemize}
 			\item $\mu > \dfrac{1}{4}$: 
 			
 			Resulta $x_1$ e $x_2$ como pontos fixos complexos, o que significa que o gráfico da função está acima da reta $y=x$.
-			
 			\item $\mu = \dfrac{1}{4}$:
-			
-			Temos que $x_1 = x_2 = \dfrac{1}{2}$, portanto, um ponto fixo apenas.
-		
-			Para o ponto fixo $x=\dfrac{1}{2}$, temos que ele é não-hiperbólico, pois $f_\mu'\left(\dfrac{1}{2}\right)=1$. Portanto, temos uma bifurcação nesse ponto.
 			\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.3\textwidth]{imagens/desenho_quadratica_1-4.png}
 				\caption{Análise da parábola com parâmetro $\mu = \dfrac{1}{4}$}
 			\end{figure}
 			
-			
+			Temos que $x_1 = x_2 = \dfrac{1}{2}$, portanto, um ponto fixo apenas.
+		
+			Para o ponto fixo $x=\dfrac{1}{2}$, temos que ele é não-hiperbólico, pois $f_\mu'\left(\dfrac{1}{2}\right)=1$. Portanto, temos uma bifurcação nesse ponto.
 			\item $\mu < \dfrac{1}{4}$:
 			
-			Resulta que o gráfico da função passa a se encontrar abaixo da reta $y=x$, agora com dois pontos fixos, isto é, $x_1 \neq x_2$.
-			
+			Resulta que o gráfico da função passa a intersectar a reta $y=x$ em dois pontos, isto é, $x_1 \neq x_2$.			
 		\end{itemize}
+		Com isso, agora podemos classificar $x_1$ e $x_2$ como atratores ou repulsores quando $\mu < \dfrac{1}{4}$. Para que $x_1$ seja repulsor, deve existir $\mu$ tal que $|f_\mu(x_1)| > 1$
 	\end{exemplo}
 	
 	
