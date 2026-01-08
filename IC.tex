@@ -276,13 +276,14 @@
 	Vimos na seção anterior sobre pontos hiperbólicos, que definem atração ou repulsão quando $|f(p)| \neq 1$. Já os pontos não-hiperbólicos trazem um estudo sobre a alteração de comportamento nesses pontos, o que chamamos de bifurcação. Eles ditam uma alteração na dinâmica do sistema, onde pontos periódicos podem surgir ou desaparecer. Alterações no parâmetro da função do sistema causam as mudanças na estrutura.
 	
 	Consideremos o parâmetro $\mu$ na função $f_\mu(x,\mu)=x+\mu$. Note que a existência de pontos fixos reais na função depende do parâmetro. Existe um determinado valor para $\mu$ tal que o gráfico da função não intersecta mais a reta $y = x$, fazendo com que pontos fixos deixem de existir. Portanto, mesmo uma pequena variação de $\mu$ pode mudar totalmente a estrutura de pontos fixos do sistema.
-	
-	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.85\textwidth]{imagens/desenho_familia_quadratica_com_parametro.png}
+		\includegraphics[width=0.9\textwidth]{imagens/desenho_familia_quadratica_com_parametro.png}
 		\caption{Análise da parábola com parâmetro $\mu$}
 	\end{figure}
+	Nesta seção, serão estudados dois tipos de bifurcação: Bifurcação de ponto de sela (saddle-node bifurcation) e Bifurcação duplicada de período (period-doubling bifurcation).
+	
+	A análise de bifurcação de ponto de sela é feita a partir do descobrimento de pontos da função, onde há a classificação dos mesmos. Já na bifurcação duplicada de período, essa mesma análise agora é feita nas iterações da função, sendo que nesse caso os pontos analisados agora serão os pontos periódicos.
 	
 	\begin{exemplo}
 		Tomemos o sistema dinâmico $(\mathbb{R}, f)$, onde $f_\mu(x,\mu)=x+\mu$ com sua derivada dada por $f_\mu'(x)=2x$. Logo, os pontos fixos da função são aqueles que satisfazem $x^2+\mu=x$. Por Bháskara, temos que esses pontos são
@@ -293,15 +294,14 @@ Como $f: \mathbb{R} \rightarrow \mathbb{R}$, precisamos garantir $\mu$ tal que a
 			
 			Resulta $x_1$ e $x_2$ como pontos fixos complexos, o que significa que o gráfico da função está acima da reta $y=x$. Desse modo, consideramos que não existem pontos fixos.
 			\item $\mu = \dfrac{1}{4}$:
+			
+			Temos que $x_1 = x_2 = \dfrac{1}{2}$, portanto, um ponto fixo apenas.
 			\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.3\textwidth]{imagens/desenho_quadratica_1-4.png}
 				\caption{Análise da parábola com parâmetro $\mu = \dfrac{1}{4}$}
 			\end{figure}
-			
-			Temos que $x_1 = x_2 = \dfrac{1}{2}$, portanto, um ponto fixo apenas.
-		
-			Para o ponto fixo $x=\dfrac{1}{2}$, temos que ele é não-hiperbólico, pois $f_\mu'\left(\dfrac{1}{2}\right)=1$. Logo, temos uma bifurcação nesse ponto.
+			Para o ponto fixo $x=\dfrac{1}{2}$, temos que ele é não-hiperbólico (ponto de sela), pois $f_\mu'\left(\dfrac{1}{2}\right)=1$. Logo, temos uma bifurcação nesse ponto.
 			\item $\mu < \dfrac{1}{4}$:
 			
 			Resulta que o gráfico da função passa a intersectar a reta $y=x$ em dois pontos, isto é, $x_1 \neq x_2$.			
