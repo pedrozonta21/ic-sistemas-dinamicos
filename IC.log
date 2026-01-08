@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.13)  27 DEC 2025 17:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.13)  8 JAN 2026 18:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -211,43 +211,44 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \c@definicao=\count277
 \c@exemplo=\count278
+\c@proposicao=\count279
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
 ftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count279
+\l__color_backend_stack_int=\count280
 \l__pdf_internal_box=\box55
 ) (IC.aux)
 \openout1 = `IC.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count280
+\scratchcounter=\count281
 \scratchdimen=\dimen153
 \scratchbox=\box56
-\nofMPsegments=\count281
-\nofMParguments=\count282
+\nofMPsegments=\count282
+\nofMParguments=\count283
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count283
+\MPscratchCnt=\count284
 \MPscratchDim=\dimen154
-\MPnumerator=\count284
-\makeMPintoPDFobject=\count285
+\MPnumerator=\count285
+\makeMPintoPDFobject=\count286
 \everyMPtoPDFconversion=\toks30
 )
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
@@ -260,17 +261,17 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
 
  (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
 
  (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 55
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 59
 .
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
@@ -284,7 +285,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ] [3] [4]
 Cap\'{\i }tulo 1.
 
-Overfull \hbox (10.31609pt too wide) in paragraph at lines 123--124
+Overfull \hbox (10.31609pt too wide) in paragraph at lines 127--128
 []\OT1/cmr/m/n/12 Assim sendo, um sis-tema din^amico mais ro-busto que con-tem-
 pla um cres-ci-mento/decrescimento
  []
@@ -294,7 +295,7 @@ pla um cres-ci-mento/decrescimento
 ] [6]
 Cap\'{\i }tulo 2.
 
-Overfull \hbox (24.06902pt too wide) in paragraph at lines 141--141
+Overfull \hbox (24.06902pt too wide) in paragraph at lines 145--145
 []\OT1/cmr/bx/n/17.28 Defini^^Xc~oes ele-men-ta-res na te-o-ria dos sis-te-mas 
 din^amicos
  []
@@ -304,7 +305,7 @@ din^amicos
 File: imagens/desenho_eventualmente_periodico.png Graphic file (type png)
 <use imagens/desenho_eventualmente_periodico.png>
 Package pdftex.def Info: imagens/desenho_eventualmente_periodico.png  used on i
-nput line 166.
+nput line 170.
 (pdftex.def)             Requested size: 483.69684pt x 201.6035pt.
 [7
 
@@ -312,7 +313,7 @@ nput line 166.
 <imagens/desenho_orbita_x3.png, id=44, 461.92575pt x 431.211pt>
 File: imagens/desenho_orbita_x3.png Graphic file (type png)
 <use imagens/desenho_orbita_x3.png>
-Package pdftex.def Info: imagens/desenho_orbita_x3.png  used on input line 199.
+Package pdftex.def Info: imagens/desenho_orbita_x3.png  used on input line 203.
 
 (pdftex.def)             Requested size: 290.22105pt x 270.934pt.
  [9 <./imagens/desenho_orbita_x3.png>]
@@ -320,43 +321,62 @@ Package pdftex.def Info: imagens/desenho_orbita_x3.png  used on input line 199.
 File: imagens/desenho_orbita_inversa_x3.png Graphic file (type png)
 <use imagens/desenho_orbita_inversa_x3.png>
 Package pdftex.def Info: imagens/desenho_orbita_inversa_x3.png  used on input l
-ine 213.
+ine 217.
 (pdftex.def)             Requested size: 338.5863pt x 314.55873pt.
  [10 <./imagens/desenho_orbita_inversa_x3.png>]
 Cap\'{\i }tulo 3.
 [11
 
-] (IC.aux)
+]
+<imagens/desenho_familia_quadratica_com_parametro.png, id=59, 682.04813pt x 219
+.06844pt>
+File: imagens/desenho_familia_quadratica_com_parametro.png Graphic file (type p
+ng)
+<use imagens/desenho_familia_quadratica_com_parametro.png>
+Package pdftex.def Info: imagens/desenho_familia_quadratica_com_parametro.png  
+used on input line 283.
+(pdftex.def)             Requested size: 411.14526pt x 132.05711pt.
+ [12]
+<imagens/desenho_quadratica_1-4.png, id=65, 307.1475pt x 304.88907pt>
+File: imagens/desenho_quadratica_1-4.png Graphic file (type png)
+<use imagens/desenho_quadratica_1-4.png>
+Package pdftex.def Info: imagens/desenho_quadratica_1-4.png  used on input line
+ 298.
+(pdftex.def)             Requested size: 145.11052pt x 144.04224pt.
+ [13 <./imagens/desenho_familia_quadratica_com_parametro.png> <./imagens/desenh
+o_quadratica_1-4.png>] [14] (IC.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3904 strings out of 474485
- 65622 string characters out of 5743261
+ 3930 strings out of 474485
+ 66524 string characters out of 5743261
  1935542 words of memory out of 5000000
- 26141 multiletter control sequences out of 15000+600000
+ 26167 multiletter control sequences out of 15000+600000
  566315 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,8n,65p,761b,336s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,8n,65p,761b,367s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Cyborg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
 m1200.pk><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmbx12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyborg/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Cyborg/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Cyborg/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Cybor
-g/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Use
-rs/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
+ublic/amsfonts/cm/cmex10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Cyborg/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyborg/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Cyborg/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Cyb
+org/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/U
+sers/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.p
 fb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmti12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/symbols/msbm10.pfb>
-Output written on IC.pdf (12 pages, 235759 bytes).
+m/cmsy10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmti12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Cyborg/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on IC.pdf (15 pages, 310707 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 132 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
