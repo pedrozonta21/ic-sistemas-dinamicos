@@ -204,9 +204,9 @@
 			\caption{Análise da órbita pelo gráfico da função $f(x) = x^3$.}
 		\end{figure}
 		
-		Portanto, podemos definir a órbita futuramente assintótica de um ponto $x_0 \in (-1, 1)$ por $O^+(x_0) = \{x_0, f(x_0), f^2(x_0), f^3(x_0), ..., 0\}$
+		\noindent Portanto, podemos definir a órbita futuramente assintótica de um ponto $x_0 \in (-1, 1)$ por $O^+(x_0) = \{x_0, f(x_0), f^2(x_0), f^3(x_0), ..., 0\}$.
 		
-		Já se $x_0 \in (-\infty, -1)$, temos que a órbita desse ponto converge para $-\infty$ pelo processo de retrato de fase. Isso nos dá a intuição geométrica do resultado $|f^i(x_0) - f(-1)| \rightarrow -\infty, i \rightarrow \infty$. Quando $x_0 \in (1, \infty)$, a órbita converge para $\infty$.
+		\noindent Já se $x_0 \in (-\infty, -1)$, temos que a órbita desse ponto converge para $-\infty$ pelo processo de retrato de fase. Isso nos dá a intuição geométrica do resultado $|f^i(x_0) - f(-1)| \rightarrow -\infty, i \rightarrow \infty$. Quando $x_0 \in (1, \infty)$, a órbita converge para $\infty$.
 	\end{exemplo}
 	
 	\begin{exemplo}
@@ -218,7 +218,7 @@
 			\caption{Análise da órbita pelo gráfico da função $f(x) = \sqrt[3]{x}$.}
 		\end{figure}
 		
-		Desse modo, definimos nesse sistema dinâmico a órbita antigamente assintótica dos pontos fixos $x = 1, x = 0, x = -1$ da seguinte forma:
+		\noindent Desse modo, definimos nesse sistema dinâmico a órbita antigamente assintótica dos pontos fixos $x = 1, x = 0, x = -1$ da seguinte forma:
 		\begin{itemize}
 			\item $O^-(1) = \{..., f^{-2}(1), f^{-1}(1), 1\}$.
 			\item $O^-(0) = \{0\}$.
@@ -291,7 +291,7 @@ Como $f: \mathbb{R} \rightarrow \mathbb{R}$, precisamos garantir $\mu$ tal que a
 		\begin{itemize}
 			\item $\mu > \dfrac{1}{4}$: 
 			
-			Resulta $x_1$ e $x_2$ como pontos fixos complexos, o que significa que o gráfico da função está acima da reta $y=x$.
+			Resulta $x_1$ e $x_2$ como pontos fixos complexos, o que significa que o gráfico da função está acima da reta $y=x$. Desse modo, consideramos que não existem pontos fixos.
 			\item $\mu = \dfrac{1}{4}$:
 			\begin{figure}[H]
 				\centering
@@ -301,12 +301,21 @@ Como $f: \mathbb{R} \rightarrow \mathbb{R}$, precisamos garantir $\mu$ tal que a
 			
 			Temos que $x_1 = x_2 = \dfrac{1}{2}$, portanto, um ponto fixo apenas.
 		
-			Para o ponto fixo $x=\dfrac{1}{2}$, temos que ele é não-hiperbólico, pois $f_\mu'\left(\dfrac{1}{2}\right)=1$. Portanto, temos uma bifurcação nesse ponto.
+			Para o ponto fixo $x=\dfrac{1}{2}$, temos que ele é não-hiperbólico, pois $f_\mu'\left(\dfrac{1}{2}\right)=1$. Logo, temos uma bifurcação nesse ponto.
 			\item $\mu < \dfrac{1}{4}$:
 			
 			Resulta que o gráfico da função passa a intersectar a reta $y=x$ em dois pontos, isto é, $x_1 \neq x_2$.			
 		\end{itemize}
-		Com isso, agora podemos classificar $x_1$ e $x_2$ como atratores ou repulsores quando $\mu < \dfrac{1}{4}$. Para que $x_1$ seja repulsor, deve existir $\mu$ tal que $|f_\mu(x_1)| > 1$
+		Note que a alteração no parâmetro $\mu$ leva a função de nenhum ponto fixo para dois pontos fixos.
+		
+		\noindent Com isso, agora podemos classificar $x_1$ e $x_2$ como atratores ou repulsores quando $\mu < \dfrac{1}{4}$. Para que $x_1$ seja repulsor, deve existir $\mu$ tal que $|f_\mu'(x_1)| > 1$.
+		$$\left|2\left(\dfrac{1+\sqrt{1-4\mu}}{2}\right)\right| > 1 \implies |1+\sqrt{1-4\mu}| > 1 \implies \sqrt{1-4\mu} > 0 \implies \mu < \dfrac{1}{4}$$ Logo, $x_1$ é repulsor $\forall\mu < \dfrac{1}{4}$. 
+		
+		\noindent Para que $x_2$ seja atrator, deve existir $\mu$ tal que $|f_\mu'(x_2)| < 1$, ou seja, $-1 < f_\mu'(x_2) < 1$.
+		$$-1 < 2\left(\dfrac{1-\sqrt{1-4\mu}}{2}\right) < 1 \implies -1 < 1-\sqrt{1-4\mu} < 1 \sqrt{1-4\mu} \implies -2 < -\sqrt{1-4\mu} < 0$$
+		$$ \implies 4 > 1-4\mu > 0 \implies 3>-4\mu>-1 \implies -\dfrac{3}{4}<\mu<\dfrac{1}{4}$$ Logo, $x_2$ é atrator quando $-\dfrac{3}{4}<\mu<\dfrac{1}{4}$.
+		
+		\noindent Já vimos que para $\mu = \dfrac{1}{4}$, temos um ponto fixo não-hiperbólico, indicando uma bifurcação. O mesmo acontece para $\mu = -\dfrac{3}{4}$, indicando uma nova bifurcação acontecendo em $x_2$.
 	\end{exemplo}
 	
 	
