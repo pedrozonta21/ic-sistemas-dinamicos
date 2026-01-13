@@ -285,7 +285,7 @@
 	
 	A análise de bifurcação de ponto de sela é feita a partir do descobrimento de pontos da função, onde há a classificação dos mesmos. Já na bifurcação duplicada de período, essa mesma análise agora é feita nas iterações da função, sendo que nesse caso os pontos analisados agora serão os pontos periódicos.
 	
-	\begin{exemplo}
+	\begin{exemplo}\label{primeiroExemploBifurcacao}
 		Tomemos o sistema dinâmico $(\mathbb{R}, f)$, onde $f_\mu(x,\mu)=x+\mu$ com sua derivada dada por $f_\mu'(x)=2x$. Logo, os pontos fixos da função são aqueles que satisfazem $x^2+\mu=x$. Por Bháskara, temos que esses pontos são
 		$$x_1 = \dfrac{1+\sqrt{1-4\mu}}{2}, x_2 = \dfrac{1-\sqrt{1-4\mu}}{2}$$
 Como $f: \mathbb{R} \rightarrow \mathbb{R}$, precisamos garantir $\mu$ tal que a raiz seja real. $1-4\mu \geq 0 \implies \mu \leq \dfrac{1}{4}$.
@@ -319,7 +319,20 @@ Como $f: \mathbb{R} \rightarrow \mathbb{R}$, precisamos garantir $\mu$ tal que a
 	\end{exemplo}
 	
 	\begin{exemplo}
-		conteúdo...
+		Considerando ainda o mesmo cenário do Exemplo $\ref{primeiroExemploBifurcacao}$, agora analisando a segunda iterada da função, ou seja, $f_\mu^2(x, \mu) = x^4 + 2x^2\mu+\mu^2+\mu$, com derivada dada por $(f_\mu^2)'(x,\mu)=4x^2+4x\mu$, temos o surgimento de pontos periódicos de período $2$ para análise.
+		
+		\noindent Temos como pontos fixos de $f_\mu^2$ os pontos que satisfazem a equação $x^4 + 2x^2\mu+\mu^2+\mu = x$. Para facilitar a identificação desses pontos, vamos tomar essa mesma equação fatorada: $$(\underbrace{x^2+\mu-x}_{(I)})(\underbrace{x^2-\mu+x+1}_{(II)})=0$$
+		
+		\noindent A equação fatorada é dada pelo produto de duas quadráticas, onde as soluções de cada uma são os pontos que estamos procurando. Note que o fator (I) é justamente a solução dos pontos fixos do Exemplo $\ref{primeiroExemploBifurcacao}$, o que faz sentido, já que são os pontos que aparecem em todas as iteradas. Agora, além dos pontos fixos, temos a aparição de pontos periódicos em (II) que também são soluções da equação, e são esses pontos que iremos analisar. Logo, as novas soluções da equação (pontos periódicos), por Bháskara, são
+		$$x_1=\dfrac{-1+\sqrt{-4\mu-3}}{2},x_2=\dfrac{-1-\sqrt{-4\mu-3}}{2}$$
+		Novamente, como $f: \mathbb{R} \rightarrow \mathbb{R}$, temos que garantir $\mu$ tal que $-4\mu-3\geq0$. Logo, 
+		$$-4\mu-3\geq0 \implies \mu \leq -\dfrac{3}{4}$$
+		
+		\begin{itemize}
+			\item $\mu > -\dfrac{3}{4}$:
+			
+			Resulta $x_1$ e $x_2$ como pontos periódicos complexos, portanto os desconsideraremos.
+		\end{itemize}
 	\end{exemplo}
 	
 	
