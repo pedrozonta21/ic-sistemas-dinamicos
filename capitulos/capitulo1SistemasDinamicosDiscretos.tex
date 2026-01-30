@@ -1,0 +1,34 @@
+\section{Exemplos de sistemas dinâmicos discretos}
+
+\begin{definicao}
+	Um sistema dinâmico é definido pelo par (X, f), onde X é um espaço métrico que possui todas as possibilidades de estado do sistema e $f: \mathbb{X} \rightarrow \mathbb{X}$ é a função que rege o desenvolvimento desse sistema ao longo do tempo.
+\end{definicao}
+
+Tomando uma condição inicial $x_0 \in \mathbb{X}$, temos que a função $f$ é dada por $f(x_t) = f(x_{t-1})$, onde $t \in \mathbb{N}$. Assim, o conjunto das gerações futuras de $x_0$ é dado pelas iteradas da função $f$ na condição inicial, ou seja, $\{x_0, f(x_0), f^2(x_0), f^3(x_0), ..., f^n(x_0), ...\}$, onde $n \in \mathbb{N}$ indica a quantidades de iteradas de $f(x_0)$.
+
+\begin{exemplo}\label{exemploSimplesSistemaDinamico}
+	Um sistema dinâmico do tipo mais simples é dado por $(\mathbb{R}, f)$, sendo $f(x) = kx$.
+\end{exemplo}
+
+Essa função do Exemplo $\ref{exemploSimplesSistemaDinamico}$, tem como característica a restrição do sistema para três possibilidades:
+\begin{enumerate}
+	\item Crescimento infinito da população, quando $k > 1$; \vspace{-2mm}
+	\item População constante, quando $k = 1$; \vspace{-2mm}
+	\item Extinção da população, quando $k < 1$. \vspace{-2mm}
+\end{enumerate}
+
+Assim sendo, um sistema dinâmico mais robusto que contempla um crescimento/decrescimento com mais variáveis é dado por $f(x) = kx(1 - L)$, onde $k \in \mathbb{R}$ e $L$ é o limite populacional suportado pelo sistema. Nesse caso, utilizamos L como proporção. Esse formato de sistema dinâmico é denominado família logística.
+
+\begin{exemplo}\label{exemplo1DeSistemaDinamico}
+	Seja $f(x) = 3.12x(1 - x)$. Tomando uma condição inicial $x_0 = 0.33$ (33\% da capacidade limite), as iteradas em $f$ nos dá a população em cada geração.
+	$\\f(x_0) = 0.689832 \\f^2(x_0) = 0.667567092741 \\f^3(x_0) = 0.6923943606225 \\f^4(x_0) = 0.6645113592021$\\
+	Nas quatro primeiras gerações, vemos que a população fica ente 66\% e 69\% da capacidade.
+\end{exemplo}
+
+Quando um sistema dinâmico é da forma $f(x) = kx(1 - L)$, pequenas variações na entrada ou na constante $k$ geram imprevisibilidade quanto ao comportamento do sistema perante a esses novos dados. O estudo da dinâmica desses sistemas consiste em entender órbitas, pontos com características específicas e análise de caos.
+
+\begin{exemplo}
+	Seja $f(x) = 3.92x(1 - x)$ e a condição inicial $x_0 = 0.33$.
+	$\\f(x_0) = 0.866712 \\f^2(x_0) = 0.4528474514995 \\f^3(x_0) = 0.971284417706 \\f^4(x_0) = 0.1093327106997$\\
+	Essa pequena variação no parâmetro $k$ comparado com o exemplo \ref{exemplo1DeSistemaDinamico} e gerou resultados menos previsíveis e um intervalo populacional maior, entre 10\% e 97\% de capacidade em um número pequeno de iterações.
+\end{exemplo}
