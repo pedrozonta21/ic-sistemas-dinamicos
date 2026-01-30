@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.13)  14 JAN 2026 18:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.13)  30 JAN 2026 19:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -800,17 +800,44 @@ Package pdftex.def Info: imagens/desenho_quadratica_1-4.png  used on input line
  303.
 (pdftex.def)             Requested size: 145.11052pt x 144.04224pt.
  [13 <./imagens/desenho_familia_quadratica_com_parametro.png>]
-[14 <./imagens/desenho_quadratica_1-4.png>] [15] [16] (IC.aux)
+<imagens/desenho_conjunto_estavel_1-4.jpg, id=73, 1606.0pt x 1353.055pt>
+File: imagens/desenho_conjunto_estavel_1-4.jpg Graphic file (type jpg)
+<use imagens/desenho_conjunto_estavel_1-4.jpg>
+Package pdftex.def Info: imagens/desenho_conjunto_estavel_1-4.jpg  used on inpu
+t line 311.
+(pdftex.def)             Requested size: 290.22105pt x 244.50975pt.
+
+[14 <./imagens/desenho_quadratica_1-4.png> <./imagens/desenho_conjunto_estavel_
+1-4.jpg>]
+<imagens/desenho_conjunto_instavel_1-4.png, id=78, 1606.0pt x 1346.02875pt>
+File: imagens/desenho_conjunto_instavel_1-4.png Graphic file (type png)
+<use imagens/desenho_conjunto_instavel_1-4.png>
+Package pdftex.def Info: imagens/desenho_conjunto_instavel_1-4.png  used on inp
+ut line 320.
+(pdftex.def)             Requested size: 290.22105pt x 243.24004pt.
+ [15 <./imagens/desenho_conjunto_instavel_1-4.png>]
+<imagens/desenho_conjunto_estavel_dois_pontos.png, id=82, 1606.0pt x 1363.0925p
+t>
+File: imagens/desenho_conjunto_estavel_dois_pontos.png Graphic file (type png)
+<use imagens/desenho_conjunto_estavel_dois_pontos.png>
+Package pdftex.def Info: imagens/desenho_conjunto_estavel_dois_pontos.png  used
+ on input line 346.
+(pdftex.def)             Requested size: 386.95894pt x 328.41763pt.
+ [16 <./imagens/desenho_conjunto_estavel_dois_pontos.png>] [17] [18]
+Cap\'{\i }tulo 4.
+[19
+
+] (IC.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 24832 strings out of 474485
- 648114 string characters out of 5743261
- 1951542 words of memory out of 5000000
- 46722 multiletter control sequences out of 15000+600000
+ 24853 strings out of 474485
+ 649163 string characters out of 5743261
+ 1950542 words of memory out of 5000000
+ 46743 multiletter control sequences out of 15000+600000
  566315 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,17n,107p,761b,2260s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -830,9 +857,9 @@ amsfonts/cm/cmsy8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmti12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Cyborg/AppData/Local/P
 rograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on IC.pdf (17 pages, 329571 bytes).
+Output written on IC.pdf (20 pages, 634126 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
+ 154 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

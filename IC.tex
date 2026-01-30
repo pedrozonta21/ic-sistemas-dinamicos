@@ -304,24 +304,55 @@ Como $f: \mathbb{R} \rightarrow \mathbb{R}$, precisamos garantir $\mu$ tal que a
 				\caption{Análise da parábola com parâmetro $\mu = \dfrac{1}{4}$}
 			\end{figure}
 			Para o ponto fixo $x=\dfrac{1}{2}$, temos que ele é não-hiperbólico (ponto de sela), pois $f_\mu'\left(\dfrac{1}{2}\right)=1$. Logo, temos uma bifurcação nesse ponto.
+			
+			A partir do mapeamento do ponto fixo, é possível definir seu conjunto estável, dado pelos valores de $x$ que convergem para $\dfrac{1}{2}$. Também é possível analisar o conjunto instável, onde essa análise se dá na função inversa.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.6\textwidth]{imagens/desenho_conjunto_estavel_1-4.jpg}
+				\caption{Análise de estabilidade do ponto fixo $x = \dfrac{1}{2}$}
+			\end{figure}
+			Pelo retrato de fases, é possível concluir que o conjunto estável de $\dfrac{1}{2}$, ou seja, aqueles pontos em que $f^i(x) \rightarrow \dfrac{1}{2}, i \rightarrow \infty$  é dado por $W^s(\frac{1}{2}) = \{x \in \mathbb{R} : -\frac{1}{2} \leq x \leq \frac{1}{2}\}$. Isso significa que qualquer ponto fora do intervalo tem órbita convergindo para $\infty$.
+			
+			Já o conjunto instável, sob análise da função inversa, é facilmente descrito pelo seu gráfico usando o mesmo processo de retrato de fases.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.6\textwidth]{imagens/desenho_conjunto_instavel_1-4.png}
+				\caption{Análise de instabilidade do ponto fixo $x = \dfrac{1}{2}$}
+			\end{figure}
+			
+			Temos que qualquer ponto no intervalo $-\frac{1}{2} < x < \frac{1}{2}$ não tem órbita convergindo para o ponto fixo. Já fora desse intervalo, os pontos convergem para o ponto fixo após $f^i(x)$, com $i \rightarrow \infty$. Portanto, definimos o conjunto instável por $W^u(\frac{1}{2}) = (-\infty, -\frac{1}{2}] \cup [\frac{1}{2}, \infty)$.
 			\item $\mu < \dfrac{1}{4}$:
 			
 			Resulta que o gráfico da função passa a intersectar a reta $y=x$ em dois pontos, isto é, $x_1 \neq x_2$.			
-		\end{itemize}
-		Note que a alteração no parâmetro $\mu$ leva a função de nenhum ponto fixo para dois pontos fixos.
 		
-		\noindent Com isso, agora podemos classificar $x_1$ e $x_2$ como atratores ou repulsores quando $\mu < \dfrac{1}{4}$. Para que $x_1$ seja repulsor, deve existir $\mu$ tal que $|f_\mu'(x_1)| > 1$.
-		$$\left|2\left(\dfrac{1+\sqrt{1-4\mu}}{2}\right)\right| > 1 \implies |1+\sqrt{1-4\mu}| > 1 \implies \sqrt{1-4\mu} > 0 \implies \mu < \dfrac{1}{4}$$ Logo, $x_1$ é repulsor $\forall\mu < \dfrac{1}{4}$. 
-		
-		\noindent Para que $x_2$ seja atrator, deve existir $\mu$ tal que $|f_\mu'(x_2)| < 1$, ou seja, $-1 < f_\mu'(x_2) < 1$.
-		$$-1 < 2\left(\dfrac{1-\sqrt{1-4\mu}}{2}\right) < 1 \implies -1 < 1-\sqrt{1-4\mu} < 1 \implies -2 < -\sqrt{1-4\mu} < 0$$
-		$$ \implies 4 > 1-4\mu > 0 \implies 3>-4\mu>-1 \implies -\dfrac{3}{4}<\mu<\dfrac{1}{4}$$ Logo, $x_2$ é atrator quando $-\dfrac{3}{4}<\mu<\dfrac{1}{4}$.
-		
-		\noindent Já vimos que para $\mu = \dfrac{1}{4}$, temos um ponto fixo não-hiperbólico, indicando uma bifurcação. O mesmo acontece para $\mu = -\dfrac{3}{4}$, indicando uma nova bifurcação acontecendo em $x_2$.
-		
-		\noindent No entanto, quando $\mu < -\dfrac{3}{4}$, acontece uma mudança em $x_2$. Ao analisar $|f_\mu'(x)|$, temos
-		$$\left|2\left(\dfrac{1-\sqrt{1-4\mu}}{2}\right)\right| \implies |1-\sqrt{1-4\mu}|$$
-		A raiz quadrada nos mostra que $\sqrt{1-4\mu} > 2$, pois $-4\mu > 3$. Portanto, $x_2$ passa a ser repulsor, já que $|1-\sqrt{1-4\mu}| > 1, \forall \mu<-\dfrac{3}{4}$.
+			Note que a alteração no parâmetro $\mu$ leva a função de nenhum ponto fixo para dois pontos fixos.
+			
+			Agora podemos classificar $x_1$ e $x_2$ como atratores ou repulsores quando $\mu < \dfrac{1}{4}$. Para que $x_1$ seja repulsor, deve existir $\mu$ tal que $|f_\mu'(x_1)| > 1$.
+			$$\left|2\left(\dfrac{1+\sqrt{1-4\mu}}{2}\right)\right| > 1 \implies |1+\sqrt{1-4\mu}| > 1 \implies \sqrt{1-4\mu} > 0 \implies \mu < \dfrac{1}{4}$$ Logo, $x_1$ é repulsor $\forall\mu < \dfrac{1}{4}$. 
+			
+			Para que $x_2$ seja atrator, deve existir $\mu$ tal que $|f_\mu'(x_2)| < 1$, ou seja, $-1 < f_\mu'(x_2) < 1$.
+			$$-1 < 2\left(\dfrac{1-\sqrt{1-4\mu}}{2}\right) < 1 \implies -1 < 1-\sqrt{1-4\mu} < 1 \implies -2 < -\sqrt{1-4\mu} < 0$$
+			$$ \implies 4 > 1-4\mu > 0 \implies 3>-4\mu>-1 \implies -\dfrac{3}{4}<\mu<\dfrac{1}{4}$$ Logo, $x_2$ é atrator quando $-\dfrac{3}{4}<\mu<\dfrac{1}{4}$.
+			
+			Com isso, a definição do conjunto estável dos dois pontos fixos pode ser observada de forma genérica no intervalo de $\mu$, através do retrato de fases feito no próprio gráfico da função. 
+			
+			Desse modo, definimos o conjunto $W^s(x_1)$ como $W^s(x_1) = \{-x_1, x_1\}$, pois qualquer outro ponto faz valer o que definimos há pouco: $x_1$ é um ponto fixo repulsor, fazendo com que a órbita se afaste dele. 
+			
+			Já para $x_2$, que vimos ser um ponto atrator, temos $W^s(x_2) = \{x \in \mathbb{R} : -x_1 < x < x_1\}$. Isso significa que para qualquer $x \in (-x_1, x_1)$, $f^i(x) \rightarrow x_2$, com $i \rightarrow \infty$.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.8\textwidth]{imagens/desenho_conjunto_estavel_dois_pontos.png}
+				\caption{Análise de estabilidade dos pontos fixos $x_1$ e $x_2$}
+			\end{figure}
+			
+			Já vimos que para $\mu = \dfrac{1}{4}$, temos um ponto fixo não-hiperbólico, indicando uma bifurcação. O mesmo acontece para $\mu = -\dfrac{3}{4}$, indicando uma nova bifurcação acontecendo em $x_2$.
+			
+			No entanto, quando $\mu < -\dfrac{3}{4}$, acontece uma mudança em $x_2$. Ao analisar $|f_\mu'(x)|$, temos
+			$$\left|2\left(\dfrac{1-\sqrt{1-4\mu}}{2}\right)\right| \implies |1-\sqrt{1-4\mu}|$$
+			A raiz quadrada nos mostra que $\sqrt{1-4\mu} > 2$, pois $-4\mu > 3$. Portanto, $x_2$ passa a ser repulsor, já que $|1-\sqrt{1-4\mu}| > 1, \forall \mu<-\dfrac{3}{4}$.
+	\end{itemize}
 	\end{exemplo}
 	
 	\begin{exemplo}
@@ -395,15 +426,16 @@ Como $f: \mathbb{R} \rightarrow \mathbb{R}$, precisamos garantir $\mu$ tal que a
 				\fill (axis cs:-1.25,-1.2) circle (2pt);
 				\fill (axis cs:-1.25,0.2) circle (2pt);
 				
-				\addplot [black, dashed, forget plot, opacity=0.5] coordinates {(-0.75, -1.6) (-0.75, -0.5)};
-				\addplot [black, dashed, forget plot, opacity=0.5] coordinates {(0.25, -1.6) (0.25, 0.5)};
+				\addplot [black, dashed, forget plot, opacity=0.15] coordinates {(-0.75, -1.6) (-0.75, -0.5)};
+				\addplot [black, dashed, forget plot, opacity=0.15] coordinates {(0.25, -1.6) (0.25, 0.5)};
+				\addplot [black, dashed, forget plot, opacity=0.15] coordinates {(-1.25, -1.6) (-1.25, 0.25)};
 				
 			\end{axis}
 		\end{tikzpicture}
 		\end{center}
 	\end{exemplo}
 	
-	
+	\chapter {Família Logística}
 	
 	
 	
