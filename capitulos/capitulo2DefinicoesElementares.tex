@@ -1,0 +1,89 @@
+\documentclass[../IC.tex]{subfiles}
+
+\begin{document}
+	\chapter{Definições elementares}
+	
+	\section{Definições elementares na teoria dos sistemas dinâmicos discretos}
+	
+	No estudo de sistemas dinâmicos, temos definições que auxiliam não só a entender o comportamento do sistema, mas também a fazer previsões e estudar diferentes possibilidades ao fazer uma mudança mínima nas condições que regem a função.
+	
+	\begin{definicao}
+		Seja $x_0 \in \mathbb{X}$ um valor inicial. Se $f(x_0) = x_0$, então $x_0$ é um ponto fixo.
+	\end{definicao}
+	\begin{exemplo}
+		Se $f(x) = x$, então todo ponto $x \in \mathbb{X}$ é fixo.
+	\end{exemplo}
+	\begin{definicao}
+		Seja $n \in \mathbb{N}$. Se $f^n(x_0) = x_0$, então $x_0$ é um ponto periódico de período $n$.
+	\end{definicao}
+	\begin{exemplo}
+		Se $f(x) = -x$, $x_0 \neq 0$ e $n \in \mathbb{N}$, então $x_0$ é periódico de período $2$, pois $f(x_0) = f^2(x_0) = f^4(x_0) = ... = f^{2n}(x_0)$.
+	\end{exemplo}
+	\begin{exemplo}
+		Considere o sistema dinâmico $(S^1, f)$, onde $S^1 = \{(\cos{\theta}, \sin{\theta}) : 0 \leq \theta \leq 2\pi\}$ e $f(\theta) = 2\theta$.		
+		O termo genérico dessa função é da forma $f^n(\theta) = 2^n\theta$. Como estamos em $S^1$, temos que $\theta + 2k\pi = \theta$, ou seja, voltamos ao mesmo ponto $\theta$ depois de $k$ voltas no círculo, onde $k \in \mathbb{Z}$. Assim, os pontos periódicos dessa função são aqueles que satisfazem $2^n\theta = \theta + 2k\pi$.\\
+		Resolvendo: $\theta(2^n - 1) = 2k\pi \implies \theta = \dfrac{2k\pi}{2^n - 1}$.
+	\end{exemplo}
+	\begin{definicao}
+		Seja $n, i \in \mathbb{N}$ e $x_0 \in \mathbb{X}$. Se $f^{n+i}(x_0) = f^i(x_0)$, então $x_0$ é um ponto eventualmente periódico de período $i$, sendo que são necessárias primeiramente $n$ iteradas para se chegar até o ciclo.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\textwidth]{imagens/desenho_eventualmente_periodico.png}
+			\caption{Ponto eventualmente periódico.}
+		\end{figure}
+	\end{definicao}
+	\begin{definicao}
+		Seja $n \in \mathbb{N}$ e p um ponto periódico de período n. Chamamos um ponto $x_0$ de futuramente assintótico a $p$ se $$\lim_{i \rightarrow \infty} f^{in}(x_0) = p$$
+		Caso p não seja periódico, definimos um ponto $x_0$ como futuramente assintótico a $p$ se $$|f^i(x_0) - f^i(p)| \rightarrow 0, i \rightarrow \infty$$
+		Esses pontos futuramente assintóticos compõem o que chamamos de conjunto estável do ponto $p$, denotado por $W^s(p)$. Caso a função $f$ admita inversa, chamamos de conjunto instável (pontos antigamente assintóticos) do ponto $p$, denotado por $W^u(p)$, aqueles pontos que satisfazem essas mesmas condições, porém com $i \rightarrow -\infty$.
+	\end{definicao}
+	\begin{exemplo}
+		Considere o sistema dinâmico $(\mathbb{R}, f)$, onde $f(x) = x^3$. O conjunto estável do ponto $x = 0$ é dado por $W^s(0) = (-1, 1)$, pois ao analisar a órbita nesse intervalo aberto, os pontos convergem para zero quando iterados na função, tornando o comportamento previsível.
+		Analisando a inversa de $f$, ou seja, $f^{-1}(x) = \sqrt[3]{x}$, vemos que todos os pontos no eixo real positivo tem órbita convergindo para $1$. Já os pontos no eixo real negativo tem órbita convergindo para $-1$. Assim, $W^u(1) = \{x \in \mathbb{R} \mid x > 0\}$ e $W^u(-1) = \{x \in \mathbb{R} \mid x < 0\}$.
+	\end{exemplo}
+	\begin{definicao}
+		Se $f'(x_0) = 0$, chamamos esse ponto $x_0$ de ponto crítico da função. E ainda classificamos esse ponto como não degenerado, caso $f''(x_0) \neq 0$, ou degenerado, caso $f''(x_0) = 0$.
+	\end{definicao}
+	
+	Essas definições introduzidas até aqui são utilizadas no estudo das órbitas dos pontos $x \in \mathbb{X}$ de um sistema dinâmico $(X, f)$.
+	
+	\section{Órbitas}
+	
+	\begin{definicao}
+		A órbita futuramente assintótica de um ponto $x_0$ que é regido por uma função é denotada por $O^+(x_0) = \{x_0, f(x_0), f^2(x_0), f^3(x_0), ...\}$. Ou seja, essa órbita é o conjunto que abriga os pontos resultantes das iteradas da função $f$.
+		Caso $f$ seja um homeomorfismo, isto é, $f$ contínua, bijetora e com inversa contínua, definimos a órbita completa de um ponto $x_0$ (tanto futura quanto antigamente assintótica) por $O(x_0) = \{..., f^{-2}(x_0), f^{-1}(x_0), x_0, f(x_0), f^2(x_0), ...\}$. Se formos analisar apenas a órbita antigamente assintótica, denotamos o conjunto por $O^-(x_0)$.	
+	\end{definicao}
+	
+	Uma forma de analisar a órbitas dos pontos de uma função é através de estudos por meio de seu gráfico. Ao traçar a reta diagonal $y = x$, podemos aplicar uma técnica geométrica chamada retrato de fase, que auxilia a entender o comportamento assintótico dos pontos e a identificar os pontos fixos (que são aqueles onde a reta intersecta o gráfico). Para aplicar essa técnica, traçamos uma linha vertical no ponto inicial $(x_0, x_0)$ até encontrar o gráfico no ponto $(x_0, f(x_0))$. Então, agora fazemos uma linha horizontal iniciando em $(x_0, f(x_0))$ indo até encontrar a diagonal em $(f(x_0), f(x_0))$. Repetimos nesse momento a tração da linha vertical, e após isso a da linha horizontal, sucessivamente.
+	
+	\begin{exemplo}\label{exemploSistemaDinamicoX^3}
+		Considere o sistema dinâmico $(\mathbb{R}, f)$, sendo $f(x) = x^3$ e um ponto $x_0$ do domínio no intervalo aberto $-1 < x < 1$. Temos que os pontos nesse intervalo convergem para o ponto fixo $x = 0$, pois $|f^i(x_0) - f(0)| \rightarrow 0, i \rightarrow \infty$.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.6\textwidth]{imagens/desenho_orbita_x3.png}
+			\caption{Análise da órbita pelo gráfico da função $f(x) = x^3$.}
+		\end{figure}
+		
+		\noindent Portanto, podemos definir a órbita futuramente assintótica de um ponto $x_0 \in (-1, 1)$ por $O^+(x_0) = \{x_0, f(x_0), f^2(x_0), f^3(x_0), ..., 0\}$.
+		
+		\noindent Já se $x_0 \in (-\infty, -1)$, temos que a órbita desse ponto converge para $-\infty$ pelo processo de retrato de fase. Isso nos dá a intuição geométrica do resultado $|f^i(x_0) - f(-1)| \rightarrow -\infty, i \rightarrow \infty$. Quando $x_0 \in (1, \infty)$, a órbita converge para $\infty$.
+	\end{exemplo}
+	
+	\begin{exemplo}
+		Considerando o mesmo sistema dinâmico do Exemplo \ref{exemploSistemaDinamicoX^3}, temos que sua função inversa é dada por $f(x) = \sqrt[3]{x}$. Nessa função, a dinâmica dos pontos convergem para $-1$ quando tomamos $x_0 \in (-\infty, 0)$. Já se $x_0 \in (0, \infty)$, a dinâmica converge para $1$. Nós podemos fazer essa análise pelo fato de $f(x) = x^3$ ser contínua, bijetora e possuir sua inversa contínua.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\textwidth]{imagens/desenho_orbita_inversa_x3.png}
+			\caption{Análise da órbita pelo gráfico da função $f(x) = \sqrt[3]{x}$.}
+		\end{figure}
+		
+		\noindent Desse modo, definimos nesse sistema dinâmico a órbita antigamente assintótica dos pontos fixos $x = 1, x = 0, x = -1$ da seguinte forma:
+		\begin{itemize}
+			\item $O^-(1) = \{..., f^{-2}(1), f^{-1}(1), 1\}$.
+			\item $O^-(0) = \{0\}$.
+			\item $O^-(-1) = \{..., f^{-2}(-1), f^{-1}(-1), -1\}$.
+		\end{itemize}
+	\end{exemplo}
+\end{document}
