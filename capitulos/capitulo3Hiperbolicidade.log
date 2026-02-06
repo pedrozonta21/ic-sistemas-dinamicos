@@ -1,11 +1,18 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.30)  2 FEB 2026 17:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.30)  6 FEB 2026 01:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./IC.tex
-(IC.tex
+**./capitulo3Hiperbolicidade.tex
+(capitulo3Hiperbolicidade.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
+(C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfiles.cls
+Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
+Preamble taken from file `../IC.tex'
+(C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
+Package: import 2020/04/01  v 6.2
+)
+(../IC.tex
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
@@ -239,11 +246,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
-
-(C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
-Package: import 2020/04/01  v 6.2
-))
-(C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty
+) (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.st
+y
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.re
 vision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
@@ -698,31 +702,31 @@ File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \c@definicao=\count327
 \c@exemplo=\count328
 \c@proposicao=\count329
-
+))
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
 ftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count330
-) (IC.aux
+) (capitulo3Hiperbolicidade.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 5.
 )
-\openout1 = `IC.aux'.
+\openout1 = `capitulo3Hiperbolicidade.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
@@ -752,18 +756,19 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+Cap\'{\i }tulo 1.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
 
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 62
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
 .
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
@@ -771,113 +776,62 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 [1
 
-{C:/Users/Cyborg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [1]
-[2
 
-] [3] (capitulos/capitulo1SistemasDinamicosDiscretos.tex [4]
-Cap\'{\i }tulo 1.
-
-Overfull \hbox (10.31609pt too wide) in paragraph at lines 25--26
-[]\OT1/cmr/m/n/12 Assim sendo, um sis-tema din^amico mais ro-busto que con-tem-
-pla um cres-ci-mento/decrescimento
- []
-
-[5
-
-]) (capitulos/capitulo2DefinicoesElementares.tex [6]
-Cap\'{\i }tulo 2.
-
-Overfull \hbox (24.06902pt too wide) in paragraph at lines 6--6
-[]\OT1/cmr/bx/n/17.28 Defini^^Xc~oes ele-men-ta-res na te-o-ria dos sis-te-mas 
-din^amicos
- []
-
-<imagens/desenho_eventualmente_periodico.png, id=37, 959.08313pt x 399.74344pt>
-
-File: imagens/desenho_eventualmente_periodico.png Graphic file (type png)
-<use imagens/desenho_eventualmente_periodico.png>
-Package pdftex.def Info: imagens/desenho_eventualmente_periodico.png  used on i
-nput line 31.
-(pdftex.def)             Requested size: 483.69684pt x 201.6035pt.
-[7
-
-] [8 <./imagens/desenho_eventualmente_periodico.png>]
-<imagens/desenho_orbita_x3.png, id=47, 461.92575pt x 431.211pt>
-File: imagens/desenho_orbita_x3.png Graphic file (type png)
-<use imagens/desenho_orbita_x3.png>
-Package pdftex.def Info: imagens/desenho_orbita_x3.png  used on input line 64.
-(pdftex.def)             Requested size: 290.22105pt x 270.934pt.
- [9 <./imagens/desenho_orbita_x3.png>]
-<imagens/desenho_orbita_inversa_x3.png, id=52, 508.90125pt x 472.76625pt>
-File: imagens/desenho_orbita_inversa_x3.png Graphic file (type png)
-<use imagens/desenho_orbita_inversa_x3.png>
-Package pdftex.def Info: imagens/desenho_orbita_inversa_x3.png  used on input l
-ine 78.
-(pdftex.def)             Requested size: 314.39998pt x 292.08768pt.
-) (capitulos/capitulo3Hiperbolicidade.tex [10 <./imagens/desenho_orbita_inversa
-_x3.png>]
-Cap\'{\i }tulo 3.
-[11
-
-] [12]
-<imagens/desenho_familia_quadratica_com_parametro.png, id=66, 682.04813pt x 219
-.06844pt>
-File: imagens/desenho_familia_quadratica_com_parametro.png Graphic file (type p
-ng)
-<use imagens/desenho_familia_quadratica_com_parametro.png>
-Package pdftex.def Info: imagens/desenho_familia_quadratica_com_parametro.png  
-used on input line 88.
+{C:/Users/Cyborg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+<../imagens/desenho_familia_quadratica_com_parametro.png, id=23, 682.04813pt x 
+219.06844pt>
+File: ../imagens/desenho_familia_quadratica_com_parametro.png Graphic file (typ
+e png)
+<use ../imagens/desenho_familia_quadratica_com_parametro.png>
+Package pdftex.def Info: ../imagens/desenho_familia_quadratica_com_parametro.pn
+g  used on input line 88.
 (pdftex.def)             Requested size: 435.32419pt x 139.82558pt.
- [13]
-<imagens/desenho_quadratica_1-4.png, id=71, 307.1475pt x 304.88907pt>
-File: imagens/desenho_quadratica_1-4.png Graphic file (type png)
-<use imagens/desenho_quadratica_1-4.png>
-Package pdftex.def Info: imagens/desenho_quadratica_1-4.png  used on input line
- 108.
+
+[3] [4 <../imagens/desenho_familia_quadratica_com_parametro.png>]
+<../imagens/desenho_quadratica_1-4.png, id=34, 307.1475pt x 304.88907pt>
+File: ../imagens/desenho_quadratica_1-4.png Graphic file (type png)
+<use ../imagens/desenho_quadratica_1-4.png>
+Package pdftex.def Info: ../imagens/desenho_quadratica_1-4.png  used on input l
+ine 108.
 (pdftex.def)             Requested size: 145.11052pt x 144.04224pt.
- [14 <./imagens/desenho_familia_quadratica_com_parametro.png>]
-<imagens/desenho_conjunto_estavel_1-4.jpg, id=76, 1606.0pt x 1353.055pt>
-File: imagens/desenho_conjunto_estavel_1-4.jpg Graphic file (type jpg)
-<use imagens/desenho_conjunto_estavel_1-4.jpg>
-Package pdftex.def Info: imagens/desenho_conjunto_estavel_1-4.jpg  used on inpu
-t line 116.
+<../imagens/desenho_conjunto_estavel_1-4.jpg, id=35, 1606.0pt x 1353.055pt>
+File: ../imagens/desenho_conjunto_estavel_1-4.jpg Graphic file (type jpg)
+<use ../imagens/desenho_conjunto_estavel_1-4.jpg>
+Package pdftex.def Info: ../imagens/desenho_conjunto_estavel_1-4.jpg  used on i
+nput line 116.
 (pdftex.def)             Requested size: 290.22105pt x 244.50975pt.
-
-[15 <./imagens/desenho_quadratica_1-4.png>]
-<imagens/desenho_conjunto_instavel_1-4.png, id=81, 1606.0pt x 1346.02875pt>
-File: imagens/desenho_conjunto_instavel_1-4.png Graphic file (type png)
-<use imagens/desenho_conjunto_instavel_1-4.png>
-Package pdftex.def Info: imagens/desenho_conjunto_instavel_1-4.png  used on inp
-ut line 125.
+ [5 <../imagens/desenho_quadratica_1-4.png>]
+<../imagens/desenho_conjunto_instavel_1-4.png, id=40, 1606.0pt x 1346.02875pt>
+File: ../imagens/desenho_conjunto_instavel_1-4.png Graphic file (type png)
+<use ../imagens/desenho_conjunto_instavel_1-4.png>
+Package pdftex.def Info: ../imagens/desenho_conjunto_instavel_1-4.png  used on 
+input line 125.
 (pdftex.def)             Requested size: 290.22105pt x 243.24004pt.
- [16 <./imagens/desenho_conjunto_estavel_1-4.jpg>] [17 <./imagens/desenho_conju
+ [6 <../imagens/desenho_conjunto_estavel_1-4.jpg>] [7 <../imagens/desenho_conju
 nto_instavel_1-4.png>]
-<imagens/desenho_conjunto_estavel_dois_pontos.png, id=88, 1606.0pt x 1363.0925p
-t>
-File: imagens/desenho_conjunto_estavel_dois_pontos.png Graphic file (type png)
-<use imagens/desenho_conjunto_estavel_dois_pontos.png>
-Package pdftex.def Info: imagens/desenho_conjunto_estavel_dois_pontos.png  used
- on input line 151.
+<../imagens/desenho_conjunto_estavel_dois_pontos.png, id=48, 1606.0pt x 1363.09
+25pt>
+File: ../imagens/desenho_conjunto_estavel_dois_pontos.png Graphic file (type pn
+g)
+<use ../imagens/desenho_conjunto_estavel_dois_pontos.png>
+Package pdftex.def Info: ../imagens/desenho_conjunto_estavel_dois_pontos.png  u
+sed on input line 151.
 (pdftex.def)             Requested size: 386.95894pt x 328.41763pt.
- [18 <./imagens/desenho_conjunto_estavel_dois_pontos.png>] [19])
-(capitulos/capitulo4FamiliaLogistica.tex [20]
-Cap\'{\i }tulo 4.
-) [21
-
-] (IC.aux)
+ [8 <../imagens/desenho_conjunto_estavel_dois_pontos.png>] [9] [10] (capitulo3H
+iperbolicidade.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25080 strings out of 467870
- 654824 string characters out of 5417871
- 1265424 words of memory out of 5000000
- 53523 multiletter control sequences out of 15000+600000
- 635967 words of font info for 71 fonts, out of 8000000 for 9000
+ 25036 strings out of 467870
+ 653518 string characters out of 5417871
+ 1263771 words of memory out of 5000000
+ 53499 multiletter control sequences out of 15000+600000
+ 635063 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,118p,817b,2340s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,17n,135p,783b,2259s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Cyborg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
 m1200.pk><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmbx12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -894,9 +848,9 @@ amsfonts/cm/cmsy8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmti12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Cyborg/AppData/Local/P
 rograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on IC.pdf (22 pages, 639672 bytes).
+Output written on capitulo3Hiperbolicidade.pdf (10 pages, 530809 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
+ 116 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
