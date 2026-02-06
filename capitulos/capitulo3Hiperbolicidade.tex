@@ -27,11 +27,33 @@
 	\end{definicao}
 	
 	\begin{proposicao}
-		Considere $p$ um ponto fixo hiperbólico com $|f'(p)| < 1$. Portanto, existe um intervalo $I$ sobre $p$ de modo que, se $x_0 \in I$, então $$\lim_{n \rightarrow \infty} f^n(x_0) = p$$.
+		Considere $p$ um ponto fixo hiperbólico com $|f'(p)| < 1$. Portanto, existe um intervalo aberto $I$ sobre $p$ de modo que, se $x_0 \in I$, então $$\lim_{n \rightarrow \infty} f^n(x_0) = p$$.
 	\end{proposicao}
 	
 	\begin{prova}
-		conteúdo...
+		Como $f$ é de classe $C^1$, por definição o limite $$\lim_{h \rightarrow 0}\frac{f(x_0+h)-f(x_0)}{h}$$ existe $\forall x_0 \in (a,b)$, fazendo com que $f$ seja derivável no intervalo. Considere a igualdade 
+		$$f(x) - f(x_0) = \frac{f(x)-f(x_0)}{x-x_0}(x-x_0).$$
+		Tomando $\lim_{x \rightarrow x_0}$ nos dois lados da igualdade, temos que
+		$$\lim_{x \rightarrow x_0}f(x) - \lim_{x \rightarrow x_0}f(x_0) = 0$$
+		pois pela regra de produto e soma de limites, podemos separar no lado direito da igualdade o limite $\lim_{x \rightarrow x_0}(x - x_0)$. Com isso, 
+		$$\lim_{x \rightarrow x_0}(x - x_0) \implies \lim_{x \rightarrow x_0}x - \lim_{x \rightarrow x_0}x_0$$
+		mas, por definição, $$\lim_{x \rightarrow x_0}x = \lim_{x \rightarrow x_0}x_0 = x_0$$
+		logo, podemos concluir que $$\lim_{x \rightarrow x_0}(x - x_0) = 0.$$
+		De modo análogo, agora pela regra da soma, concluímos também que $$\lim_{x \rightarrow x_0}(f(x) - f(x_0)) \implies \lim_{x \rightarrow x_0}f(x) = f(x_0).$$
+		Isso nos dá o resultado de que podemos aplicar o Teorema do Valor Médio para dar segmento na prova dessa proposição.
+		Pelo TVM, $f(x_0) - p = f'(c)(x_0-p)$. Estamos supondo a existência de um intervalo $I = [p-\alpha, p+\alpha]$ onde $\forall x_0 \in I$ existe $0 < \epsilon < 1$ tal que $|f'(x_0)| < (1-\epsilon) < 1$. Logo,
+		$$|f'(x_0)| < (1-\epsilon) < 1 \implies
+		|f(x_0) - p| \leq (1-\epsilon)|x_0-p| < |x_0-p|$$
+		Considere $n,i \in \mathbb{N}$, com $i \rightarrow n$.Aplicando a função em $x_0$, temos
+		\[
+		\begin{aligned}
+			&|f^2(x_0) - p| \leq (1-\epsilon)|f(x_0)-p| \leq (1-\epsilon)^2|x_0-p| < |x_0-p|  \\
+			&|f^3(x_0) - p| \leq (1-\epsilon)|f^2(x_0) - p| \leq (1-\epsilon)^2|f(x_0) - p| \leq (1-\epsilon)^3|x_0 - p| < |x_0 - p| \\
+			&\vdots \\
+			&|f^n - p| \leq (1-\epsilon)^{i=1}|f^{n-1} - p| \leq (1-\epsilon)^{i+1}|f^{n-2} - p| \leq ...  \leq (1-\epsilon)^{i=n}|x_0 - p| \leq ... \leq |x_0-p|
+		\end{aligned}
+		\]
+		Simplificando para fazermos a análise, temos $|f^n(x_0) - p| \leq (1-\epsilon)^n|x_0 - p| < |x_0 - p|$. Isso significa que para $n \rightarrow \infty$, a distância para o ponto $p$ fica cada vez menor, e é justamente isso que diz a proposição.
 	\end{prova}
 	
 	\begin{definicao}
@@ -39,11 +61,21 @@
 	\end{definicao}
 	
 	\begin{proposicao}
-		Considere $p$ um ponto fixo hiperbólico com $|f'(p)| > 1$. Portanto, existe um intervalo $I$ sobre $p$ de modo que, se $x_0 \in I$, sendo $x_0 \neq p$, então existe um $k > 0$ tal que $$\lim_{n \rightarrow \infty} f^k(x_0) \notin I$$.
+		Considere $p$ um ponto fixo hiperbólico com $|f'(p)| > 1$. Portanto, existe um intervalo $I$ sobre $p$ de modo que, se $x_0 \in I$, sendo $x_0 \neq p$, então existe um $k > 0$ tal que $$f^k(x_0) \notin I$$.
 	\end{proposicao}
 	
 	\begin{prova}
-		conteúdo...
+		Estamos supondo que para $x_0 \in I$ existe um valor $n > 0$ que faça com que $f^n(x_0) \notin [p-\alpha, p+\alpha]$.
+		De modo semelhante à prova anterior, com $\epsilon > 0$ temos
+		\[
+		\begin{aligned}
+			&|f(x_0) - p| \geq (1+\epsilon)|f(x_0)-p| > |x_0-p|  \\
+			&|f^2(x_0) - p| \geq (1+\epsilon)|f(x_0) - p| \geq (1+\epsilon)^2|f(x_0) - p| \geq (1-\epsilon)^2|x_0 - p| > |x_0 - p| \\
+			&\vdots \\
+			&|f^n - p| \geq (1+\epsilon)^{i=1}|f^{n-1} - p| \geq ...  \geq (1+\epsilon)^{i=n-1}|f - p| \geq (1+\epsilon)^{i=n}|x_0-p| > |x_0-p|
+		\end{aligned}
+		\]
+		Portanto, $|f^n(x_0) - p| > (1+\epsilon)^n|x_0-p|$, com $n \rightarrow \infty$. Ou seja, como a distância aumenta, esse valor $n$ fará com que $|f^n(x_0) - p| > \alpha$, levando a órbita para fora do intervalo.
 	\end{prova}
 	
 	\section{Uma ideia sobre Bifurcação}
