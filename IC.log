@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.30)  2 FEB 2026 17:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.30)  18 APR 2026 15:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -862,6 +862,11 @@ Package pdftex.def Info: imagens/desenho_conjunto_estavel_dois_pontos.png  used
  [18 <./imagens/desenho_conjunto_estavel_dois_pontos.png>] [19])
 (capitulos/capitulo4FamiliaLogistica.tex [20]
 Cap\'{\i }tulo 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--19
+
+ []
+
 ) [21
 
 ] (IC.aux)
@@ -871,10 +876,10 @@ L3 programming layer <2025-12-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25080 strings out of 467870
- 654824 string characters out of 5417871
- 1265424 words of memory out of 5000000
- 53523 multiletter control sequences out of 15000+600000
+ 25081 strings out of 467870
+ 654832 string characters out of 5417871
+ 1263424 words of memory out of 5000000
+ 53524 multiletter control sequences out of 15000+600000
  635967 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,17n,118p,817b,2340s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -894,7 +899,7 @@ amsfonts/cm/cmsy8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmti12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Cyborg/AppData/Local/P
 rograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on IC.pdf (22 pages, 639672 bytes).
+Output written on IC.pdf (22 pages, 641672 bytes).
 PDF statistics:
  160 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

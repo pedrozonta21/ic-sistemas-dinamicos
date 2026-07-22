@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.30)  6 FEB 2026 01:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.30)  25 FEB 2026 15:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -787,13 +787,14 @@ Package pdftex.def Info: ../imagens/desenho_familia_quadratica_com_parametro.pn
 g  used on input line 88.
 (pdftex.def)             Requested size: 435.32419pt x 139.82558pt.
 
-[3] [4 <../imagens/desenho_familia_quadratica_com_parametro.png>]
-<../imagens/desenho_quadratica_1-4.png, id=34, 307.1475pt x 304.88907pt>
+[3]
+<../imagens/desenho_quadratica_1-4.png, id=30, 307.1475pt x 304.88907pt>
 File: ../imagens/desenho_quadratica_1-4.png Graphic file (type png)
 <use ../imagens/desenho_quadratica_1-4.png>
 Package pdftex.def Info: ../imagens/desenho_quadratica_1-4.png  used on input l
 ine 108.
 (pdftex.def)             Requested size: 145.11052pt x 144.04224pt.
+ [4 <../imagens/desenho_familia_quadratica_com_parametro.png>]
 <../imagens/desenho_conjunto_estavel_1-4.jpg, id=35, 1606.0pt x 1353.055pt>
 File: ../imagens/desenho_conjunto_estavel_1-4.jpg Graphic file (type jpg)
 <use ../imagens/desenho_conjunto_estavel_1-4.jpg>
@@ -827,7 +828,7 @@ L3 programming layer <2025-12-29>
 Here is how much of TeX's memory you used:
  25036 strings out of 467870
  653518 string characters out of 5417871
- 1263771 words of memory out of 5000000
+ 1263772 words of memory out of 5000000
  53499 multiletter control sequences out of 15000+600000
  635063 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -848,7 +849,7 @@ amsfonts/cm/cmsy8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmti12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Cyborg/AppData/Local/P
 rograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on capitulo3Hiperbolicidade.pdf (10 pages, 530809 bytes).
+Output written on capitulo3Hiperbolicidade.pdf (10 pages, 530830 bytes).
 PDF statistics:
  116 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.30)  21 APR 2026 10:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.30)  18 APR 2026 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./capitulo2DefinicoesElementares.tex
-(capitulo2DefinicoesElementares.tex
+**./capitulo4FamiliaLogistica.tex
+(capitulo4FamiliaLogistica.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfiles.cls
@@ -707,11 +707,11 @@ File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count330
-) (capitulo2DefinicoesElementares.aux
+) (capitulo4FamiliaLogistica.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 5.
 )
-\openout1 = `capitulo2DefinicoesElementares.aux'.
+\openout1 = `capitulo4FamiliaLogistica.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -757,87 +757,57 @@ Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 Cap\'{\i }tulo 1.
-
-Overfull \hbox (24.06902pt too wide) in paragraph at lines 6--6
-[]\OT1/cmr/bx/n/17.28 Defini^^Xc~oes ele-men-ta-res na te-o-ria dos sis-te-mas 
-din^amicos
- []
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 11
-.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 6.
+
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<../imagens/desenho_eventualmente_periodico.png, id=4, 959.08313pt x 399.74344p
-t>
-File: ../imagens/desenho_eventualmente_periodico.png Graphic file (type png)
-<use ../imagens/desenho_eventualmente_periodico.png>
-Package pdftex.def Info: ../imagens/desenho_eventualmente_periodico.png  used o
-n input line 31.
-(pdftex.def)             Requested size: 483.69684pt x 201.6035pt.
+Underfull \hbox (badness 10000) in paragraph at lines 15--18
+
+ []
 
 [1
 
 
-{C:/Users/Cyborg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2 <../imag
-ens/desenho_eventualmente_periodico.png>]
-<../imagens/desenho_orbita_x3.png, id=25, 461.92575pt x 431.211pt>
-File: ../imagens/desenho_orbita_x3.png Graphic file (type png)
-<use ../imagens/desenho_orbita_x3.png>
-Package pdftex.def Info: ../imagens/desenho_orbita_x3.png  used on input line 6
-4.
-(pdftex.def)             Requested size: 290.22105pt x 270.934pt.
- [3 <../imagens/desenho_orbita_x3.png>]
-<../imagens/desenho_orbita_inversa_x3.png, id=30, 508.90125pt x 472.76625pt>
-File: ../imagens/desenho_orbita_inversa_x3.png Graphic file (type png)
-<use ../imagens/desenho_orbita_inversa_x3.png>
-Package pdftex.def Info: ../imagens/desenho_orbita_inversa_x3.png  used on inpu
-t line 78.
-(pdftex.def)             Requested size: 314.39998pt x 292.08768pt.
- [4 <../imagens/desenho_orbita_inversa_x3.png>]
-(capitulo2DefinicoesElementares.aux)
+{C:/Users/Cyborg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+(capitulo4FamiliaLogistica.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 24471 strings out of 467870
- 637429 string characters out of 5417871
- 1184480 words of memory out of 5000000
- 52934 multiletter control sequences out of 15000+600000
- 635063 words of font info for 68 fonts, out of 8000000 for 9000
+ 24431 strings out of 467870
+ 635893 string characters out of 5417871
+ 1180475 words of memory out of 5000000
+ 52895 multiletter control sequences out of 15000+600000
+ 634120 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,8n,135p,789b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Cyborg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
-m1200.pk><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyborg/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Cyborg/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Cyborg/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Cybor
-g/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Use
-rs/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmti12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/symbols/msbm10.pfb>
-Output written on capitulo2DefinicoesElementares.pdf (4 pages, 215444 bytes).
+ 119i,5n,135p,784b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmmi12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Cyborg/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Cyborg/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Cyborg/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cy
+borg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C
+:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbol
+s/msam10.pfb>
+Output written on capitulo4FamiliaLogistica.pdf (1 page, 101607 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
+ 54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
