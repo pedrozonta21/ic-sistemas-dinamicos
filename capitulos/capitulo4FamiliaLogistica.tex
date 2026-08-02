@@ -18,10 +18,141 @@
 	\end{prova}
 	
 	\begin{proposicao}
-		Suponha $\mu > 1$. Se $x<0$, então $F_\mu^n(x) \rightarrow -\infty$ conforme $n \rightarrow \infty$. Já se $x>1$, $F_\mu^n(x) \rightarrow -\infty$ conforme $n \rightarrow \infty$.
+		Suponha $\mu > 1$. Se $x<0$, então $F_\mu^n(x) \rightarrow -\infty$ quando $n \rightarrow \infty$. Já se $x>1$, $F_\mu^n(x) \rightarrow -\infty$ quando $n \rightarrow \infty$.
 	\end{proposicao}
 	
 	\begin{prova}
-		conteúdo...
+		Seja $x<0$ e $x_n=F_\mu^n(x)$. Isso nos leva a $\mu\/x(1-x) - x <0 \implies F_\mu^n(x) < x$. Desse modo podemos construir uma sequência de pontos decrescentes: 
+		$$x < 0 \implies x_1 < x < 0 \implies x_2 < x_1 < x < 0 \implies ... \implies ...<x_n<...<x_1<x<0$$
+		Por ser monótona decrescente, a sequência converge para $-\infty$. Portanto, para $x<0$, temos que $F_\mu^n(x) \rightarrow -\infty$ quando $n \rightarrow \infty$.
+		\\
+		Seja $x>1$. Temos que, para este caso, $\mu\/x(1-x) < 0 \implies F_\mu(x) < 0$, nos levando ao caso anterior. Portanto, para $x>1$, temos que $F_\mu^n(x) \rightarrow -\infty$ quando $n \rightarrow \infty$.
+	\end{prova}
+	
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+				axis lines=middle,
+				xmin=-0.35, xmax=1.25,
+				ymin=-0.65, ymax=1.35,
+				width=11cm,
+				height=8.3cm,
+				xlabel={$x$},
+				ylabel={$F_\mu(x)$},
+				xtick={1},
+				ytick={1},
+				domain=-0.35:1.25,
+				samples=400
+				]
+				
+				% Caixa de limite e função
+				\draw[thick] (axis cs:0,0) rectangle (axis cs:1,1);
+				\addplot[blue,thick] {2.9*x*(1-x)};
+				\addplot[dashed,domain=-0.35:1.5] {x};			
+				
+				% 2) Trajetória Externa para x > 1 (Vermelha)
+				% Começando em x1 = 1.07 -> F(1.07) = -0.217
+				\draw[-stealth, red, thin] (axis cs:1.07, 1.07) -- (axis cs:1.07, -0.217);
+				\draw[-stealth, red, thin] (axis cs:1.07, -0.217) -- (axis cs:-0.217, -0.217);
+				% Indo de -0.217 para -infinito
+				\draw[-stealth, red, thin] (axis cs:-0.217, -0.217) -- (axis cs:-0.217, -0.65); 
+				
+				\node[circle,fill=red,inner sep=1pt] at (axis cs:1.07,1.07) {};
+				\node[above left, red] at (axis cs:1.07,1.07) {$a_0$};
+				
+				% 3) Trajetória Externa para x < 0 (Vermelha)
+				% Começando em x2 = -0.08 -> F(-0.08) = -0.25
+				\draw[-stealth, red, thin] (axis cs:-0.08, -0.08) -- (axis cs:-0.08, -0.25);
+				\draw[-stealth, red, thin] (axis cs:-0.08, -0.25) -- (axis cs:-0.25, -0.25);
+				% Indo de -0.25 para -infinito
+				\draw[-stealth, red, thin] (axis cs:-0.25, -0.25) -- (axis cs:-0.25, -0.65); 
+				
+				\node[circle,fill=red,inner sep=1pt] at (axis cs:-0.08,-0.08) {};
+				\node[above left, red] at (axis cs:-0.08,-0.08) {$b_0$};
+				
+			\end{axis}
+		\end{tikzpicture}
+		\captionof{figure}{Ilustração da órbita de dois pontos através do retrato de fase.}
+	\end{center}
+	
+	\section{O caso mais simples}
+	
+	Como consequência da proposição anterior, temos que toda a dinâmica da família logística ocorre no intervalo unitário $I={x|0\leq x \leq 1}$.
+	
+	\begin{proposicao}
+		Seja $1<\mu<3$. Então
+		\begin{enumerate}
+			\item $F_\mu$ tem um ponto fixo atrator em $p_\mu = \frac{(\mu - 1)}{\mu}$ e um ponto fixo repulsor em $0$.
+			\item Se $0<x<1$, então $$\lim_{n \rightarrow \infty} F_\mu^n(x)=p_\mu$$.
+		\end{enumerate}
+	\end{proposicao}
+	
+	\begin{prova}
+		Para o ponto fixo $p_\mu$, temos $F_\mu'(p_\mu) = 2-\mu$. Como $1<\mu<3$ satisfaz a desigualdade $-1<2-\mu<1$, temos que de fato $p_\mu$ é um ponto fixo atrator.
+		\\
+		Para o ponto fixo $x=0$, temos $|F_\mu'(0)| = \mu$. Portanto $x=0$ de fato é um ponto fixo repulsor.
+		
+		Já para a segunda parte, primeiro vamos analisar o caso $1<\mu<2$. Supondo $x \in (0,\frac{1}{2}]$ e comparando $F_\mu(x)$ com $x$, temos que *(colocar um pouco mais de informação)*
+		$$|F_\mu(x) - p_\mu| < |x - p_\mu|$$ se $x \neq p_\mu$. Esse resultado nos leva à conclusão de que $|F_\mu(x) - p_\mu| \rightarrow 0$ quando $n \rightarrow \infty$. Desse modo, 
+		$$F_\mu^n(x) \rightarrow p_\mu$$ quando $n \rightarrow \infty$.\\
+		O caso $2<\mu<3$ é mais complexo de ser analisado. Para esses valores de $\mu$, temos a localização do ponto fixo $p_\mu$ sendo $\frac{1}{2}<p_\mu<\frac{2}{3}$, ou seja, à direita do ponto crítico $\frac{1}{2}$, no lado onde a função é estritamente decrescente. Seja $\hat{p_\mu}$ o único ponto pertencente ao intervalo $(0, \frac{1}{2})$, onde a função $F_\mu$ é estritamente crescente, de modo que $F_\mu(\hat{p_\mu}) = p_\mu$.
+		
+		\begin{center}
+			\begin{tikzpicture}[x=10cm, y=2cm]
+				
+				% Eixo principal do intervalo [0, 1]
+				\draw[thick] (0,0) -- (1,0);
+				
+				% Marcações: 0, 1/2 e 1
+				\draw[thick] (0, 0.1) -- (0, -0.1) node[below=0.1cm] {$0$};
+				\draw[thick] (0.5, 0.1) -- (0.5, -0.1) node[below=0.1cm] {$1/2$};
+				\draw[thick] (1, 0.1) -- (1, -0.1) node[below=0.1cm] {$1$};
+				
+				% Textos indicativos do comportamento de F_mu
+				\node at (0.25, -0.45) {$F_\mu$ crescente};
+				\node at (0.75, -0.45) {$F_\mu$ decrescente};
+				
+				% Ponto na primeira metade (ex: 0.25)
+				\coordinate (P1) at (0.25, 0);
+				\fill (P1) circle (1.5pt);
+				\node[above left] at (P1) {$\hat{p}_\mu$};
+				
+				% Ponto na segunda metade, especificamente entre 1/2 (0.5) e 2/3 (~0.667)
+				% Escolhido 0.6 para satisfazer a condição
+				\coordinate (P2) at (0.6, 0);
+				\fill (P2) circle (1.5pt);
+				\node[above right] at (P2) {$p_\mu$};
+				
+				% Seta curva saindo do primeiro ponto e indo para o segundo
+				% O "bend left=55" cria um arco suave por cima da linha
+				\draw[->, thick, >=stealth] (P1) to[bend left=55] (P2);
+				
+			\end{tikzpicture}
+			\captionof{figure}{Mapeamento de $\hat{p_\mu}$ em $p_\mu$.}
+		\end{center}
+		
+		Tomemos o intervalo $[\hat{p_\mu}, p_\mu]$. Como esse intervalo possui o ponto crítico que leva ao valor máximo de $F_\mu$, que ocorre em $F_\mu(\frac{1}{2}) = \frac{\mu}{4}$, temos que 
+		$F_\mu([\hat{p_\mu}, p_\mu]) = [p_\mu, \frac{\mu}{4}]$. Essa imagem está no lado estritamente decrescente, logo, $F_\mu([p_\mu, \frac{\mu}{4}]) = [F_\mu(\frac{\mu}{4}), p_\mu]$.\\
+		Para entender melhor a localização de $[F_\mu(\frac{\mu}{4}), p_\mu]$, temos
+		$$F_\mu\left(\dfrac{\mu}{4}\right) = \dfrac{\mu^2(4-\mu)}{16}$$
+		e analisando $g(\mu) = \mu^2(4-\mu)$, obtemos pela sua derivada que $g$ é estritamente crescente para $\mu \in (2, \frac{8}{3})$. Logo, como $g(2) = 8$, teremos $g(\mu) > 8$ e por consequência,
+		$$F_\mu\left(\dfrac{\mu}{4}\right) = \dfrac{g(\mu)}{16} > \dfrac{8}{16} = \dfrac{1}{2}$$
+		fazendo com que esse intervalo fique à direita de $x = \frac{1}{2}$. Assim, $F_\mu^2([\hat{p_\mu}, p_\mu]) \subset (\frac{1}{2}, p_\mu)$.
+		
+		Agora, para mostrar a convergência para o ponto fixo $p_\mu$, vamos estudar a dinâmica de um ponto $x_0 \in (\frac{1}{2}, p_\mu)$. Como acabamos de ver, a cada duas iteradas a órbita volta para o intervalo $(\frac{1}{2}, p_\mu)$. Analisando $G_\mu = F_\mu^2$, temos que $G_\mu$ é estritamente crescente, já que, $F_\mu'(x) < 0$ quando $x>\frac{1}{2}$, e pela regra da cadeia, 
+		$$G_\mu'(x) = F_\mu'(F_\mu(x)) \cdot F_\mu'(x) > 0$$
+		pois $F_\mu(x) > \frac{1}{2}$.\\
+		Desse modo, se $x_n < p_\mu$, então $F_\mu^2(x_n) < F_\mu^2(p_\mu) = p_\mu$. Também precisamos, para garantir que os passos vão para a direita, que $F_\mu^2(x_0) - x_0 > 0$, e como $G_\mu$ é estritamente crescente no intervalo, temos que se $F_\mu^2(x_0) > x_0$, então $F_\mu^4(x_0) > F_\mu^2(x_0)$, nos levando à sequência
+		$$x_0<x_2<x_4<x_6<x_8<...<p_\mu$$
+		
+		De modo análogo para um ponto $x_1 \in (p_\mu, \frac{\mu}{4})$, a dinâmica volta para este mesmo intervalo a cada duas iteradas. Com isso, se $x_n > p_\mu$, então $F_\mu^2(x_n) > p_\mu$. Para garantir que essas iteradas estão caminhando para a esquerda, precisamos que $F_\mu^2(x_1) - x_1 < 0$, e pelo crescimento da função $G_\mu$ já visto anteriormente, temos que $F_\mu^4(x_1) < F_\mu^2(x_1)$, nos levando à sequência
+		$$$$
 	\end{prova}
 \end{document}
+
+
+
+
+
+
+
