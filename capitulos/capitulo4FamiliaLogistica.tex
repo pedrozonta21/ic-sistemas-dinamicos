@@ -3,7 +3,7 @@
 \begin{document}
 	\chapter {Família Logística}
 	
-	Neste capítulo, a família logística $F_\mu()=\mu\/x(1-x)$ será explorada conforme mudanças no parâmetro $\mu$, a fim de entender como a dinâmica se comporta no intervalo $0<x<1$. Essa família de funções ilustram muitos dos mais importantes fenômenos que ocorrem em sistemas dinâmicos.
+	Neste capítulo, a família logística $F_\mu(x)=\mu\/x(1-x)$ será explorada conforme mudanças no parâmetro $\mu$, a fim de entender como a dinâmica se comporta no intervalo $0<x<1$. Essa família de funções ilustram muitos dos mais importantes fenômenos que ocorrem em sistemas dinâmicos.
 	
 	\begin{proposicao}
 		Para a família logística $F_\mu(x)=\mu\/x(1-x)$
@@ -77,7 +77,7 @@
 	
 	\section{O caso mais simples}
 	
-	Como consequência da proposição anterior, temos que toda a dinâmica da família logística ocorre no intervalo unitário $I={x|0\leq x \leq 1}$.
+	Como consequência da proposição anterior, temos que toda a dinâmica da família logística ocorre no intervalo unitário $I=\{x|0\leq x \leq 1\}$.
 	
 	\begin{proposicao}
 		Seja $1<\mu<3$. Então
@@ -146,8 +146,78 @@
 		$$x_0<x_2<x_4<x_6<x_8<...<p_\mu$$
 		
 		De modo análogo para um ponto $x_1 \in (p_\mu, \frac{\mu}{4})$, a dinâmica volta para este mesmo intervalo a cada duas iteradas. Com isso, se $x_n > p_\mu$, então $F_\mu^2(x_n) > p_\mu$. Para garantir que essas iteradas estão caminhando para a esquerda, precisamos que $F_\mu^2(x_1) - x_1 < 0$, e pelo crescimento da função $G_\mu$ já visto anteriormente, temos que $F_\mu^4(x_1) < F_\mu^2(x_1)$, nos levando à sequência
-		$$$$
+		$$p_\mu<...<x_9<x_7<x_5<x_3<x_1$$
+		
+		No intervalo restante $(0, \hat{p_\mu})$ vale a desigualdade $F_\mu(x) > x$, pois
+		$\mu\/x(1-x) > x \implies x < p_\mu$. Logo, existe $k>0$ tal que $F_\mu^k(x) \geq \hat{p_\mu}$, caindo no intervalo $(\hat{p_\mu}, p_\mu)$ já estudado.
+        
+        Desse modo, concluímos que 
+        $$\lim_{n \rightarrow \infty} F_\mu^n(x)=p_\mu$$.
+        
+        \begin{center}
+        	\begin{tikzpicture}[x=10cm, y=2cm]
+        		
+        		% Eixo principal do intervalo [0, 1]
+        		\draw[thick] (0,0) -- (1,0);
+        		
+        		% Marcações: 0, 1/2 e 1
+        		\draw[thick] (0, 0.1) -- (0, -0.1) node[below=0.1cm] {$0$};
+        		\draw[thick] (0.5, 0.1) -- (0.5, -0.1) node[below=0.1cm] {$1/2$};
+        		\draw[thick] (1, 0.1) -- (1, -0.1) node[below=0.1cm] {$1$};
+        		
+        		% Ponto na primeira metade (ex: 0.25)
+        		\coordinate (P1) at (0.25, 0);
+        		\fill (P1) circle (1.5pt);
+        		\node[above left=0.1cm] at (P1) {$\hat{p}_\mu$};
+        		
+        		% Ponto fixo na segunda metade (ex: 0.6)
+        		\coordinate (P2) at (0.6, 0);
+        		\fill (P2) circle (1.5pt);
+        		\node[above right=0.1cm] at (P2) {$p_\mu$};
+        		
+        		% Seta original indicando a imagem de \hat{p}_\mu
+        		\draw[->, thick, gray, >=stealth] (P1) to[bend left=60] (P2);
+        		
+        		% ==========================================================
+        		% DINÂMICA 1: Saindo de (0, \hat{p}_\mu) e ultrapassando \hat{p}_\mu
+        		% ==========================================================
+        		\draw[->, thick, blue, >=stealth] (0.03, 0) to[bend left=45] (0.09, 0);
+        		\draw[->, thick, blue, >=stealth] (0.09, 0) to[bend left=45] (0.16, 0);
+        		\draw[->, thick, blue, >=stealth] (0.16, 0) to[bend left=45] (0.28, 0); % Ultrapassa \hat{p}_\mu (0.25)
+        		
+        		% ==========================================================
+        		% DINÂMICA 2: Saindo de (\hat{p}_\mu, p_\mu), passando p_\mu e alternando
+        		% ==========================================================
+        		% Salto inicial para frente do ponto fixo (por cima do eixo)
+        		\draw[->, thick, red, >=stealth] (0.35, 0) to[bend left=45] (0.69, 0); 
+        		
+        		% Início da alternância convergindo para p_\mu (0.6)
+        		% Quando vai da direita para a esquerda, o "bend left" desenha a seta por baixo do eixo
+        		\draw[->, thick, red, >=stealth] (0.69, 0) to[bend left=45] (0.53, 0); % Volta (por baixo)
+        		\draw[->, thick, red, >=stealth] (0.53, 0) to[bend left=45] (0.65, 0); % Vai (por cima)
+        		\draw[->, thick, red, >=stealth] (0.65, 0) to[bend left=45] (0.56, 0); % Volta (por baixo)
+        		\draw[->, thick, red, >=stealth] (0.56, 0) to[bend left=45] (0.62, 0); % Vai (por cima)
+        		\draw[->, thick, red, >=stealth] (0.62, 0) to[bend left=45] (0.585, 0); % Volta (por baixo)
+        		\draw[->, thick, red, >=stealth] (0.585, 0) to[bend left=45] (0.605, 0); % Vai (por cima - quase no ponto)
+        		
+        	\end{tikzpicture}
+        	\captionof{figure}{Mapeamento dos intervalos com convergência para $p_\mu$.}
+        \end{center}
+        
+        Para o caso restante $\mu = 2$, vamos ter como ponto fixo justamente o vértice da parábola, e a desigualdade $F_2(x)>x$ vale até o ponto fixo:
+        $$2x(1-x) > x \implies 2(1-x) > 1 \implies x < \dfrac{1}{2}.$$
+        Como o valor máximo da função é $\frac{1}{2}$, para $x_0 \in (0, \frac{1}{2})$ temos a sequência crescente e limitada
+        $$x_0<x_1<x_2<x_3<...<x_n<...<p_\mu.$$
+        Sendo $F_2$ estritamente decrescente para $x > \frac{1}{2}$, então $F_2([\frac{1}{2}, 1])=[0,\frac{1}{2}]$.
+        Portanto, 
+        $$\lim_{n \rightarrow \infty} F_\mu^n(x)=p_\mu.$$
 	\end{prova}
+	
+	Quando $\mu > 3$, pontos periódicos de período $2$ surgem, tornando a dinâmica de $F_\mu$ mais complicada. Conforme o valor do parâmetro aumenta, a complexidade também cresce, de modo que o retrato de fase começa a perder a sua eficiência no que diz respeito a nossa visualização.
+	
+	\section{O Caso do Conjunto de Cantor}
+	
+	Nesta seção, estudaremos o caso $\mu>4$. Para facilitar a leitura, vamos escrever $F$ em vez de $F_\mu$. Vimos anteriormente que a dinâmica que possui mais riqueza de informações acontece no intervalo unitário $I$. Note que, se $\mu > 4$, teremos como máximo da função o $F$ o valor $\frac{\mu}{4}$, que por sua vez é maior do que um. Isso nos leva a perceber a existência de pontos que saem do intervalo unitário após a primeira iterada de $F$, e com isso, esses pontos eventualmente são levados para $-\infty$ por $F^n$, como visto na propriedade. Vamos denotar o conjunto desses pontos que saem de $I$ após a primeira iterada de $F$ como $A_0$.
 \end{document}
 
 
