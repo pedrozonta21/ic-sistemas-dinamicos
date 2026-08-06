@@ -225,7 +225,7 @@
 	Como $A_0$ é um intervalo aberto centrado em $\frac{1}{2}$, $I - A_0$ consiste de dois intervalos fechados: $I_0$ à esquerda e $I_1$ à direita.
 	
 	\begin{center}
-		\begin{tikzpicture}[scale=6]
+		\begin{tikzpicture}[x=7cm, y=6cm]
 			
 			% ==========================================================
 			% CAIXA UNITÁRIA
@@ -287,7 +287,123 @@
 		\captionof{figure}{Ilustração dos intervalos $I_0, A_0$ e $I_1$}
 	\end{center}
 	
+	Vale ressaltar que a disposição desses intervalos depende da variação do parâmetro $\mu$, que rege a posição da função. Já que $A_0$ tem como propriedade $F(x) > 1$, podemos definir exatamente as fronteiras de $A_0$ em função de $\mu$:
+	
+	$$\mu\/x(1-x) > 1 \implies x^2-x+\frac{1}{\mu}<0$$
+	$$Por Bhaskara: x_1 = \dfrac{1+ \sqrt{1-\frac{4}{\mu}}}{2}, x_2 = \dfrac{1- \sqrt{1-\frac{4}{\mu}}}{2}$$
+	$$A_0 = \left(\dfrac{1- \sqrt{1-\frac{4}{\mu}}}{2}, \dfrac{1+ \sqrt{1-\frac{4}{\mu}}}{2}\right)$$
+	
 	Note que $F(I_0) = F(I_1) = I$, logo, há um par de subintervalos em ambos os lados de modo que $F$ os mapeia até $A_0$. Esses dois subintervalos são precisamente o conjunto $A_1$.
+	
+	Considere agora $I-(A_0 \cup A_1)$. Esse resultado consiste de 4 intervalos fechados e mapeia cada um deles em $I_0$ ou $I_1$, que por sua vez tem como imagem justamente o intervalo $I$. Portanto, existe, em cada um desses 4 intervalos, outro subintervalo que é levado até $A_0$ por $F^2$. O conjunto desses subintervalos é chamado de $A_2$.
+	
+	A construção de $\Lambda$ nos remete à construção clássica do conjunto de Cantor de terços médios: $\Lambda$ é obtido removendo-se sucessivamente intervalos abertos das partes centrais de um conjunto de intervalos fechados.
+	
+	\begin{definicao}
+		Um conjunto $\Lambda$ é um conjunto de Cantor se ele é fechado, totalmente desconexo, e um subconjunto perfeito de $I$. Um conjunto na eixo real é totalmente desconexo se ele não possui intervalos; um conjunto é perfeito se todo ponto pertencente ao conjunto é ponto de acumulação ou ponto limite de outros pontos no conjunto.
+	\end{definicao}
+	
+	\begin{exemplo}
+		O conjunto de Cantor de terços médios. Este é o exemplo clássico de um
+		conjunto de Cantor. Comece com $I = [0,1]$, mas remova o ``terço médio" aberto, isto é, o intervalo
+		$(\frac{1}{3}, \frac{2}{3})$. Em seguida, remova novamente os dois terços médios do que restou, isto é,
+		o par de intervalos $(\frac{1}{9}, \frac{2}{9})$ e $(\frac{7}{9}, \frac{8}{9})$. Continue removendo terços médios
+		dessa maneira. Esse procedimento é análogo à nossa construção anterior.
+		
+		\begin{center}
+			\begin{tikzpicture}
+				\begin{axis}[
+					axis lines=none,
+					xmin=-0.05, xmax=1.05,
+					ymin=0.5, ymax=4.7,
+					width=16cm,
+					height=4cm,
+					]
+					
+					% C0
+					\addplot[thick] coordinates {(0,4) (1,4)};
+					\addplot[only marks,mark=|,mark size=2pt,thick]
+					coordinates {(0,4) (1,4)};
+					
+					% C1
+					\addplot[thick] coordinates {(0,3) (1/3,3)};
+					\addplot[thick] coordinates {(2/3,3) (1,3)};
+					
+					\addplot[red,only marks,mark=x,mark size=2pt,thick] 
+					coordinates {(1/2,3)};
+					
+					\addplot[only marks,mark=|,mark size=2pt,thick]
+					coordinates {(0,3) (1/3,3)};
+					\addplot[only marks,mark=|,mark size=2pt,thick]
+					coordinates {(2/3,3) (1,3)};
+					
+					% C2
+					\addplot[thick] coordinates {(0,2) (1/9,2)};
+					\addplot[thick] coordinates {(2/9,2) (1/3,2)};
+					\addplot[thick] coordinates {(2/3,2) (7/9,2)};
+					\addplot[thick] coordinates {(8/9,2) (1,2)};
+					
+					\addplot[red,only marks,mark=x,mark size=2pt,thick]
+					coordinates {(1/6,2)};
+					
+					\addplot[red,only marks,mark=x,mark size=2pt,thick]
+					coordinates {(5/6,2)};
+					
+					\addplot[only marks,mark=|,mark size=2pt,thick]
+					coordinates {(0,2) (1/9,2)};
+					\addplot[only marks,mark=|,mark size=2pt,thick]
+					coordinates {(2/9,2) (1/3,2)};
+					\addplot[only marks,mark=|,mark size=2pt,thick]
+					coordinates {(2/3,2) (7/9,2)};
+					\addplot[only marks,mark=|,mark size=2pt,thick]
+					coordinates {(8/9,2) (1,2)};
+					
+					% C3
+					\addplot[thick] coordinates {(0,1) (1/27,1)};
+					\addplot[thick] coordinates {(2/27,1) (1/9,1)};
+					\addplot[thick] coordinates {(2/9,1) (7/27,1)};
+					\addplot[thick] coordinates {(8/27,1) (1/3,1)};
+					\addplot[thick] coordinates {(2/3,1) (19/27,1)};
+					\addplot[thick] coordinates {(20/27,1) (7/9,1)};
+					\addplot[thick] coordinates {(8/9,1) (25/27,1)};
+					\addplot[thick] coordinates {(26/27,1) (1,1)};
+					
+					\addplot[red,only marks,mark=x,mark size=2pt,thick]
+					coordinates {(1/18,1)};
+					
+					\addplot[red,only marks,mark=x,mark size=2pt,thick]
+					coordinates {(5/18,1)};
+					
+					\addplot[red,only marks,mark=x,mark size=2pt,thick]
+					coordinates {(13/18,1)};
+					
+					\addplot[red,only marks,mark=x,mark size=2pt,thick]
+					coordinates {(17/18,1)};
+					
+					\addplot[only marks,mark=|,mark size=2pt,thick]
+					coordinates {(0,1) (1/27,1)};
+					\addplot[only marks,mark=|,mark size=2pt,thick]
+					coordinates {(2/27,1) (1/9,1)};
+					\addplot[only marks,mark=|,mark size=2pt,thick]
+					coordinates {(2/9,1) (7/27,1)};
+					\addplot[only marks,mark=|,mark size=2pt,thick]
+					coordinates {(8/27,1) (1/3,1)};
+					\addplot[only marks,mark=|,mark size=2pt,thick]
+					coordinates {(2/3,1) (19/27,1)};
+					\addplot[only marks,mark=|,mark size=2pt,thick]
+					coordinates {(20/27,1) (7/9,1)};
+					\addplot[only marks,mark=|,mark size=2pt,thick]
+					coordinates {(8/9,1) (25/27,1)};
+					\addplot[only marks,mark=|,mark size=2pt,thick]
+					coordinates {(26/27,1) (1,1)};
+					
+				\end{axis}
+			\end{tikzpicture}
+			\captionof{figure}{Construção de Cantor clássico no intervalo $[0,1]$}
+		\end{center}
+	\end{exemplo}
+	
+	
 \end{document}
 
 
