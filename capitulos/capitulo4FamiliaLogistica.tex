@@ -189,16 +189,16 @@
         		% DINÂMICA 2: Saindo de (\hat{p}_\mu, p_\mu), passando p_\mu e alternando
         		% ==========================================================
         		% Salto inicial para frente do ponto fixo (por cima do eixo)
-        		\draw[->, thick, red, >=stealth] (0.35, 0) to[bend left=45] (0.69, 0); 
+        		\draw[->, thick, blue, >=stealth] (0.35, 0) to[bend left=45] (0.69, 0); 
         		
         		% Início da alternância convergindo para p_\mu (0.6)
         		% Quando vai da direita para a esquerda, o "bend left" desenha a seta por baixo do eixo
-        		\draw[->, thick, red, >=stealth] (0.69, 0) to[bend left=45] (0.53, 0); % Volta (por baixo)
-        		\draw[->, thick, red, >=stealth] (0.53, 0) to[bend left=45] (0.65, 0); % Vai (por cima)
-        		\draw[->, thick, red, >=stealth] (0.65, 0) to[bend left=45] (0.56, 0); % Volta (por baixo)
-        		\draw[->, thick, red, >=stealth] (0.56, 0) to[bend left=45] (0.62, 0); % Vai (por cima)
-        		\draw[->, thick, red, >=stealth] (0.62, 0) to[bend left=45] (0.585, 0); % Volta (por baixo)
-        		\draw[->, thick, red, >=stealth] (0.585, 0) to[bend left=45] (0.605, 0); % Vai (por cima - quase no ponto)
+        		\draw[->, thick, blue, >=stealth] (0.69, 0) to[bend left=45] (0.53, 0); % Volta (por baixo)
+        		\draw[->, thick, blue, >=stealth] (0.53, 0) to[bend left=45] (0.65, 0); % Vai (por cima)
+        		\draw[->, thick, blue, >=stealth] (0.65, 0) to[bend left=45] (0.56, 0); % Volta (por baixo)
+        		\draw[->, thick, blue, >=stealth] (0.56, 0) to[bend left=45] (0.62, 0); % Vai (por cima)
+        		\draw[->, thick, blue, >=stealth] (0.62, 0) to[bend left=45] (0.585, 0); % Volta (por baixo)
+        		\draw[->, thick, blue, >=stealth] (0.585, 0) to[bend left=45] (0.605, 0); % Vai (por cima - quase no ponto)
         		
         	\end{tikzpicture}
         	\captionof{figure}{Mapeamento dos intervalos com convergência para $p_\mu$.}
@@ -287,7 +287,7 @@
 		\captionof{figure}{Ilustração dos intervalos $I_0, A_0$ e $I_1$}
 	\end{center}
 	
-	Vale ressaltar que a disposição desses intervalos depende da variação do parâmetro $\mu$, que rege a posição da função. Já que $A_0$ tem como propriedade $F(x) > 1$, podemos definir exatamente as fronteiras de $A_0$ em função de $\mu$:
+	Vale ressaltar que a disposição desses intervalos depende da variação do parâmetro $\mu$, que rege a posição do gráfico. Já que $A_0$ tem como propriedade $F(x) > 1$, podemos definir exatamente as fronteiras de $A_0$ em função de $\mu$:
 	
 	$$\mu\/x(1-x) > 1 \implies x^2-x+\frac{1}{\mu}<0$$
 	$$Por Bhaskara: x_1 = \dfrac{1+ \sqrt{1-\frac{4}{\mu}}}{2}, x_2 = \dfrac{1- \sqrt{1-\frac{4}{\mu}}}{2}$$

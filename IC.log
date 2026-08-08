@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.4)  6 AUG 2026 15:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.4)  8 AUG 2026 03:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -701,45 +701,46 @@ Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
 \c@definicao=\count327
 \c@exemplo=\count328
 \c@proposicao=\count329
+\c@teorema=\count330
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
 ftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count330
+\l__color_backend_stack_int=\count331
 ) (IC.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 5.
 )
 \openout1 = `IC.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count331
+\scratchcounter=\count332
 \scratchdimen=\dimen281
 \scratchbox=\box69
-\nofMPsegments=\count332
-\nofMParguments=\count333
+\nofMPsegments=\count333
+\nofMParguments=\count334
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count334
+\MPscratchCnt=\count335
 \MPscratchDim=\dimen282
-\MPnumerator=\count335
-\makeMPintoPDFobject=\count336
+\MPnumerator=\count336
+\makeMPintoPDFobject=\count337
 \everyMPtoPDFconversion=\toks49
 )
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
@@ -755,18 +756,18 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
 
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 63
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 64
 .
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
@@ -872,17 +873,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
 
 [21
 
-] [22] [23] [24]) [25] [26] (IC.aux)
+] [22] [23] [24] [25] [26]) [27] (IC.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25462 strings out of 467871
- 663204 string characters out of 5417887
- 1297912 words of memory out of 5000000
- 53901 multiletter control sequences out of 15000+600000
+ 25510 strings out of 467871
+ 664091 string characters out of 5417887
+ 1297984 words of memory out of 5000000
+ 53949 multiletter control sequences out of 15000+600000
  635967 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,17n,118p,993b,2340s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -891,20 +892,21 @@ m1200.pk><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmbx12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmex10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Cyborg/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyborg/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Cyborg/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Cyb
-org/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/U
-sers/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.p
-fb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmsy8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmti12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Cyborg/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on IC.pdf (27 pages, 672257 bytes).
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Cyborg/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyborg/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Cyb
+org/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/
+Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.
+pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Cyborg/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Cyborg/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on IC.pdf (28 pages, 690761 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
+ 184 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
