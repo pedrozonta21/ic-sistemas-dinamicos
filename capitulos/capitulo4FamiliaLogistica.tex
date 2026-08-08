@@ -418,7 +418,14 @@
 		Escolha $[x,y] \subset \Lambda$. Logo, $|(F^n)'(a)| > \lambda^n, \forall a \in [x,y]$. Tomando $n$ tal que $\lambda^n|y-x| >1$, pelo Teorema do Valor Médio temos que
 		$$|F^n(y)-F^n(x)=\underbrace{|(F^n)'(a)|}_{>\lambda^n}\cdot|y-x|$$
 		$$|(F^n)'(a)|\cdot|y-x|>\lambda^n|y-x|>1$$
-		$$|F^n(y) - F^n(x)| > \lambda^n \cdot |y - x|$$
+		$$|F^n(y) - F^n(x)| > \lambda^n \cdot |y - x| > 1.$$
+		Mas, para isso, $F^n(y)$ ou $F^n(x)$  precisaria estar fora de $I$, o que é uma contradição da nossa hipótese. Portanto, $\Lambda$ é totalmente desconexo.
+		
+		Uma vez que $\Lambda$ é a interseção aninhada de intervalos fechados, $\Lambda$ é fechado.
+		
+		Para provar que $\Lambda$ é perfeito, isto é, não possui pontos isolados, primeiro note que as extremidades de qualquer $A_k$ está em $\Lambda$, pois cada extremidade é levada no valor 1, e $F(1) = F(0) = 0$. Se um ponto $p \in \Lambda$ fosse isolado, qualquer ponto próximo deveria ser levado para $-\infty$, fazendo com que $p$ fosse um máximo local. Mas esse máximo corre apenas em $\frac{1}{2}$, que é levado para $-\infty$, contradizendo o fato de $p$ ser isolado. Portanto, $\Lambda$ é perfeito.
+		
+		\noindent\textbf{\color{red}Observação:} Este teorema também é válido para $\mu > 4$, mas a prova é mais delicada e não será realizada neste relatório.
 	\end{prova}
 \end{document}
 
