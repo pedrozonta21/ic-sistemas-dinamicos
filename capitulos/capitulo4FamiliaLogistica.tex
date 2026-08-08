@@ -409,9 +409,16 @@
 	
 	\begin{prova}
 		Para garantir que $\Lambda$ é um conjunto de Cantor, precisaremos de uma hipótese adicional sobre $\mu$ para ser utilizada na demonstração: Vamos assumir que $|F'(x)| > 1, \forall x \in I_0 \cup I_1$.
-		O valor absoluto da derivada $\vert{}F_\mu'(x)\vert{}$ diminui à medida que nos aproximamos do ponto crítico $x = \frac{1}{2}$, que possui derivada igual a zero.
-		$$|\mu(1-2x)|>1$$
-		$$$$
+		O valor absoluto da derivada $|F_\mu'(x)|$ diminui à medida que nos aproximamos do ponto crítico $x = \frac{1}{2}$, que possui derivada igual a zero. Logo, o menor valor da derivada ocorre exatamente nas extremidades de $A_0$ visto no início desta seção. Como estamos tratando de valor absoluto e podemos aproveitar a simetria da parábola, vamos utilizar apenas uma das extremidades para realizar o cálculo.
+		$$\left|F'\left(\dfrac{1- \sqrt{1-\frac{4}{\mu}}}{2}\right)\right| = \sqrt{\mu^2 - 4\mu}$$
+		$$\sqrt{\mu^2 - 4\mu} > 1 \implies \mu > 2+\sqrt{5}.$$
+		Desse modo, existe $\lambda > 1$ tal que $|F'(x)|>\lambda, \forall x \in \Lambda$. Pela regra da cadeia,
+		$$|(F^n)'(x)| = \underbrace{|F'(F^{n-1}(x))|}_{> \lambda} \cdot \underbrace{|F'(F^{n-2}(x))|}_{> \lambda} \cdots \underbrace{|F'(x)|}_{> \lambda}$$
+		$$|(F^n)'(x)| > \lambda^n.$$
+		Escolha $[x,y] \subset \Lambda$. Logo, $|(F^n)'(a)| > \lambda^n, \forall a \in [x,y]$. Tomando $n$ tal que $\lambda^n|y-x| >1$, pelo Teorema do Valor Médio temos que
+		$$|F^n(y)-F^n(x)=\underbrace{|(F^n)'(a)|}_{>\lambda^n}\cdot|y-x|$$
+		$$|(F^n)'(a)|\cdot|y-x|>\lambda^n|y-x|>1$$
+		$$|F^n(y) - F^n(x)| > \lambda^n \cdot |y - x|$$
 	\end{prova}
 \end{document}
 
