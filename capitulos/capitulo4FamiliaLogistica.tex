@@ -309,101 +309,110 @@
 		$(\frac{1}{3}, \frac{2}{3})$. Em seguida, remova novamente os dois terços médios do que restou, isto é,
 		o par de intervalos $(\frac{1}{9}, \frac{2}{9})$ e $(\frac{7}{9}, \frac{8}{9})$. Continue removendo terços médios
 		dessa maneira. Esse procedimento é análogo à nossa construção anterior.
-		
-		\begin{center}
-			\begin{tikzpicture}
-				\begin{axis}[
-					axis lines=none,
-					xmin=-0.05, xmax=1.05,
-					ymin=0.5, ymax=4.7,
-					width=16cm,
-					height=4cm,
-					]
-					
-					% C0
-					\addplot[thick] coordinates {(0,4) (1,4)};
-					\addplot[only marks,mark=|,mark size=2pt,thick]
-					coordinates {(0,4) (1,4)};
-					
-					% C1
-					\addplot[thick] coordinates {(0,3) (1/3,3)};
-					\addplot[thick] coordinates {(2/3,3) (1,3)};
-					
-					\addplot[red,only marks,mark=x,mark size=2pt,thick] 
-					coordinates {(1/2,3)};
-					
-					\addplot[only marks,mark=|,mark size=2pt,thick]
-					coordinates {(0,3) (1/3,3)};
-					\addplot[only marks,mark=|,mark size=2pt,thick]
-					coordinates {(2/3,3) (1,3)};
-					
-					% C2
-					\addplot[thick] coordinates {(0,2) (1/9,2)};
-					\addplot[thick] coordinates {(2/9,2) (1/3,2)};
-					\addplot[thick] coordinates {(2/3,2) (7/9,2)};
-					\addplot[thick] coordinates {(8/9,2) (1,2)};
-					
-					\addplot[red,only marks,mark=x,mark size=2pt,thick]
-					coordinates {(1/6,2)};
-					
-					\addplot[red,only marks,mark=x,mark size=2pt,thick]
-					coordinates {(5/6,2)};
-					
-					\addplot[only marks,mark=|,mark size=2pt,thick]
-					coordinates {(0,2) (1/9,2)};
-					\addplot[only marks,mark=|,mark size=2pt,thick]
-					coordinates {(2/9,2) (1/3,2)};
-					\addplot[only marks,mark=|,mark size=2pt,thick]
-					coordinates {(2/3,2) (7/9,2)};
-					\addplot[only marks,mark=|,mark size=2pt,thick]
-					coordinates {(8/9,2) (1,2)};
-					
-					% C3
-					\addplot[thick] coordinates {(0,1) (1/27,1)};
-					\addplot[thick] coordinates {(2/27,1) (1/9,1)};
-					\addplot[thick] coordinates {(2/9,1) (7/27,1)};
-					\addplot[thick] coordinates {(8/27,1) (1/3,1)};
-					\addplot[thick] coordinates {(2/3,1) (19/27,1)};
-					\addplot[thick] coordinates {(20/27,1) (7/9,1)};
-					\addplot[thick] coordinates {(8/9,1) (25/27,1)};
-					\addplot[thick] coordinates {(26/27,1) (1,1)};
-					
-					\addplot[red,only marks,mark=x,mark size=2pt,thick]
-					coordinates {(1/18,1)};
-					
-					\addplot[red,only marks,mark=x,mark size=2pt,thick]
-					coordinates {(5/18,1)};
-					
-					\addplot[red,only marks,mark=x,mark size=2pt,thick]
-					coordinates {(13/18,1)};
-					
-					\addplot[red,only marks,mark=x,mark size=2pt,thick]
-					coordinates {(17/18,1)};
-					
-					\addplot[only marks,mark=|,mark size=2pt,thick]
-					coordinates {(0,1) (1/27,1)};
-					\addplot[only marks,mark=|,mark size=2pt,thick]
-					coordinates {(2/27,1) (1/9,1)};
-					\addplot[only marks,mark=|,mark size=2pt,thick]
-					coordinates {(2/9,1) (7/27,1)};
-					\addplot[only marks,mark=|,mark size=2pt,thick]
-					coordinates {(8/27,1) (1/3,1)};
-					\addplot[only marks,mark=|,mark size=2pt,thick]
-					coordinates {(2/3,1) (19/27,1)};
-					\addplot[only marks,mark=|,mark size=2pt,thick]
-					coordinates {(20/27,1) (7/9,1)};
-					\addplot[only marks,mark=|,mark size=2pt,thick]
-					coordinates {(8/9,1) (25/27,1)};
-					\addplot[only marks,mark=|,mark size=2pt,thick]
-					coordinates {(26/27,1) (1,1)};
-					
-				\end{axis}
-			\end{tikzpicture}
-			\captionof{figure}{Construção de Cantor clássico no intervalo $[0,1]$}
-		\end{center}
 	\end{exemplo}
 	
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+				axis lines=none,
+				xmin=-0.05, xmax=1.05,
+				ymin=0.5, ymax=4.7,
+				width=16cm,
+				height=4cm,
+				]
+				
+				% C0
+				\addplot[thick] coordinates {(0,4) (1,4)};
+				\addplot[only marks,mark=|,mark size=2pt,thick]
+				coordinates {(0,4) (1,4)};
+				
+				% C1
+				\addplot[thick] coordinates {(0,3) (1/3,3)};
+				\addplot[thick] coordinates {(2/3,3) (1,3)};
+				
+				\addplot[red,only marks,mark=x,mark size=2pt,thick] 
+				coordinates {(1/2,3)};
+				
+				\addplot[only marks,mark=|,mark size=2pt,thick]
+				coordinates {(0,3) (1/3,3)};
+				\addplot[only marks,mark=|,mark size=2pt,thick]
+				coordinates {(2/3,3) (1,3)};
+				
+				% C2
+				\addplot[thick] coordinates {(0,2) (1/9,2)};
+				\addplot[thick] coordinates {(2/9,2) (1/3,2)};
+				\addplot[thick] coordinates {(2/3,2) (7/9,2)};
+				\addplot[thick] coordinates {(8/9,2) (1,2)};
+				
+				\addplot[red,only marks,mark=x,mark size=2pt,thick]
+				coordinates {(1/6,2)};
+				
+				\addplot[red,only marks,mark=x,mark size=2pt,thick]
+				coordinates {(5/6,2)};
+				
+				\addplot[only marks,mark=|,mark size=2pt,thick]
+				coordinates {(0,2) (1/9,2)};
+				\addplot[only marks,mark=|,mark size=2pt,thick]
+				coordinates {(2/9,2) (1/3,2)};
+				\addplot[only marks,mark=|,mark size=2pt,thick]
+				coordinates {(2/3,2) (7/9,2)};
+				\addplot[only marks,mark=|,mark size=2pt,thick]
+				coordinates {(8/9,2) (1,2)};
+				
+				% C3
+				\addplot[thick] coordinates {(0,1) (1/27,1)};
+				\addplot[thick] coordinates {(2/27,1) (1/9,1)};
+				\addplot[thick] coordinates {(2/9,1) (7/27,1)};
+				\addplot[thick] coordinates {(8/27,1) (1/3,1)};
+				\addplot[thick] coordinates {(2/3,1) (19/27,1)};
+				\addplot[thick] coordinates {(20/27,1) (7/9,1)};
+				\addplot[thick] coordinates {(8/9,1) (25/27,1)};
+				\addplot[thick] coordinates {(26/27,1) (1,1)};
+				
+				\addplot[red,only marks,mark=x,mark size=2pt,thick]
+				coordinates {(1/18,1)};
+				
+				\addplot[red,only marks,mark=x,mark size=2pt,thick]
+				coordinates {(5/18,1)};
+				
+				\addplot[red,only marks,mark=x,mark size=2pt,thick]
+				coordinates {(13/18,1)};
+				
+				\addplot[red,only marks,mark=x,mark size=2pt,thick]
+				coordinates {(17/18,1)};
+				
+				\addplot[only marks,mark=|,mark size=2pt,thick]
+				coordinates {(0,1) (1/27,1)};
+				\addplot[only marks,mark=|,mark size=2pt,thick]
+				coordinates {(2/27,1) (1/9,1)};
+				\addplot[only marks,mark=|,mark size=2pt,thick]
+				coordinates {(2/9,1) (7/27,1)};
+				\addplot[only marks,mark=|,mark size=2pt,thick]
+				coordinates {(8/27,1) (1/3,1)};
+				\addplot[only marks,mark=|,mark size=2pt,thick]
+				coordinates {(2/3,1) (19/27,1)};
+				\addplot[only marks,mark=|,mark size=2pt,thick]
+				coordinates {(20/27,1) (7/9,1)};
+				\addplot[only marks,mark=|,mark size=2pt,thick]
+				coordinates {(8/9,1) (25/27,1)};
+				\addplot[only marks,mark=|,mark size=2pt,thick]
+				coordinates {(26/27,1) (1,1)};
+				
+			\end{axis}
+		\end{tikzpicture}
+		\captionof{figure}{Construção de Cantor clássico no intervalo $[0,1]$.}
+	\end{center}
 	
+	\begin{teorema}
+		Se $\mu > 2+\sqrt{5}$, então $\Lambda$ é um conjunto de Cantor.
+	\end{teorema}
+	
+	\begin{prova}
+		Para garantir que $\Lambda$ é um conjunto de Cantor, precisaremos de uma hipótese adicional sobre $\mu$ para ser utilizada na demonstração: Vamos assumir que $|F'(x)| > 1, \forall x \in I_0 \cup I_1$.
+		O valor absoluto da derivada $\vert{}F_\mu'(x)\vert{}$ diminui à medida que nos aproximamos do ponto crítico $x = \frac{1}{2}$, que possui derivada igual a zero.
+		$$|\mu(1-2x)|>1$$
+		$$$$
+	\end{prova}
 \end{document}
 
 
