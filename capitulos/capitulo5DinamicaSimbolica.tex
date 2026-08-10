@@ -56,15 +56,15 @@
 	
 	Esse resultado se faz importante por nos dar o poder de decidir rapidamente se duas sequências estão ou não próximas uma da outra. Intuitivamente, essa análise mostra que duas sequências estão próximas em $\Sigma_2$ desde que as suas primeiras entradas coincidam. Quando mais esses primeiros índices coincidem, mais próximas estão essas duas sequências.
 	
-	\section{O \textit{Shift Map}}
+	\section{O mapa \textit{Shift}}
 	
-	Neste momento, iremos definir o fator mais importante em dinâmica simbólica: o \textit{shift map} em $\Sigma_2$.
+	Neste momento, iremos definir o fator mais importante em dinâmica simbólica: o mapa \textit{shift} em $\Sigma_2$.
 	
 	\begin{definicao}
-		O shift map $\sigma:\Sigma_2 \rightarrow \Sigma_2$ é dado por $\sigma(s_0s_1s_2...)=(s_1s_2s_3...).$
+		O mapa shift $\sigma:\Sigma_2 \rightarrow \Sigma_2$ é dado por $\sigma(s_0s_1s_2...)=(s_1s_2s_3...).$
 	\end{definicao}
 	
-	O shift map elimina a primeira entrada de uma sequência, deslocando todas as demais entradas para a esquerda.
+	O mapa shift elimina a primeira entrada de uma sequência, deslocando todas as demais entradas para a esquerda.
 	
 	\begin{proposicao}
 		$\sigma:\Sigma_2 \rightarrow \Sigma_2$ é contínua.
@@ -77,25 +77,32 @@
 		$$d[s,t] < \frac{1}{2^{n+1}} \implies \underbrace{d[\sigma(s),\sigma(t)] \leq \frac{1}{2^n} < \epsilon}_{\parbox{6cm}{\centering \small Como $\sigma$ retira a primeira entrada, temos agora $s_i=t_i$ para $i \le n$, tornando a desigualdade válida pelo Teorema da Proximidade.}}$$
 	\end{prova}
 	
-	No próximo capítulo, mostraremos que o shift map é um modelo exato para o mapa logístico $F_\mu$ quando $\mu>4$. Por enquanto estamos mostrando que a dinâmica de $\sigma$ pode ser totalmente compreendida estudando as sequências. Por exemplo, pontos periódicos são representados por sequências que se repetem, da forma $s=(s_0...s_{n-1}s_0...s_{n-1}...).$. Por isso que existem exatamente $2^n$ pontos periódicos em $\sigma$, cada um gerado por uma das $2^n$ sequências finitas de 0s e 1s de tamanho $n$.
+	No próximo capítulo, mostraremos que o mapa shift é um modelo exato para o mapa logístico $F_\mu$ quando $\mu>4$. Por enquanto estamos mostrando que a dinâmica de $\sigma$ pode ser totalmente compreendida estudando as sequências. Por exemplo, pontos periódicos são representados por sequências que se repetem, da forma $s=(s_0...s_{n-1}s_0...s_{n-1}...).$. Por isso que existem exatamente $2^n$ pontos periódicos em $\sigma$, cada um gerado por uma das $2^n$ sequências finitas de 0s e 1s de tamanho $n$.
 
 	\vspace{-\baselineskip}
 	Pontos eventualmente periódicos também são fáceis de reconhecer. Uma sequência da forma $(s_0...s_n111)$ é eventualmente fixa, enquanto para $\sigma$, qualquer sequência que eventualmente se repete se torna eventualmente periódica.
 	
 	\vspace{-\baselineskip}
-	Outro fato interessante sobre $\sigma$ é que pontos periódicos formam um subconjunto denso de $\Sigma_2$. 
+	Outro fato interessante sobre $\sigma$ é que pontos periódicos formam um subconjunto denso de $\Sigma_2$. Um subconjunto é denso em $\Sigma_2$ se o seu fecho é o próprio $\Sigma_2$. Para provar que Per($\sigma$) é denso, devemos produzir uma sequência de pontos periódicos $\tau_n$ que converge para um ponto arbitrário $s=(s_0s_1s_2...)$. Pelo Teorema da Proximidade, $d[\tau_n,s]\leq \frac{1}{2^n}$, portanto $\tau_n \rightarrow s$.
 	
+	\vspace{-\baselineskip}
+	Mas, nem todos os pontos $\Sigma_2$ são periódicos ou eventualmente periódicos. Qualquer sequência que não se repete nunca poderá ser periódica. Na verdade, existem muito mais sequências desse tipo do que sequências periódicas em $\Sigma_2$. Outra forma de dizer isso é que existem pontos cuja órbita chega arbitrariamente próxima de uma sequência dada em $\Sigma_2$. Para ilustrar isso, consideremos
+	$$s^* = (\underbrace{0 \; 1}_{\text{1 bloco}} \quad \underbrace{00 \; 01 \; 10 \; 11}_{\text{2 blocos}} \quad \underbrace{000 \; 001 \; 011...}_{\text{3 blocos}} \quad \underbrace{...}_{...})$$.
 	
+	\vspace{-\baselineskip}
+	Essa sequência $s^*$ é construída listando sucessivamente todas as sequências possíveis de 0s e 1s de tamanho $n,n+1,n+2, etc.$. Em alguma iterada de $\sigma$ aplicada em $s^*$ teremos uma nova sequência que coincide com a sequência dada $t$ na quantidade arbitrária de entradas, ou seja, $\sigma^n(s^*)_i = t_i$, para $i\leq n$. Mapas que possuem órbitas densas são denominados \textit{topologicamente transitivos}.
 	
+	\begin{proposicao}
+		Para $\sigma$
+		
+		1. A cardinalidade de $Per_n(\sigma)$ é $2^n$.
+		
+		2. $Per(\sigma)$ é denso em $\Sigma_2$.
+		
+		3. Existe uma órbita densa para $\sigma$ em $\Sigma_2$.
+	\end{proposicao}
 	
-	
-	
-	
-	
-	
-	
-	
-	
+	No próximo capítulo, mostraremos que o mapa shift em $\Sigma_2$ na verdade é o mesmo mapa como $F$ é em $\Lambda$.
 	
 	
 	
