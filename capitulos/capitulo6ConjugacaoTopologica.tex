@@ -32,4 +32,23 @@
 	\end{definicao}
 	
 	Mapas que são topologicamente conjugados são completamente equivalentes em termos de dinâmica. Pontos periódicos e fixos, órbitas e densidade são preservados na transição. Desse modo, estudar a dinâmica em $g$ é a mesma coisa que estudar a dinâmica em $f$.
+	
+	\vspace{-\baselineskip}
+	No caso do mapa shift $\sigma$ em $\Sigma_2$ e $F_\mu$ em $\Lambda$, o próximo Teorema nos mostrará que esses dois mapas são topologicamente conjugados, fazendo com que do ponto de vista dinâmico, se tornem iguais. Portanto, poderemos continuar estudando a dinâmica de $F_\mu$ por meio de $\sigma$, o que se mostrará bem mais simples de ser feito.
+	
+	\begin{teorema}
+		$S \circ F_\mu = \sigma \circ S$.
+	\end{teorema}
+	
+	\begin{prova}
+		Um ponto $x$ em $\Lambda$ pode ser definido pela sequência aninhada de intervalos
+		$$ \bigcap_{n \ge 0} I_{s_0 s_1 \dots s_n} $$
+		determinada pelo itinerário $S(x)$. Agora,
+		$$ I_{s_0 \dots s_n} = I_{s_0} \cap F_\mu^{-1}(I_{s_1}) \cap \dots \cap F_\mu^{-n}(I_{s_n}) $$
+		de modo que $F_\mu(I_{s_0 \dots s_n})$ pode ser escrito como
+		$$ I_{s_1} \cap F_\mu^{-1}(I_{s_2}) \cap \dots \cap F_\mu^{-n+1}(I_{s_n}) $$
+		uma vez que $F_\mu(I_{s_0}) = I$. Portanto,
+		$$ S(F_\mu(x)) = S \left( F_\mu \left( \bigcap_{n=0}^{\infty} I_{s_0 s_1 \dots s_n} \right) \right) = S \left( \bigcap_{n=1}^{\infty} I_{s_1 \dots s_n} \right) = s_1 s_2 \dots = \sigma(S(x)). $$
+		Em particular, como $F_\mu$ em $\Lambda$ é topologicamente conjugada à aplicação deslocamento (\textit{shift map}) em $\Sigma$, provamos agora que a aplicação logística desfruta das mesmas propriedades interessantes que descobrimos tão facilmente para $\sigma$ na seção anterior. Isso pode ser resumido da seguinte forma.
+	\end{prova}
 \end{document} 
