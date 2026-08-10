@@ -31,6 +31,19 @@
 		Seja $f: A \rightarrow A$ e $g: B \rightarrow B$ dois mapas. $f$ e $g$ são topologicamente conjugados se existe um homeomorfismo $h: A \rightarrow B$ tal que $h \circ f = g \circ h$. A equação $h \circ f = g \circ h$ é dita equação de conjugação e o homeomorfismo $h$ é dito conjugação topológica.
 	\end{definicao}
 	
+	\begin{exemplo}
+		Se $c<\frac{1}{4}$ e $\mu>1$, então o mapa quadrático $Q_c$ e o mapa logístico $F_\mu$ são topologicamente conjugados por um mapa linear do tipo $ax+b$. Ou seja,
+		$$
+		\begin{array}{ccc}
+			x & \xrightarrow{\quad F_\mu \quad} & \mu\/x(1 - x) \\
+			h \Bigg\downarrow & & \Bigg\downarrow h \\
+			ax + b & \xrightarrow{\quad Q_c \quad} & \boldsymbol{(ax+b)^2+c = a(\mu\/x(1-x))+b}
+		\end{array}
+		$$
+		
+		Desenvolvendo a igualdade de polinômios, teremos $a=-\mu, b=\frac{\mu}{2}$ e $b^2+c = b$. Para garantir $\mu > 1$, basta tomar $c<\frac{1}{4}$. Portanto, a igualdade é válida, fazendo $Q_c$ e $F_\mu$ serem topologicamente conjugados por um mapa linear.
+	\end{exemplo}
+	
 	Mapas que são topologicamente conjugados são completamente equivalentes em termos de dinâmica. Pontos periódicos e fixos, órbitas e densidade são preservados na transição. Desse modo, estudar a dinâmica em $g$ é a mesma coisa que estudar a dinâmica em $f$.
 	
 	\vspace{-\baselineskip}
@@ -43,12 +56,37 @@
 	\begin{prova}
 		Um ponto $x$ em $\Lambda$ pode ser definido pela sequência aninhada de intervalos
 		$$ \bigcap_{n \ge 0} I_{s_0 s_1 \dots s_n} $$
-		determinada pelo itinerário $S(x)$. Agora,
-		$$ I_{s_0 \dots s_n} = I_{s_0} \cap F_\mu^{-1}(I_{s_1}) \cap \dots \cap F_\mu^{-n}(I_{s_n}) $$
-		de modo que $F_\mu(I_{s_0 \dots s_n})$ pode ser escrito como
-		$$ I_{s_1} \cap F_\mu^{-1}(I_{s_2}) \cap \dots \cap F_\mu^{-n+1}(I_{s_n}) $$
-		uma vez que $F_\mu(I_{s_0}) = I$. Portanto,
+		determinada pelo itinerário $S(x)$. Por definição, sabemos que:
+		$$ I_{s_0 \dots s_n} = I_{s_0} \cap F_\mu^{-1}(I_{s_1}) \cap F_\mu^{-2}(I_{s_2}) \cap \dots \cap F_\mu^{-n}(I_{s_n}) $$
+		
+		Aplicando a função $F_\mu$ a ambos os lados da igualdade, temos
+		$$ F_\mu(I_{s_0 \dots s_n}) = F_\mu(I_{s_0}) \cap F_\mu(F_\mu^{-1}(I_{s_1})) \cap F_\mu(F_\mu^{-2}(I_{s_2})) \cap \dots \cap F_\mu(F_\mu^{-n}(I_{s_n})) $$
+		$$ F_\mu(I_{s_0 \dots s_n}) = I \cap I_{s_1} \cap F_\mu^{-1}(I_{s_2}) \cap \dots \cap F_\mu^{-n+1}(I_{s_n}) $$
+		
+		Note que essa expressão é exatamente a definição de $I_{s_1 \dots s_n}$. Portanto, 
 		$$ S(F_\mu(x)) = S \left( F_\mu \left( \bigcap_{n=0}^{\infty} I_{s_0 s_1 \dots s_n} \right) \right) = S \left( \bigcap_{n=1}^{\infty} I_{s_1 \dots s_n} \right) = s_1 s_2 \dots = \sigma(S(x)). $$
-		Em particular, como $F_\mu$ em $\Lambda$ é topologicamente conjugada à aplicação deslocamento (\textit{shift map}) em $\Sigma$, provamos agora que a aplicação logística desfruta das mesmas propriedades interessantes que descobrimos tão facilmente para $\sigma$ na seção anterior. Isso pode ser resumido da seguinte forma.
 	\end{prova}
+	
+	Em particular, como $F_\mu$ em $\Lambda$ é topologicamente conjugada ao mapa shift em $\Sigma$, concluímos que $F_\mu$ possui as mesmas propriedades que descobrimos anteriormente para $\sigma$. Isso pode ser resumido da seguinte forma:
+	
+	\begin{teorema}
+		Seja $F_\mu(x) = \mu x(1 - x)$ com $\mu > 2 + \sqrt{5}$. Então:
+		\begin{enumerate}
+			\item A cardinalidade de $Per_n(F_\mu)$ é $2^n$.
+			\item $Per(F_\mu)$ é denso em $\Lambda$.
+			\item $F_\mu$ possui uma órbita densa em $\Lambda$.
+		\end{enumerate}
+	\end{teorema}
+	
+	Esse teorema mostra o poder da dinâmica simbólica e da conjugação topológica. Realizar o estudo da dinâmica pelo mapa logístico se torna rapidamente uma tarefa algebricamente inviável, mas a conjugação topológica garante que é possível estudar toda essa dinâmica por um mapa equivalente e mais simples.
+	
+	Outra ferramenta para relacionar a dinâmica de dois mapas diferentes é a semi-conjugação.
+	
+	\begin{definicao}
+		Sejam $f : X \to X$ e $g : Y \to Y$, e suponha que $h : X \to Y$ seja uma aplicação contínua e sobrejetora de $X$ em $Y$ que satisfaz a equação de conjugação
+		$$ h(f(x)) = g(h(x)) $$
+		para todo $x \in X$. Então $h$ é uma semiconjugação, e as aplicações $f$ e $g$ são semiconjugadas entre si.
+	\end{definicao}
+	
+	\noindent\textbf{Observação:} Diferentemente da conjugação, a semi-conjugação não exige que $h$ seja injetora (logo, não é um homeomorfismo). Além disso, as semi-conjugações preservam órbitas densas e levam pontos periódicos de $f$ em pontos periódicos de $g$, embora o período possa ser menor (por exemplo, um ciclo de período 2 pode ser mapeado em um único ponto fixo).
 \end{document} 
