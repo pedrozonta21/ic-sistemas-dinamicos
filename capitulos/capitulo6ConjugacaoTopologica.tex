@@ -35,16 +35,28 @@
 			
 			\item contínua:
 			
-			Tomemos $x \in \Lambda$ e supomos que $S(x) = s_0s_1s_2 \dots$. Seja $\epsilon > 0$ e $n$ tal que $\frac{1}{2^n} < \epsilon$. Considere os subintervalos fechados $I_{t_0t_1\dots t_n}$ definidos acima para todas as combinações possíveis $t_0t_1 \dots t_n$. 
+			Tomemos $x \in \Lambda$ e supomos que $S(x) = s_0s_1s_2 \dots$. Seja $\epsilon > 0$ e $n$ tal que $\frac{1}{2^n} < \epsilon$. Considere os subintervalos fechados $I_{t_0t_1\dots t_n}$ para todas as combinações possíveis $t_0t_1 \dots t_n$. 
 			
-			Estes subintervalos são todos disjuntos, e $\Lambda$ está contido na união deles. Existem $2^{n+1}$ tais subintervalos, e $I_{s_0s_1\dots s_n}$ é um deles. Portanto, podemos escolher $\delta$ tal que $|x - y| < \delta$ e $y \in \Lambda$ implique que $y \in I_{s_0s_1\dots s_n}$. 
+			Estes subintervalos são todos disjuntos, e $\Lambda$ está contido na união deles. Como existem $2^{n+1}$ subintervalos, logo $I_{s_0s_1\dots s_n}$ é um deles. Portanto, podemos escolher $\delta$ tal que $|x - y| < \delta$ e $y \in \Lambda$ implique que $y \in I_{s_0s_1\dots s_n}$. 
 			
 			Assim, $S(y)$ coincide com $S(x)$ nos primeiros $n + 1$ termos. Portanto, pelo Teorema da Proximidade:
 			$$ d[S(x), S(y)] < \frac{1}{2^n} < \epsilon $$
 			
-			Isto prova a continuidade de $S$.
+			Isso prova a continuidade de $S$.
 			
 			\item inversa contínua:
+			
+			Seja $s = s_0 s_1 \dots \in \Sigma_2$ e $\epsilon > 0$. Sabemos pela construção do conjunto de Cantor $\Lambda$ que o comprimento dos subintervalos da forma $I_{s_0 \dots s_n}$ tende a zero quando $n \to \infty$. Assim, podemos tomar $n$ tal que
+			$$|I_{s_0 \dots s_n}| < \epsilon $$
+			
+			Escolhemos arbitrariamente $\delta = \frac{1}{2^n}$. Seja $t \in \Sigma_2$ uma sequência qualquer tal que $d[s, t] < \delta$. Pela definição da métrica em $\Sigma_2$, isso garante que as sequências $s$ e $t$ coincidem em seus primeiros $n+1$ termos (de $0$ a $n$). 
+			
+			Pela definição da aplicação de itinerário, se $s$ e $t$ começam com o bloco $(s_0 \dots s_n)$, então tanto $S^{-1}(s)$ quanto $S^{-1}(t)$ pertencem ao mesmo subintervalo fechado $I_{s_0 \dots s_n}$. 
+			
+			Como ambos os pontos estão no mesmo intervalo, a distância entre eles não excede o diâmetro do mesmo:
+			$$ |S^{-1}(s) - S^{-1}(t)| \le \text{diam}(I_{s_0 \dots s_n}) < \epsilon $$
+			
+			Isso prova que $S^{-1}$ é contínua no ponto $s$ e, por extensão, em todo o espaço $\Sigma_2$.
 		\end{itemize}
 	\end{prova}
 	
