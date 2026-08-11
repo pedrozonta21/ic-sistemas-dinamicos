@@ -92,8 +92,19 @@
 		\\
 		Para o ponto fixo $x=0$, temos $|F_\mu'(0)| = \mu$. Portanto $x=0$ de fato é um ponto fixo repulsor.
 		
-		Já para a segunda parte, primeiro vamos analisar o caso $1<\mu<2$. Supondo $x \in (0,\frac{1}{2}]$ e comparando $F_\mu(x)$ com $x$, temos que *(colocar um pouco mais de informação)*
-		$$|F_\mu(x) - p_\mu| < |x - p_\mu|$$ se $x \neq p_\mu$. Esse resultado nos leva à conclusão de que $|F_\mu(x) - p_\mu| \rightarrow 0$ quando $n \rightarrow \infty$. Desse modo, 
+		Já para a segunda parte, primeiro vamos analisar o caso $1<\mu<2$. Supondo $x \in (0,\frac{1}{2})$, temos que $0 < p_\mu < \frac{1}{2}$, e comparando $F_\mu(x)$ com $x$ e com $p_\mu$, obtemos
+		\[
+		\begin{array}{ll}
+			F_\mu(x) > x, \quad x < p & \qquad\qquad F_\mu(x) > p, \quad p < x < 1/2 \\[2ex]
+			F_\mu(x) < x, \quad x > p & \qquad\qquad F_\mu(x) < p, \quad 0 < x < p
+		\end{array}
+		\]
+		assim,
+		$$|F_\mu(x) - p_\mu| < |x - p_\mu|$$ 
+		$$|F_\mu^2(x) - p_\mu| < |F_\mu(x) - p_\mu| < |x - p_\mu|$$ 
+		$$...$$
+		$$|F_\mu^n(x) - p_\mu| <...< |x - p_\mu|$$
+		se $x \neq p_\mu$. Esse resultado nos leva à conclusão de que $|F_\mu^n(x) - p_\mu| \rightarrow 0$ quando $n \rightarrow \infty$. Desse modo, 
 		$$F_\mu^n(x) \rightarrow p_\mu$$ quando $n \rightarrow \infty$.\\
 		O caso $2<\mu<3$ é mais complexo de ser analisado. Para esses valores de $\mu$, temos a localização do ponto fixo $p_\mu$ sendo $\frac{1}{2}<p_\mu<\frac{2}{3}$, ou seja, à direita do ponto crítico $\frac{1}{2}$, no lado onde a função é estritamente decrescente. Seja $\hat{p_\mu}$ o único ponto pertencente ao intervalo $(0, \frac{1}{2})$, onde a função $F_\mu$ é estritamente crescente, de modo que $F_\mu(\hat{p_\mu}) = p_\mu$.
 		
