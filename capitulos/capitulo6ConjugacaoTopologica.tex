@@ -49,14 +49,14 @@
 			Seja $s = s_0 s_1 \dots \in \Sigma_2$ e $\epsilon > 0$. Sabemos pela construção do conjunto de Cantor $\Lambda$ que o comprimento dos subintervalos da forma $I_{s_0 \dots s_n}$ tende a zero quando $n \to \infty$. Assim, podemos tomar $n$ tal que
 			$$|I_{s_0 \dots s_n}| < \epsilon $$
 			
-			Escolhemos arbitrariamente $\delta = \frac{1}{2^n}$. Seja $t \in \Sigma_2$ uma sequência qualquer tal que $d[s, t] < \delta$. Pela definição da métrica em $\Sigma_2$, isso garante que as sequências $s$ e $t$ coincidem em seus primeiros $n+1$ termos (de $0$ a $n$). 
+			Escolhemos arbitrariamente $\delta = \frac{1}{2^n}$. Seja $t \in \Sigma_2$ uma sequência qualquer tal que $d[s, t] < \delta$. Pela definição da métrica em $\Sigma_2$, isso garante que as sequências $s$ e $t$ coincidem em seus primeiros $n+1$ termos. 
 			
-			Pela definição da aplicação de itinerário, se $s$ e $t$ começam com o bloco $(s_0 \dots s_n)$, então tanto $S^{-1}(s)$ quanto $S^{-1}(t)$ pertencem ao mesmo subintervalo fechado $I_{s_0 \dots s_n}$. 
-			
-			Como ambos os pontos estão no mesmo intervalo, a distância entre eles não excede o diâmetro do mesmo:
-			$$ |S^{-1}(s) - S^{-1}(t)| \le \text{diam}(I_{s_0 \dots s_n}) < \epsilon $$
-			
-			Isso prova que $S^{-1}$ é contínua no ponto $s$ e, por extensão, em todo o espaço $\Sigma_2$.
+			Pela definição da aplicação de itinerário, se $s$ e $t$ começam com o bloco $s_0 \dots s_n$, então tanto $S^{-1}(s)$ quanto $S^{-1}(t)$ pertencem ao mesmo $I_{s_0 \dots s_n}$. 
+			Como $s$ e $t$ estão no mesmo intervalo, a distância entre eles não pode ser maior que o comprimento do mesmo.
+			$$ |S^{-1}(s) - S^{-1}(t)| \le |I_{s_0 \dots s_n}| < \epsilon $$
+			então,
+			$$|s-t|<\frac{1}{2^n} \implies |S^{-1}(s) - S^{-1}(t)| \le |I_{s_0 \dots s_n}| < \epsilon.$$
+			Com isso, $S^{-1}$ é contínua.
 		\end{itemize}
 	\end{prova}
 	
