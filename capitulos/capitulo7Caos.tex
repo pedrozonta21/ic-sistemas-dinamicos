@@ -4,4 +4,57 @@
 	\chapter{Caos}
 	
 	O mapa logístico exibe de forma impressionante um fenômeno que, para muitas funções, é apenas parcialmente compreendido: o comportamento caótico de órbitas de um sistema dinâmico. Há muitas definições de caos, mas antes de darmos a nossa própria definição, precisamos de algumas definições preliminares.
+	
+	\begin{definicao}
+		$f:J\rightarrow J$ é dita topologicamente transitiva se, para algum par de conjuntos abertos $U, V \subset J$, existe um $k>0$ tal que $f^k(U) \cap V \neq \emptyset$
+	\end{definicao}
+	
+	Intuitivamente, um mapa topologicamente transitivo possui pontos que eventualmente se movem sob iterações de uma pequena vizinhança arbitrária para outra. Consequentemente, o sistema dinâmico não pode ser decomposto em dois conjuntos abertos disjuntos invariantes.
+	
+	\begin{definicao}
+		$f: J \rightarrow J$ possui dependência sensível nas condições iniciais em $J$ se existe $\delta > 0$ tal que, para algum $x\in J$ e uma vizinhança N de $x$, existem $y \in N$ e $n\geq 0$ tal que $|f^(x)-f^n(y)| > \delta$.
+	\end{definicao}
+	
+	Intuitivamente, uma aplicação apresenta dependência sensível nas condições iniciais se, para cada ponto $x$ em $J$, existirem pontos arbitrariamente próximos de $x$ cujas órbitas acabam se afastando da órbita de $x$ por pelo menos $\delta$ sob a iteração de $f$. Vale ressaltar que nem todos os pontos próximos de $x$ precisam necessariamente se afastar de $x$ durante a iteração, mas deve haver pelo menos um ponto nessas condições em qualquer vizinhança de $x$
+	
+	\begin{exemplo}\label{mapaLogisticoSensivel}
+		O mapa logístico $F_\mu$ com $\mu>2+\sqrt{5}$ possui dependência sensível nas condições iniciais em $\Lambda$. Basta escolher $\delta$ menor do que o comprimento de $A_0$. Seja $x,y \in \Lambda$. Se $x \neq y$, então $S(x) \neq S(y)$, e portanto o itinerário de $x$ deve divergir do itinerário de $y$ em pelo menos uma entrada da sequência, digamos no índice $k$. Mas isso significa que $F_\mu^k(x)$ e $F_\mu^k(y)$ estão em lados opostos de $A_0$, então
+		$$|F_\mu^k(x)-F_\mu^k(y)| > \delta$$.
+	\end{exemplo}
+	
+	\begin{definicao}
+		Seja $V$ um conjunto. $f: V \rightarrow V$ é dita caótica em $V$ se $f$ possui as seguintes propriedades:
+		\begin{enumerate}
+			\item os pontos periódicos são densos em $V$;
+			\item $f$ é topologicamente transitiva;
+			\item $f$ possui dependência sensível nas condições iniciais.
+		\end{enumerate}
+	\end{definicao}
+	
+	Em resumo, um mapa caótico possui três ingredientes: imprevisibilidade, indecomponibilidade e um elemento de regularidade. Um sistema caótico é imprevisível devido à dependência sensível das condições iniciais. Ele não pode ser dividido ou decomposto em dois subconjuntos abertos invariantes que não interajam sob a ação de $f$, devido à transitividade topológica. E, em meio a esse comportamento aleatório, temos um elemento de regularidade: o conjunto de pontos periódicos, que são densos.
+	
+	\begin{teorema}
+		Os mapas logísticos $F_\mu(x)=\mu\/x(1-x)$ são caóticos em $\Lambda$ quando $\mu > 2+\sqrt{5}$.
+	\end{teorema}
+	
+	\begin{prova}
+		Para mostrar que os pontos periódicos são densos, vamos nos aproveitar da conjugação topológica do mapa shift. Seja $s \in \Sigma_2$. Dado $\epsilon>0$, queremos $p \in Per(\sigma)$ tal que $d[s,p]<\epsilon$. Tomemos $n$ tal que $\frac{1}{2^n}<\epsilon$ e $p$ sendo construído com um bloco de $s$ de tamanho $n$.
+		$$p = s_0s_1...s_{n-1}s_0s_1...s_{n-1}...$$
+		$$d[s,p]=\sum_{i=n+1}^{\infty} \dfrac{|s_i-p_i|}{2^i} \leq \sum_{i=n+1}^{\infty} \dfrac{1}{2^i}=\sum_{i=n+1}^{\infty}\frac{1}{2^i} = \frac{1}{2^n}$$
+		mas, pelo Teorema da Proximidade,
+		$$d[s,p]\leq \frac{1}{2^n}<\epsilon$$
+		e portanto, os pontos periódicos são densos em $\Sigma_2$, e pela conjugação topológica, também são densos em $\Lambda$.
+		
+		Seja $a\in\Sigma_2$. Dado $\epsilon>0$, queremos que a órbita tem um ponto $s^*\in\Sigma_2$ se aproxime de $a$, ou seja, $d[\sigma^k(s^*),a]<\epsilon$.
+		
+		A dependência sensível nas condições iniciais foi mostrada no Exemplo $\ref{mapaLogisticoSensivel}$.
+	\end{prova}
+	
+	\begin{teorema}
+		$F_4(x)=4x(1-x)$ é caótico no intervalo $I=[0,1]$.
+	\end{teorema}
+	
+	\begin{prova}
+		conteúdo...
+	\end{prova}
 \end{document}	
