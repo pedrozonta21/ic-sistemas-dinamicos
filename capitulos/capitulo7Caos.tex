@@ -46,6 +46,11 @@
 		e portanto, os pontos periódicos são densos em $\Sigma_2$, e pela conjugação topológica, também são densos em $\Lambda$.
 		
 		Seja $a\in\Sigma_2$. Dado $\epsilon>0$, queremos que a órbita tem um ponto $s^*\in\Sigma_2$ se aproxime de $a$, ou seja, $d[\sigma^k(s^*),a]<\epsilon$.
+		Tomemos $n$ tal que $\frac{1}{2^n}<\epsilon$ e $s^*$ sendo a união de todas as sequências possíveis vista no Capítulo 5.
+		
+		$$\sigma^k(s^*)_i=a_i, i\leq n$$
+		$$d[\sigma^k(s^*),a]=\sum_{i=n+1}^{\infty}\frac{|\sigma^k(s^*)_i-a_i|}{2^i} \leq \sum_{i=n+1}^{\infty} \dfrac{1}{2^i} = \frac{1}{2^n} < \epsilon$$
+		Como existe uma órbita densa para $\sigma$ em $\Sigma_2$, $\sigma$ é topologicamente transitivo, e por consequência, $F_\mu$.
 		
 		A dependência sensível nas condições iniciais foi mostrada no Exemplo $\ref{mapaLogisticoSensivel}$.
 	\end{prova}
@@ -55,6 +60,26 @@
 	\end{teorema}
 	
 	\begin{prova}
-		conteúdo...
+		Seja $D(\theta) = 2\theta$ a aplicação duplicação em $S^1$. Tomemos $h_1: S^1 \to [-1, 1]$ dada por $h_1(\theta) = \cos(\theta)$. Ou seja, $h_1$ é a projeção de $S^1$ no intervalo $[-1, 1]$, pois $-1\leq \cos(\theta) \leq 1$. Seja $q(x) = 2x^2 - 1$. Então
+		$$ h_1 \circ D(\theta) = \cos(2\theta) = 2\cos^2(\theta) - 1 = q \circ h_1(\theta) $$
+		onde $h_1$ semi-conjuga $D$ com $q$.
+		
+		Agora, $q$ é topologicamente conjugada a $F_4$. De fato, se $h_2(t) = \frac{1}{2}(1 - t)$, então temos $F_4 \circ h_2 = h_2 \circ q$. Portanto, temos o seguinte diagrama:
+		
+		$$
+		\begin{array}{ccc}
+			S^1 & \xrightarrow{\quad D \quad} & S^1 \\
+			h_1 \Bigg\downarrow & & \Bigg\downarrow h_1 \\
+			{[-1, 1]} & \xrightarrow{\quad q \quad} & {[-1, 1]} \\
+			h_2 \Bigg\downarrow & & \Bigg\downarrow h_2 \\
+			{[0, 1]} & \xrightarrow{\quad F_4 \quad} & {[0, 1]}
+		\end{array}
+		$$
+		
+		Consequentemente, $F_4$ é semi-conjugada a $D$ através da composição $h_2 \circ h_1$. Segue imediatamente que $F_4$ é topologicamente transitiva, pois se $U$ e $V$ são dois intervalos abertos em $I$, podemos escolher arcos abertos $\hat{U}$ e $\hat{V}$ em $S^1$, que se projetam sobre $U$ e $V$ sob $h_2 \circ h_1$. Como existe $k$ tal que $D^k(\hat{U}) \cap \hat{V} \neq \emptyset$, temos, portanto, que $F_4^k(U) \cap V \neq \emptyset$.
+		
+		Para provar a dependência sensível, notamos que qualquer vizinhança $U$ de $x \in I$ se ``eleva'' a $\hat{U}$ em $S^1$. Existe $n$ tal que $D^n(\hat{U})$ cobre $S^1$, logo $F_4^n(U)$ também cobre $I$. Assim, existem pontos em $U$ que se afastam de $x$ em pelo menos $\delta = 1/2$. 
+		
+		Finalmente, a densidade de pontos periódicos para $D$ implica que existe um ponto periódico de $D$ em $\hat{U}$. A projeção deste ponto em $U$ é claramente periódica sob $F_4$. \hfill
 	\end{prova}
 \end{document}	
