@@ -104,8 +104,56 @@
 		$$|F_\mu^2(x) - p_\mu| < |F_\mu(x) - p_\mu| < |x - p_\mu|$$ 
 		$$...$$
 		$$|F_\mu^n(x) - p_\mu| <...< |x - p_\mu|$$
-		se $x \neq p_\mu$. Esse resultado nos leva à conclusão de que $|F_\mu^n(x) - p_\mu| \rightarrow 0$ quando $n \rightarrow \infty$. Desse modo, 
-		$$F_\mu^n(x) \rightarrow p_\mu$$ quando $n \rightarrow \infty$.\\
+		se $x \neq p_\mu$. Já para $x \in [\frac{1}{1},1)$, temos que $F_\mu(x) < \frac{1}{2}$, caindo no caso que acabamos de verificar. Esse resultado nos leva à conclusão de que $|F_\mu^n(x) - p_\mu| \rightarrow 0$ quando $n \rightarrow \infty$. Desse modo, 
+		$$F_\mu^n(x) \rightarrow p_\mu$$ quando $n \rightarrow \infty$.
+		\begin{center}
+			\begin{tikzpicture}[x=10cm, y=3cm]
+				
+				% ==========================================================
+				% EIXO PRINCIPAL E MARCAÇÕES
+				% ==========================================================
+				\draw[thick] (0,0) -- (1,0);
+				
+				% Marcações: 0, 1/2 e 1
+				\draw[thick] (0, 0.05) -- (0, -0.05) node[below=0.1cm] {$0$};
+				\draw[thick] (0.5, 0.05) -- (0.5, -0.05) node[below=0.1cm] {$1/2$};
+				\draw[thick] (1, 0.05) -- (1, -0.05) node[below=0.1cm] {$1$};
+				
+				% ==========================================================
+				% PONTO FIXO p_\mu (na primeira metade)
+				% ==========================================================
+				% Escolhi a coordenada 0.3 para representar p_\mu
+				\coordinate (P) at (0.3, 0);
+				\fill (P) circle (1.5pt);
+				% Rótulo movido para baixo para não trombar com as setas
+				\node[below=0.1cm] at (P) {$p_\mu$}; 
+				
+				% ==========================================================
+				% DINÂMICA EM TORNO DE p_\mu (3 PASSOS CURVOS)
+				% ==========================================================
+				% 1. À esquerda de p: 3 passos caminhando para a direita
+				% (Como vai da esquerda pra direita, "bend left" desenha por cima do eixo)
+				\draw[->, thick, >=stealth] (0.03, 0) to[bend left=45] (0.13, 0);
+				\draw[->, thick, >=stealth] (0.13, 0) to[bend left=45] (0.22, 0);
+				\draw[->, thick, >=stealth] (0.22, 0) to[bend left=45] (0.28, 0);
+				
+				% 2. Entre p e 1/2: 3 passos caminhando para a esquerda
+				% (Como vai da direita pra esquerda, "bend right" desenha por cima do eixo)
+				\draw[->, thick, >=stealth] (0.47, 0) to[bend right=45] (0.41, 0);
+				\draw[->, thick, >=stealth] (0.41, 0) to[bend right=45] (0.36, 0);
+				\draw[->, thick, >=stealth] (0.36, 0) to[bend right=45] (0.32, 0);
+				
+				% ==========================================================
+				% SALTO DA SEGUNDA METADE PARA A PRIMEIRA (FLUTUANTE)
+				% ==========================================================
+				% Seta curva cor de vinho saindo de y=0.2 e chegando em y=0.2
+				% (Não toca a reta em nenhum momento)
+				\draw[->, thick, >=stealth] (0.6, 0.3) to[bend right=35] (0.4, 0.3);
+				
+			\end{tikzpicture}
+			\captionof{figure}{Ilustração da conversão para $p_\mu$ com $1<\mu<2$.}
+		\end{center}
+		
 		O caso $2<\mu<3$ é mais complexo de ser analisado. Para esses valores de $\mu$, temos a localização do ponto fixo $p_\mu$ sendo $\frac{1}{2}<p_\mu<\frac{2}{3}$, ou seja, à direita do ponto crítico $\frac{1}{2}$, no lado onde a função é estritamente decrescente. Seja $\hat{p_\mu}$ o único ponto pertencente ao intervalo $(0, \frac{1}{2})$, onde a função $F_\mu$ é estritamente crescente, de modo que $F_\mu(\hat{p_\mu}) = p_\mu$.
 		
 		\begin{center}
