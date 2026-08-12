@@ -102,5 +102,17 @@
 		3. Existe uma órbita densa para $\sigma$ em $\Sigma_2$.
 	\end{proposicao}
 	
+	\begin{prova}
+		Seja $s$ um ponto periódico da forma $s = s_0s_1...s_{n-1}s_0s_1...s_{n-1}...$. Como temos a repetição de um bloco de tamanho $n$ e para cada entrada só existem duas possibilidades (0 ou 1), então a cardinalidade é 
+		$$2\cdot2\cdot2\cdot...2=2^n.$$
+		
+		Seja $a\in\Sigma_2$. Dado $\epsilon>0$, queremos que a órbita tem um ponto $s^*\in\Sigma_2$ se aproxime de $a$, ou seja, $d[\sigma^k(s^*),a]<\epsilon$.
+		Tomemos $n$ tal que $\frac{1}{2^n}<\epsilon$ e $s^*$ sendo a união de todas as sequências possíveis vista há pouco.
+		
+		$$\sigma^k(s^*)_i=a_i, i\leq n$$
+		$$d[\sigma^k(s^*),a]=\sum_{i=n+1}^{\infty}\frac{|\sigma^k(s^*)_i-a_i|}{2^i} \leq \sum_{i=n+1}^{\infty} \dfrac{1}{2^i} = \frac{1}{2^n} < \epsilon.$$
+		Portanto, existe uma órbita densa para $\sigma$ em $\Sigma_2$.
+	\end{prova}
+	
 	No próximo capítulo, mostraremos que o mapa shift em $\Sigma_2$ na verdade é o mesmo mapa como $F$ é em $\Lambda$. Desse modo, o mapa shift se torna um outro meio para estudar a dinâmica de $F$.
 \end{document}
