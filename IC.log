@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.4)  11 AUG 2026 18:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.4)  12 AUG 2026 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -890,25 +890,25 @@ Overfull \hbox (3.79497pt too wide) in paragraph at lines 89--90
 -tu-al-mente peri^^Sodicos. Qual-quer sequ^encia
  []
 
-) (capitulos/capitulo6ConjugacaoTopologica.tex [31]
+[31]) (capitulos/capitulo6ConjugacaoTopologica.tex [32]
 Cap\'{\i }tulo 6.
-[32
+[33
 
-] [33] [34] [35]) (capitulos/capitulo7Caos.tex [36]
+] [34] [35] [36]) (capitulos/capitulo7Caos.tex [37]
 Cap\'{\i }tulo 7.
-[37
+[38
 
-] [38] [39]) [40] (IC.aux)
+] [39] [40]) [41] (IC.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25696 strings out of 467871
- 667812 string characters out of 5417887
- 1297977 words of memory out of 5000000
- 54113 multiletter control sequences out of 15000+600000
+ 25697 strings out of 467871
+ 667833 string characters out of 5417887
+ 1298006 words of memory out of 5000000
+ 54114 multiletter control sequences out of 15000+600000
  643088 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,17n,118p,993b,2337s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -936,9 +936,9 @@ sers/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
 /amsfonts/cm/cmti12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/amsfonts/symbols/msam10.pfb><C:/Users/Cyborg/AppData/Local/Programs/
 MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on IC.pdf (41 pages, 809668 bytes).
+Output written on IC.pdf (42 pages, 811031 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
+ 260 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

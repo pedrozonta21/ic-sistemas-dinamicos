@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.4)  11 AUG 2026 00:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.4)  12 AUG 2026 17:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -779,33 +779,51 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 [1
 
 
-{C:/Users/Cyborg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-(capitulo7Caos.aux)
+{C:/Users/Cyborg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+LaTeX Warning: Reference `propriedadesDeSigma' on page 2 undefined on input lin
+e 48.
+
+[2] [3] [4] (capitulo7Caos.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 24462 strings out of 467871
- 636488 string characters out of 5417887
- 1181461 words of memory out of 5000000
- 52922 multiletter control sequences out of 15000+600000
- 634120 words of font info for 65 fonts, out of 8000000 for 9000
+ 24681 strings out of 467871
+ 641314 string characters out of 5417887
+ 1190463 words of memory out of 5000000
+ 53131 multiletter control sequences out of 15000+600000
+ 639104 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,6n,135p,755b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,16n,135p,755b,771s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmbx12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmmi12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Cyborg/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Cyborg/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Cyborg/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cy
-borg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on capitulo7Caos.pdf (2 pages, 103829 bytes).
+msfonts/cm/cmex10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Cyborg/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Cyborg/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Cyborg/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/
+Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r17.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr6.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Cyborg/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Cyborg/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/C
+yborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.
+pfb>
+Output written on capitulo7Caos.pdf (4 pages, 183220 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
+ 98 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
