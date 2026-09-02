@@ -5,17 +5,14 @@
 	
 	\section{Definições elementares na teoria dos sistemas dinâmicos discretos}
 	
-	No estudo de sistemas dinâmicos, temos definições que auxiliam não só a entender o comportamento do sistema, mas também a fazer previsões e estudar diferentes possibilidades ao fazer uma mudança mínima nas condições que regem a função.
+	O objetivo da Teoria dos Sistemas Dinâmicos é entender o comportamento assintótico das órbitas dos pontos do domínio. Uma órbita é o conjunto de todas a iteradas de uma função em um determinado ponto $x$, ou seja, $f(x), f^2(x), f^3(x),...$.
 	
 	\begin{definicao}
-		Seja $x_0 \in \mathbb{X}$ um valor inicial. Se $f(x_0) = x_0$, então $x_0$ é um ponto fixo.
+		Seja $x_0 \in \mathbb{X}$ um valor inicial e $n \in \mathbb{N}$. Se $f(x_0) = x_0$, então $x_0$ é um ponto fixo. Já se $f^n(x_0) = x_0$, então $x_0$ é um ponto periódico de período $n$.
 	\end{definicao}
 	\begin{exemplo}
 		Se $f(x) = x$, então todo ponto $x \in \mathbb{X}$ é fixo.
 	\end{exemplo}
-	\begin{definicao}
-		Seja $n \in \mathbb{N}$. Se $f^n(x_0) = x_0$, então $x_0$ é um ponto periódico de período $n$.
-	\end{definicao}
 	\begin{exemplo}
 		Se $f(x) = -x$, $x_0 \neq 0$ e $n \in \mathbb{N}$, então $x_0$ é periódico de período $2$, pois $f(x_0) = f^2(x_0) = f^4(x_0) = ... = f^{2n}(x_0)$.
 	\end{exemplo}
