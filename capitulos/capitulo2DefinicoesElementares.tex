@@ -5,8 +5,12 @@
 	
 	\section{Definições elementares na teoria dos sistemas dinâmicos discretos}
 	
-	O objetivo da Teoria dos Sistemas Dinâmicos é entender o comportamento assintótico das órbitas dos pontos do domínio. Uma órbita é o conjunto de todas a iteradas de uma função em um determinado ponto $x$, ou seja, $f(x), f^2(x), f^3(x),...$.
+	O objetivo da teoria dos sistemas dinâmicos é entender o comportamento assintótico das órbitas de um dado sistema. Essa teoria, em sistemas dinâmicos discretos, auxilia no entendimento do comportamento dos pontos $x, f(x), f(f(x)), f(f(f(x)))$ e assim por diante.
 	
+	\begin{definicao}
+			Denotamos a $n$-ésima composição de uma função $f$ com si mesma aplicada a $x$ por $f^n(x)$. (Isso não significa elevar $f(x)$ à $n$-ésima potência.) A órbita futura de $x$ é o conjunto de pontos $x, f(x), f^2(x), f^3(x), \dots$ e é denotada por $O^+(x)$. Se $f$ é um homeomorfismo, podemos definir a órbita completa de $x$, $O(x)$, como o conjunto de pontos $f^n(x)$ para $n \in \mathbb{Z}$, e a órbita passada de $x$, $O^-(x)$, como o conjunto de pontos $x, f^{-1}(x), f^{-2}(x), \dots$.
+	\end{definicao}
+
 	\begin{definicao}
 		Seja $x_0 \in \mathbb{X}$ um valor inicial e $n \in \mathbb{N}$. Se $f(x_0) = x_0$, então $x_0$ é um ponto fixo. Já se $f^n(x_0) = x_0$, então $x_0$ é um ponto periódico de período $n$.
 	\end{definicao}
@@ -22,13 +26,44 @@
 		Resolvendo: $\theta(2^n - 1) = 2k\pi \implies \theta = \dfrac{2k\pi}{2^n - 1}$.
 	\end{exemplo}
 	\begin{definicao}
-		Seja $n, i \in \mathbb{N}$ e $x_0 \in \mathbb{X}$. Se $f^{n+i}(x_0) = f^i(x_0)$, então $x_0$ é um ponto eventualmente periódico de período $i$, sendo que são necessárias primeiramente $n$ iteradas para se chegar até o ciclo.
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=1\textwidth]{imagens/desenho_eventualmente_periodico.png}
-			\caption{Ponto eventualmente periódico.}
-		\end{figure}
+		Seja $n, i \in \mathbb{N}$ e $x_0 \in \mathbb{X}$. Se $f^{n+i}(x_0) = f^i(x_0)$, então $x_0$ é um ponto eventualmente periódico de período $i$, sendo que são necessárias primeiramente $n$ iteradas para se chegar até o ciclo. É possível visualizar essa comportamento na figura abaixo.
+		\begin{center}
+			\begin{tikzpicture}[
+				dot/.style={circle, fill=black, inner sep=0pt, minimum size=3.5pt},
+				arrow/.style={->, >=stealth, thick}
+				]
+				
+				% Nós da linha horizontal
+				\node[dot, label=above:{$x_0$}] (n1) at (0, 0) {};
+				\node[dot, label=above:{$f(x_0)$}] (n2) at (1.8, 0) {};
+				\node[dot, label=above:{$\dots$}] (n3) at (3.6, 0) {};
+				\node[dot, label=above:{$f^n(x_0) = f^{n+i}(x_0)$}] (n4) at (5.4, 0) {};
+				\node[dot, label=above:{$f^{n+1}(x_0)$}] (n5) at (7.8, 0) {};
+				
+				% Nós do ciclo
+				\node[dot, label=right:{$f^{n+2}(x_0)$}] (n6) at (7.8, -1.8) {};
+				\node[dot, label=below:{$\dots$}] (n7) at (6.6, -3.0) {};
+				\node[dot, label=left:{$f^{n+(i-1)}(x_0)$}] (n8) at (5.4, -1.8) {};
+				
+				% Setas da linha horizontal
+				\draw[arrow] (n1) -- (n2);
+				\draw[arrow] (n2) -- (n3);
+				\draw[arrow] (n3) -- (n4);
+				\draw[arrow] (n4) -- (n5);
+				
+				% Setas do ciclo
+				\draw[arrow] (n5) -- (n6);
+				\draw[arrow, rounded corners=8pt] (n6) |- (n7);
+				\draw[arrow, rounded corners=8pt] (n7) -| (n8);
+				\draw[arrow] (n8) -- (n4);
+				
+			\end{tikzpicture}
+			\captionof{figure}{Ponto eventualmente periódico}
+		\end{center}
 	\end{definicao}
+	\begin{exemplo}
+		Seja $f(\theta) = 2\theta$ no círculo. Note que $f(0) = 0$ é fixo. Se $\theta = \frac{2k\pi}{2^n}$, então $f^n(\theta) = 2k\pi$, de modo que $\theta$ é eventualmente fixo.
+	\end{exemplo}
 	\begin{definicao}
 		Seja $n \in \mathbb{N}$ e p um ponto periódico de período n. Chamamos um ponto $x_0$ de futuramente assintótico a $p$ se $$\lim_{i \rightarrow \infty} f^{in}(x_0) = p$$
 		Caso p não seja periódico, definimos um ponto $x_0$ como futuramente assintótico a $p$ se $$|f^i(x_0) - f^i(p)| \rightarrow 0, i \rightarrow \infty$$
@@ -42,16 +77,15 @@
 		Se $f'(x_0) = 0$, chamamos esse ponto $x_0$ de ponto crítico da função. E ainda classificamos esse ponto como não degenerado, caso $f''(x_0) \neq 0$, ou degenerado, caso $f''(x_0) = 0$.
 	\end{definicao}
 	
+	\begin{exemplo}
+		$f(x)=x^2$ tem um ponto crítico não degenerado em 0, pois $f''(0) = 2 \neq 0$. Mas, para $f(x) = x^n$ com $n>2$, temos um ponto crítico degenerado em 0.
+	\end{exemplo}
+	
 	Essas definições introduzidas até aqui são utilizadas no estudo das órbitas dos pontos $x \in \mathbb{X}$ de um sistema dinâmico $(X, f)$.
 	
-	\section{Órbitas}
+	\section{Visão Geométrica de Órbitas}
 	
-	\begin{definicao}
-		A órbita futuramente assintótica de um ponto $x_0$ que é regido por uma função é denotada por $O^+(x_0) = \{x_0, f(x_0), f^2(x_0), f^3(x_0), ...\}$. Ou seja, essa órbita é o conjunto que abriga os pontos resultantes das iteradas da função $f$.
-		Caso $f$ seja um homeomorfismo, isto é, $f$ contínua, bijetora e com inversa contínua, definimos a órbita completa de um ponto $x_0$ (tanto futura quanto antigamente assintótica) por $O(x_0) = \{..., f^{-2}(x_0), f^{-1}(x_0), x_0, f(x_0), f^2(x_0), ...\}$. Se formos analisar apenas a órbita antigamente assintótica, denotamos o conjunto por $O^-(x_0)$.	
-	\end{definicao}
-	
-	Uma forma de analisar a órbitas dos pontos de uma função é através de estudos por meio de seu gráfico. Ao traçar a reta diagonal $y = x$, podemos aplicar uma técnica geométrica chamada retrato de fase, que auxilia a entender o comportamento assintótico dos pontos e a identificar os pontos fixos (que são aqueles onde a reta intersecta o gráfico). Para aplicar essa técnica, traçamos uma linha vertical no ponto inicial $(x_0, x_0)$ até encontrar o gráfico no ponto $(x_0, f(x_0))$. Então, agora fazemos uma linha horizontal iniciando em $(x_0, f(x_0))$ indo até encontrar a diagonal em $(f(x_0), f(x_0))$. Repetimos nesse momento a tração da linha vertical, e após isso a da linha horizontal, sucessivamente.
+	Uma forma de analisar a órbitas dos pontos de uma função é através de estudos por meio de seu gráfico. Ao traçar a reta diagonal $y = x$, podemos aplicar uma técnica chamada retrato de fase, que auxilia a entender o comportamento assintótico dos pontos e a identificar os pontos fixos (que são aqueles onde a reta intersecta o gráfico). Para aplicar essa técnica, traçamos uma linha vertical no ponto inicial $(x_0, x_0)$ até encontrar o gráfico no ponto $(x_0, f(x_0))$. Então, agora fazemos uma linha horizontal iniciando em $(x_0, f(x_0))$ indo até encontrar a diagonal em $(f(x_0), f(x_0))$. Repetimos nesse momento a tração da linha vertical, e após isso a da linha horizontal, sucessivamente.
 	
 	\begin{exemplo}\label{exemploSistemaDinamicoX^3}
 		Considere o sistema dinâmico $(\mathbb{R}, f)$, sendo $f(x) = x^3$ e um ponto $x_0$ do domínio no intervalo aberto $-1 < x < 1$. Temos que os pontos nesse intervalo convergem para o ponto fixo $x = 0$, pois $|f^i(x_0) - f(0)| \rightarrow 0, i \rightarrow \infty$.
@@ -83,4 +117,19 @@
 			\item $O^-(-1) = \{..., f^{-2}(-1), f^{-1}(-1), -1\}$.
 		\end{itemize}
 	\end{exemplo}
+	
+	\begin{exemplo}
+		Seja $\lambda \in \mathbb{R}$ e $T_\lambda(\theta) = \theta + 2\pi\lambda$.
+		As aplicações $T_\lambda$ comportam-se de forma bastante diferente dependendo da racionalidade ou irracionalidade de $\lambda$. Se $\lambda = p/q$, onde $p$ e $q$ são inteiros, então $T_\lambda^q(\theta) = \theta + 2\pi p \equiv \theta$, de modo que todos os pontos são fixos por $T_\lambda^q$. Quando $\lambda$ é irracional, a situação é bastante diferente. O seguinte resultado é conhecido como Teorema de Jacobi.
+	\end{exemplo}
+	
+	\begin{teorema}
+		Cada órbita $O(\theta)$ é densa em $S^1$ se $\lambda$ for irracional.
+	\end{teorema}
+	
+	\begin{prova}
+		Seja $\theta \in S^1$. Os pontos na órbita de $\theta$ são distintos, pois se $T_\lambda^n(\theta) = T_\lambda^m(\theta)$, teríamos $(n - m)\lambda \in \mathbb{Z}$, de modo que $n = m$. Qualquer conjunto infinito de pontos no círculo deve ter um ponto de acumulação. Assim, dado qualquer $\epsilon > 0$, devem existir inteiros $n$ e $m$ tais que $|T_\lambda^n(\theta) - T_\lambda^m(\theta)| < \epsilon$. Seja $k = n - m$. Então $|T_\lambda^k(\theta) - \theta| < \epsilon$.
+		
+		Agora, $T_\lambda$ preserva comprimentos em $S^1$. Consequentemente, $T_\lambda^k$ leva o arco conectando $\theta$ a $T_\lambda^k(\theta)$ no arco conectando $T_\lambda^k(\theta)$ e $T_\lambda^{2k}(\theta)$, o qual tem comprimento menor que $\epsilon$. Em particular, segue que os pontos $\theta, T_\lambda^k(\theta), T_\lambda^{2k}(\theta), \dots$ particionam $S^1$ em arcos de comprimento menor que $\epsilon$. Como $\epsilon$ era arbitrário, portanto cada órbita é densa em $S^1$.
+	\end{prova}
 \end{document}
