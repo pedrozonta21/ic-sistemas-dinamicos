@@ -3,23 +3,17 @@
 \begin{document}
 	\chapter{Hiperbolicidade}
 	
-	Até aqui, estamos estudando funções simples e conhecidas como mapas de um sistema, que muitas vezes nos dão um comportamento previsível e simples no estudo das iterações, ou seja, podemos descrever facilmente a dinâmica da função. No entanto, sistemas dinâmicos abrangem comportamentos mais robustos, onde pontos fixos/periódicos estão mais espalhados ao longo do sistema. Mapas com pontos hiperbólicos são mais comuns, e por isso classificaremos esses pontos neste capítulo.
-	
-	\section{Tipos de pontos periódicos}
-	
-	Vamos considerar funções de classe $C^1$, com $f'(x)$ contínua.
+	Em geral, na teoria de sistemas dinâmicos, o estudo assintótico de órbitas pode apresentar comportamentos mais robustos, onde pontos fixos e periódicos estão mais espalhados no domínio da dinâmica. Mapas com pontos hiperbólicos são mais comuns, e por isso classificaremos esse pontos neste capítulo.
 	
 	\begin{definicao}
 		Seja $p$ um ponto periódico de período $n$. Chamamos $p$ de hiperbólico se $|(f^n)'(p)| \neq 1$.
 	\end{definicao}
 	
 	\begin{exemplo}
-		Considere a função $f(x) = -\dfrac{x^3}{2}-\dfrac{x}{2}$. Temos que $x_1 = 0$ é ponto fixo, enquanto $x_2 = 1, x_3 = -1$ são pontos periódicos de período $2$. Desse modo, tomemos $f'(x) = -\dfrac{3x^2}{2} - \dfrac{1}{2}$ e $(f^{2})'(x)=\dfrac{\left(\dfrac{3}{4}(x^{3}+x)^{2}+1\right)(3x^{2}+1)}{4}$.
-		\begin{itemize}
-			\item $x_1$ é hiperbólico, pois $|f'(x_1)| = \dfrac{1}{2}$.
-			\item $x_2$ é hiperbólico, pois $|(f^2)'(x_2)| = 4$.
-			\item $x_3$ é hiperbólico, pois $|(f^2)'(x_3)| = 4$.
-		\end{itemize}
+		Considere a função $f(x) = -\dfrac{x^3}{2}-\dfrac{x}{2}$. Temos que $x_1 = 0$ é ponto fixo, enquanto $x_2 = 1, x_3 = -1$ são pontos periódicos de período $2$. Desse modo, temos $f'(x) = -\dfrac{3x^2}{2} - \dfrac{1}{2}$ e $(f^{2})'(x)=\dfrac{\left(\dfrac{3}{4}(x^{3}+x)^{2}+1\right)(3x^{2}+1)}{4}$. Assim, os pontos $x_1,x_2,x_3$ são hiperbólicos, já que
+			$$|f'(x_1)| = \dfrac{1}{2}$$
+			$$|(f^2)'(x_2)| = 4$$
+			$$|(f^2)'(x_3)| = 4.$$
 	\end{exemplo}
 	
 	\begin{definicao}
@@ -27,34 +21,20 @@
 	\end{definicao}
 	
 	\begin{proposicao}
-		Considere $p$ um ponto fixo hiperbólico com $|f'(p)| < 1$. Portanto, existe um intervalo aberto $I$ sobre $p$ de modo que, se $x_0 \in I$, então $$\lim_{n \rightarrow \infty} f^n(x_0) = p.$$
+		Considere $p$ um ponto fixo hiperbólico com $|f'(p)| < 1$, onde $f$ é uma função de classe $C^1$. Portanto, existe um intervalo aberto $I$ sobre $p$ de modo que, se $x_0 \in I$, então $$\lim_{n \rightarrow \infty} f^n(x_0) = p.$$
 	\end{proposicao}
 	
 	\begin{prova}
-		Como $f$ é de classe $C^1$, por definição o limite $$\lim_{h \rightarrow 0}\frac{f(x_0+h)-f(x_0)}{h}$$ existe $\forall x_0 \in (a,b)$, fazendo com que $f$ seja derivável no intervalo. Considere a igualdade 
-		$$f(x) - f(x_0) = \frac{f(x)-f(x_0)}{x-x_0}(x-x_0).$$
-		Tomando $\lim_{x \rightarrow x_0}$ nos dois lados da igualdade, temos que
-		$$\lim_{x \rightarrow x_0}f(x) - \lim_{x \rightarrow x_0}f(x_0) = 0$$
-		pois pela regra de produto e soma de limites, podemos separar no lado direito da igualdade o limite $\lim_{x \rightarrow x_0}(x - x_0)$. Com isso, 
-		$$\lim_{x \rightarrow x_0}(x - x_0) \implies \lim_{x \rightarrow x_0}x - \lim_{x \rightarrow x_0}x_0$$
-		mas, por definição, $$\lim_{x \rightarrow x_0}x = \lim_{x \rightarrow x_0}x_0 = x_0$$
-		logo, podemos concluir que $$\lim_{x \rightarrow x_0}(x - x_0) = 0.$$
-		De modo análogo, agora pela regra da soma, concluímos também que $$\lim_{x \rightarrow x_0}(f(x) - f(x_0)) \implies \lim_{x \rightarrow x_0}f(x) = f(x_0).$$
-		Isso nos dá o resultado de que podemos aplicar o Teorema do Valor Médio para dar segmento na prova dessa proposição.
-		Pelo TVM, $f(x_0) - p = f'(c)(x_0-p)$. Estamos supondo a existência de um intervalo $I = [p-\alpha, p+\alpha]$ onde $\forall x_0 \in I$ existe $0 < \epsilon < 1$ tal que $|f'(x_0)| < (1-\epsilon) < 1$. Logo,
-		$$|f'(x_0)| < (1-\epsilon) < 1 \implies
-		|f(x_0) - p| \leq (1-\epsilon)|x_0-p| < |x_0-p|$$
-		Considere $n,i \in \mathbb{N}$, com $i \rightarrow n$.Aplicando a função em $x_0$, temos
-		\[
-		\begin{aligned}
-			&|f^2(x_0) - p| \leq (1-\epsilon)|f(x_0)-p| \leq (1-\epsilon)^2|x_0-p| < |x_0-p|  \\
-			&|f^3(x_0) - p| \leq (1-\epsilon)|f^2(x_0) - p| \leq (1-\epsilon)^2|f(x_0) - p| \leq (1-\epsilon)^3|x_0 - p| < |x_0 - p| \\
-			&\vdots \\
-			&|f^n - p| \leq (1-\epsilon)^{i=1}|f^{n-1} - p| \leq (1-\epsilon)^{i+1}|f^{n-2} - p| \leq ...  \leq (1-\epsilon)^{i=n}|x_0 - p| \leq ... \leq |x_0-p|
-		\end{aligned}
-		\]
-		Simplificando para fazermos a análise, temos $|f^n(x_0) - p| \leq (1-\epsilon)^n|x_0 - p| < |x_0 - p|$. Isso significa que para $n \rightarrow \infty$, a distância para o ponto $p$ fica cada vez menor, e é justamente isso que diz a proposição.
+		Como $f$ é de classe $C^1$ e $|f'(p)| < 1$, existe $\epsilon>0$ e $0<A<1$ tal que $|f'(x)|<A, \forall x\in[p-\epsilon, p+\epsilon]$. Seja $x\in[p-\epsilon, p+\epsilon] - \{p\}$. Pelo Teorema do Valor Médio, existe $c$ entre $p$ e $x$ tal que
+		$$f'(c) = \frac{f(x)-f(p)}{x-p}=\frac{f(x)-p}{x-p} \implies |f(x)-p|=|f'(c)|\cdot|x-p| \leq A|x-p|<A\cdot\epsilon<\epsilon$$
+		Com isso, $f(x) \in [p-\epsilon, p+\epsilon]$ e, usando o mesmo argumento, $|f^2(x)-p|\leq A^2|x-p|<\epsilon$. Continuando dessa maneira, temos $f^n(x)\to p$.
 	\end{prova}
+	
+	\textbf{Observação:} Se $f^n(x)\to p$ quando $n \to \infty$, para cada $x \in I$, seque que o intervalo $I$ está contido na variedade estável $W^s(p)$ de $p$. A proposição anterior também é válida para pontos periódicos hiperbólicos $p$ de período $n$, com $|(f^n)'(p)|<1$.
+	
+	\begin{definicao}
+		Seja $p$ um ponto periódico hiperbólico de período $n$ com $|(f^n)'(p)|<1$. Esse ponto $p$ é chamado de ponto periódico atrator.
+	\end{definicao}
 	
 	\begin{definicao}
 		Um ponto fixo $p$ é chamado de ponto fixo repulsor quando $|f'(p)| > 1$.
