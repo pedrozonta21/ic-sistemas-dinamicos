@@ -28,14 +28,20 @@
 			
 			\item $S$ é sobrejetora:
 			
-			Seja 
-			$$I_{s_0s_1...} = \bigcap_{n=0}^{\infty} I_{s_0 s_1 \dots s_n} = I_{s_0} \cap F_\mu^{-1}(I_{s_1...s_n}).$$
-			Se $x \in I_{s_0s_1...}$, então, por definição, $x \in I_{s_0}, F_\mu(x) \in I_{s_1},...,F_\mu^n(x) \in I_{s_n}$. Logo, $S(x) = s_0s_1s_2...$ e portanto $S$ é sobrejetora.
-			
 			Primeiramente, observe que se $J \subset I$ é um intervalo fechado, então $F^{-1}(J)$ consiste de 2 subintervalos, um em $I_0$ e outro em $I_1$. Ver Figura...
 			
 			Dado $s=(s_0s_1s_2...)\in\Sigma_2$, vamos encontrar $x\in\Lambda$ tal que $S(x)=s$. Para isso, defina
-			$$I_{s_0s_1...s_n}=\{x\in I : x \in I_{s_0}, F_\mu(x) \in I_{s_1},...,F_\mu^n(x) \in I_{s_n}\} = $$
+			$$I_{s_0s_1...s_n}=\{x\in I : x \in I_{s_0}, F(x) \in I_{s_1},...,F^n(x) \in I_{s_n}\} = I_{s_0} \cap F^{-1}(I_{s_1}) \cap ... \cap F^{-n}(I_{s_n}).$$
+			
+			Assim, temos que $I_{s_0s_1...s_n}$ é uma sequência de intervalos fechados não-vazios. Note que
+			$$I_{s_0s_1...s_n} = I_{s_0} \cap F^{-1}(I_{s_1...s_n})$$
+			e, por indução, $I_{s_1...s_n}$ é um subintervalo não-vazio. Pelo observado acima, $F^{-1}(I_{s_1...s_n})$ consiste de dois intervalos fechados, um em $I_O$ e outro em $I_1$ e, portanto, $I_{s_0s_1...s_n} = I_{s_0} \cap F^{-1}(I_{s_1...s_n})$ é um intervalo fechado. Além disso, esses intervalos são encaixantes, pois 
+			$$I_{s_0...s_n} = I_{s_0...s_{n-1}} \cap F^{-n}(I_{s_n}) \subset I_{s_0...s_{n-1}}.$$
+			Consequentemente, pelo Teorema dos Intervalos Encaixantes, temos que 
+			$$\bigcap_{n \geq 0} I_{s_0...s_n} \neq \emptyset.$$
+			Por fim, note que se $x \in \bigcap_{n \geq 0} I_{s_0...s_n}$, então 
+			$$x \in I_{s_0}, F(x) \in I_{s_1}, F^2(x) \in I_{s_2}, ..., F^n(x) \in I_{s_n},...,$$
+			isto é, $S(x) = (s_0s_1...)$. Isso prova que $S$ é sobrejetora.
 			
 			\item $S$ é contínua:
 			
@@ -48,12 +54,12 @@
 			
 			Isso prova a continuidade de $S$.
 			
-			\item inversa contínua:
+			\item A inversa $S^{-1}$ contínua:
 			
-			Seja $s = s_0 s_1 \dots \in \Sigma_2$ e $\epsilon > 0$. Sabemos pela construção do conjunto de Cantor $\Lambda$ que o comprimento dos subintervalos da forma $I_{s_0 \dots s_n}$ tende a zero quando $n \to \infty$. Assim, podemos tomar $n$ tal que
-			$$|I_{s_0 \dots s_n}| < \epsilon $$
+			Seja $s = s_0 s_1 \dots \in \Sigma_2$ e $\epsilon > 0$. Sabemos pela construção do conjunto de Cantor $\Lambda$ que o comprimento dos subintervalos da forma $I_{s_0 \dots s_n}$ tende a zero quando $n \to \infty$. Assim, podemos tomar $n$ tal que o comprimento do intervalo  $I_{s_0...s_n}$ seja menor que $\epsilon$, isto é,
+			$$|I_{s_0 \dots s_n}| < \epsilon.$$
 			
-			Escolhemos arbitrariamente $\delta = \frac{1}{2^n}$. Seja $t \in \Sigma_2$ uma sequência qualquer tal que $d[s, t] < \delta$. Pela definição da métrica em $\Sigma_2$, isso garante que as sequências $s$ e $t$ coincidem em seus primeiros $n+1$ termos. 
+			Escolhemos $\delta = \frac{1}{2^n}$. Seja $t \in \Sigma_2$ uma sequência qualquer tal que $d[s, t] < \delta$. Pela definição da métrica em $\Sigma_2$, isso garante que as sequências $s$ e $t$ coincidem em seus primeiros $n+1$ termos. 
 			
 			Pela definição da aplicação de itinerário, se $s$ e $t$ começam com o bloco $s_0 \dots s_n$, então tanto $S^{-1}(s)$ quanto $S^{-1}(t)$ pertencem ao mesmo $I_{s_0 \dots s_n}$. 
 			Como $s$ e $t$ estão no mesmo intervalo, a distância entre eles não pode ser maior que o comprimento do mesmo.
