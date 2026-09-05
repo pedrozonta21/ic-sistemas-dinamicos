@@ -38,7 +38,7 @@
 	Em resumo, um mapa caótico possui três ingredientes: imprevisibilidade, indecomponibilidade e um elemento de regularidade. Um sistema caótico é imprevisível devido à dependência sensível às condições iniciais. Ele não pode ser dividido ou decomposto em dois subconjuntos abertos invariantes que não interajam sob a ação de $f$, devido à transitividade topológica. E, em meio a esse comportamento aleatório, temos um elemento de regularidade: o conjunto de pontos periódicos, que são densos.
 	
 	\begin{exemplo}
-		conteúdo...
+		O mapa $f: S^1 \to S^1$ dado por $f(\theta) = 2\theta$ é caótico. Como vimos, a distância angular entre dois pontos é duplicada sob iteração de $f$. Portanto, $f$ é sensível às condições iniciais. A transitividade topológica também segue dessa observação, uma vez que qualquer pequeno arco em $S^1$ é eventualmente expandido por algum $f^k$ para cobrir todo o $S^1$ e, em particular, qualquer outro arco em $S^1$.
 	\end{exemplo}
 	
 	\begin{teorema}
@@ -46,7 +46,7 @@
 	\end{teorema}
 	
 	\begin{prova}
-		Para mostrar que os pontos periódicos são densos, vamos nos aproveitar da conjugação topológica do mapa shift. Seja $s \in \Sigma_2$. Dado $\epsilon>0$, queremos $p \in Per(\sigma)$ tal que $d[s,p]<\epsilon$. Tomemos $n$ tal que $\frac{1}{2^n}<\epsilon$ e $p$ sendo construído com um bloco de $s$ de tamanho $n$.
+		Para mostrar que os pontos periódicos são densos, vamos nos aproveitar da conjugação topológica da aplicação \textit{shift}. Seja $s \in \Sigma_2$. Dado $\epsilon>0$, queremos $p \in Per(\sigma)$ tal que $d[s,p]<\epsilon$. Tomemos $n$ tal que $\frac{1}{2^n}<\epsilon$ e $p$ sendo construído com um bloco de $s$ de tamanho $n$.
 		$$p = s_0s_1...s_{n-1}s_0s_1...s_{n-1}...$$
 		$$d[s,p]=\sum_{i=n+1}^{\infty} \dfrac{|s_i-p_i|}{2^i} \leq \sum_{i=n+1}^{\infty} \dfrac{1}{2^i}=\sum_{i=n+1}^{\infty}\frac{1}{2^i} = \frac{1}{2^n}$$
 		mas, pelo Teorema da Proximidade,
