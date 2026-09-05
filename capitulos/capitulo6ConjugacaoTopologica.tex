@@ -131,9 +131,10 @@
 	\noindent\textbf{Observação:} Diferentemente da conjugação, a semi-conjugação não exige que $h$ seja injetora (logo, não é um homeomorfismo). Além disso, as semi-conjugações preservam órbitas densas e levam pontos periódicos de $f$ em pontos periódicos de $g$, embora o período possa ser menor (por exemplo, um ciclo de período 2 pode ser mapeado em um único ponto fixo).
 	
 	\begin{exemplo}
-		Seja $D : S^1 \to S^1$ a aplicação de duplicação no círculo unitário, dada por $D(\theta) = 2\theta$. Assim, $D$ simplesmente duplica o ângulo de qualquer ponto que esteja em $S^1$. E seja $Q_{-2}(x) = x^2 - 2$ onde $x \in [-2, 2]$. Então, $h : S^1 \to [-2, 2]$ dada por $h(\theta) = 2\cos(\theta)$, projeta o círculo de forma "dois-para-um" sobre $[-2, 2]$ (exceto nos dois pontos onde o círculo intercepta a reta real).  Ou seja, dois pontos gerados pelo ângulo $\theta$ acabam sendo levados em um único ponto na reta real.
+		Seja $D : S^1 \to S^1$ a aplicação de duplicação no círculo unitário, dada por $D(\theta) = 2\theta$. Assim, $D$ simplesmente duplica o ângulo de qualquer ponto que esteja em $S^1$. E seja $Q_{-2}(x) = x^2 - 2$ onde $x \in [-2, 2]$. Então, $h : S^1 \to [-2, 2]$ dada por $h(\theta) = 2\cos(\theta)$, projeta o círculo de forma "dois-para-um" sobre $[-2, 2]$ (exceto nos dois pontos onde o círculo intercepta a reta real).  Ou seja, dois pontos gerados pelo ângulo $\theta$ acabam sendo levados em um único ponto na reta real, conforme ilustrado pela Figura 
 		
-		\begin{center}
+		\begin{figure}
+			\centering
 			\begin{tikzpicture}[scale=1.3]
 				% Eixos X e Y
 				\draw[thick, ->] (-3, 0) -- (3, 0) node[right] {$x$};
@@ -177,13 +178,13 @@
 				\node[red, right] at ({2*cos(\ang)}, {sin(\ang)}) {$h$};
 				
 			\end{tikzpicture}
-			\captionof{figure}{Ilustração da semi-conjugação.}
-		\end{center}
+			\caption{Ilustração da semi-conjugação.}
+		\end{figure}
 		
 		Neste caso, temos que $h$ é uma semi-conjugação entre essas duas aplicações, pois
 		$$ h(D(\theta)) = 2\cos(2\theta) = 2(\cos^2(\theta) - \sin^2(\theta)) = 2(2\cos^2(\theta) - 1) = 4\cos^2(\theta) - 2. $$
 		Por outro lado, temos:
 		$$ Q_{-2}(h(\theta)) = (2\cos(\theta))^2 - 2 = 4\cos^2(\theta) - 2 = h(D(\theta)). $$
-		Portanto, essas aplicações de fato são semi-conjugadas.
+		Portanto, essas aplicações, de fato, são semi-conjugadas.
 	\end{exemplo}
 \end{document} 
