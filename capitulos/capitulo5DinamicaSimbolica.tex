@@ -50,7 +50,7 @@
 	
 	\begin{prova}
 		Se $s_i=t_i$ para $i\leq n$, então
-		$$d[s,t]=\sum_{i=0}^{n}\frac{|s_i-t_i|}{2^i} + \sum_{i=n+1}^{\infty}\frac{|s_i-t_i|}{2^i} \leq \underbrace{\sum_{i=n+1}^{\infty}\frac{1}{2^i}}_{\text{P.G. de razão 1/2}} = \frac{1}{2^n}$$
+		$$d[s,t]=\underbrace{\sum_{i=0}^{n}\frac{|s_i-t_i|}{2^i}}_{\text{0}} + \sum_{i=n+1}^{\infty}\frac{|s_i-t_i|}{2^i} \leq \underbrace{\sum_{i=n+1}^{\infty}\frac{1}{2^i}}_{\text{P.G. de razão 1/2}} = \frac{1}{2^n}$$
 		
 		Por outro lado, se $s_j \neq t_j$ para algum $j\leq n$, então devemos ter
 		$$d[s,t] = \frac{|s_0 - t_0|}{2^0} + \dots + \frac{|s_j - t_j|}{2^j} + \dots \geq \frac{|s_j - t_j|}{2^j} \geq \frac{1}{2^n}$$
