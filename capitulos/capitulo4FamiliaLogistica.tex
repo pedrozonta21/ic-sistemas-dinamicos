@@ -464,16 +464,16 @@
 		\captionof{figure}{Construção de Cantor clássico no intervalo $[0,1]$.}
 	\end{center}
 	
+	Para provar o próximo Teorema, isto é, que $\Lambda$ é um conjunto de Cantor, vamos considerar uma hipótese adicional sobre $\mu$ para ser utilizada na demonstração: Vamos assumir que $|F'(x)| > 1, \forall x \in I_0 \cup I_1$. O valor absoluto da derivada $|F_\mu'(x)|$ diminui à medida que nos aproximamos do ponto crítico $x = \frac{1}{2}$, que possui derivada igual a zero. Logo, o menor valor da derivada ocorre exatamente nas extremidades de $A_0$ visto no início desta seção. Como estamos tratando de valor absoluto e podemos aproveitar a simetria da parábola, vamos utilizar apenas uma das extremidades para realizar o cálculo.
+	$$\left|F'\left(\dfrac{1- \sqrt{1-\frac{4}{\mu}}}{2}\right)\right| = \sqrt{\mu^2 - 4\mu}$$
+	$$\text{e com isso, } \sqrt{\mu^2 - 4\mu} > 1 \implies \mu > 2+\sqrt{5}.$$
+	
 	\begin{teorema}
 		Se $\mu > 2+\sqrt{5}$, então $\Lambda$ é um conjunto de Cantor.
 	\end{teorema}
 	
 	\begin{prova}
-		Para garantir que $\Lambda$ é um conjunto de Cantor, precisaremos de uma hipótese adicional sobre $\mu$ para ser utilizada na demonstração: Vamos assumir que $|F'(x)| > 1, \forall x \in I_0 \cup I_1$.
-		O valor absoluto da derivada $|F_\mu'(x)|$ diminui à medida que nos aproximamos do ponto crítico $x = \frac{1}{2}$, que possui derivada igual a zero. Logo, o menor valor da derivada ocorre exatamente nas extremidades de $A_0$ visto no início desta seção. Como estamos tratando de valor absoluto e podemos aproveitar a simetria da parábola, vamos utilizar apenas uma das extremidades para realizar o cálculo.
-		$$\left|F'\left(\dfrac{1- \sqrt{1-\frac{4}{\mu}}}{2}\right)\right| = \sqrt{\mu^2 - 4\mu}$$
-		$$\sqrt{\mu^2 - 4\mu} > 1 \implies \mu > 2+\sqrt{5}.$$
-		Desse modo, existe $\lambda > 1$ tal que $|F'(x)|>\lambda, \forall x \in \Lambda$. Pela regra da cadeia,
+		Como $\mu>2+\sqrt{5}$ e, portanto, $|F_\mu'(x)|>1$ em $I_0 \cup I_1$, segue que existe $\lambda > 1$ tal que $|F'(x)|>\lambda, \forall x \in \Lambda$. Pela regra da cadeia,
 		$$|(F^n)'(x)| = \underbrace{|F'(F^{n-1}(x))|}_{> \lambda} \cdot \underbrace{|F'(F^{n-2}(x))|}_{> \lambda} \cdots \underbrace{|F'(x)|}_{> \lambda}$$
 		$$|(F^n)'(x)| > \lambda^n.$$
 		Escolha $[x,y] \subset \Lambda$. Logo, $|(F^n)'(a)| > \lambda^n, \forall a \in [x,y]$. Tomando $n$ tal que $\lambda^n|y-x| >1$, pelo Teorema do Valor Médio temos que
@@ -485,9 +485,12 @@
 		Uma vez que $\Lambda$ é a interseção aninhada de intervalos fechados, $\Lambda$ é fechado.
 		
 		Para provar que $\Lambda$ é perfeito, isto é, não possui pontos isolados, primeiro note que as extremidades de qualquer $A_k$ está em $\Lambda$, pois cada extremidade é levada no valor 1, e $F(1) = F(0) = 0$. Se um ponto $p \in \Lambda$ fosse isolado, qualquer ponto próximo deveria ser levado para $-\infty$, fazendo com que $p$ fosse um máximo local. Mas esse máximo corre apenas em $\frac{1}{2}$, que é levado para $-\infty$, contradizendo o fato de $p$ ser isolado. Portanto, $\Lambda$ é perfeito.
-		
-		\noindent\textbf{Observação:} Este teorema também é válido para $\mu > 4$, mas a prova é mais delicada e não será realizada neste relatório.
 	\end{prova}
+	
+	\textbf{Observação:} Este teorema também é válido para $\mu > 4$, mas a prova é mais delicada e não será realizada neste relatório.
+	
+	Assim, se $\mu>4$, compreendemos melhor o comportamento das órbitas de $F$. Em particular, temos que o conjunto de Julia de $F$ é $\Lambda$, isto é,
+	$$\Lambda=\{x \in [0,1]|(F^n(x))_{n\geq0} \text{ é limitado}\}$$.
 \end{document}
 
 
