@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.4)  5 SEP 2026 16:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.4)  5 SEP 2026 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -972,19 +972,25 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 [1
 
 {C:/Users/Cyborg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Overfull \hbox (7.7058pt too wide) in paragraph at lines 83--86
+\OT1/cmr/m/n/12 pode ser aces-sado usando o link []$\OT1/cmtt/m/n/12 https : / 
+/ github . com / pedrozonta21 / ic-[]sistemas-[]dinamicos$[]\OT1/cmr/m/n/12 .
+ []
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.77 	\newpage
-               [1] (IC.toc)
+l.87 	\newpage
+               [1] [2] (IC.toc)
 \tf@toc=\write5
 \openout5 = `IC.toc'.
 
- [2] [3]
-(capitulos/capitulo1SistemasDinamicosDiscretos.tex [4]
+ [3] [4]
+(capitulos/capitulo1SistemasDinamicosDiscretos.tex [5]
 Cap\'{\i }tulo 1.
-[5
+[6
 
 ]
 Overfull \hbox (10.31609pt too wide) in paragraph at lines 29--30
@@ -992,7 +998,7 @@ Overfull \hbox (10.31609pt too wide) in paragraph at lines 29--30
 pla um cres-ci-mento/decrescimento
  []
 
-[6]) (capitulos/capitulo2DefinicoesElementares.tex [7]
+[7]) (capitulos/capitulo2DefinicoesElementares.tex [8]
 Cap\'{\i }tulo 2.
 
 Overfull \hbox (24.06902pt too wide) in paragraph at lines 6--6
@@ -1000,28 +1006,28 @@ Overfull \hbox (24.06902pt too wide) in paragraph at lines 6--6
 din^amicos
  []
 
-[8
+[9
 
-] [9]
-<imagens/desenho_orbita_x3.png, id=152, 461.92575pt x 431.211pt>
+] [10]
+<imagens/desenho_orbita_x3.png, id=163, 461.92575pt x 431.211pt>
 File: imagens/desenho_orbita_x3.png Graphic file (type png)
 <use imagens/desenho_orbita_x3.png>
 Package pdftex.def Info: imagens/desenho_orbita_x3.png  used on input line 93.
 (pdftex.def)             Requested size: 241.84842pt x 225.76408pt.
- [10 <./imagens/desenho_orbita_x3.png>]
-<imagens/desenho_orbita_inversa_x3.png, id=165, 508.90125pt x 472.76625pt>
+ [11 <./imagens/desenho_orbita_x3.png>]
+<imagens/desenho_orbita_inversa_x3.png, id=176, 508.90125pt x 472.76625pt>
 File: imagens/desenho_orbita_inversa_x3.png Graphic file (type png)
 <use imagens/desenho_orbita_inversa_x3.png>
 Package pdftex.def Info: imagens/desenho_orbita_inversa_x3.png  used on input l
 ine 107.
 (pdftex.def)             Requested size: 314.39998pt x 292.08768pt.
- [11 <./imagens/desenho_orbita_inversa_x3.png>]) (capitulos/capitulo3Hiperbolic
-idade.tex [12]
+ [12 <./imagens/desenho_orbita_inversa_x3.png>]) (capitulos/capitulo3Hiperbolic
+idade.tex [13]
 Cap\'{\i }tulo 3.
-[13
+[14
 
-] [14]
-<imagens/desenho_familia_quadratica_com_parametro.png, id=199, 682.04813pt x 21
+] [15]
+<imagens/desenho_familia_quadratica_com_parametro.png, id=209, 682.04813pt x 21
 9.06844pt>
 File: imagens/desenho_familia_quadratica_com_parametro.png Graphic file (type p
 ng)
@@ -1029,7 +1035,7 @@ ng)
 Package pdftex.def Info: imagens/desenho_familia_quadratica_com_parametro.png  
 used on input line 125.
 (pdftex.def)             Requested size: 435.32419pt x 139.82558pt.
- [15 <./imagens/desenho_familia_quadratica_com_parametro.png>]
+ [16 <./imagens/desenho_familia_quadratica_com_parametro.png>]
 Overfull \hbox (2.89941pt too wide) in paragraph at lines 133--134
 []\OT1/cmr/bx/it/12 (Fam^^S^^Plia Quadr^^Satica) \OT1/cmr/m/it/12 To-me-mos o s
 is-tema din^amico $\OT1/cmr/m/n/12 (\U/msb/m/n/12 R\OML/cmm/m/it/12 ; f\OT1/cmr
@@ -1037,57 +1043,57 @@ is-tema din^amico $\OT1/cmr/m/n/12 (\U/msb/m/n/12 R\OML/cmm/m/it/12 ; f\OT1/cmr
 m/m/it/12 x; ^^V\OT1/cmr/m/n/12 ) =
  []
 
-<imagens/desenho_conjunto_estavel_1-4.jpg, id=209, 1606.0pt x 1353.055pt>
+<imagens/desenho_conjunto_estavel_1-4.jpg, id=219, 1606.0pt x 1353.055pt>
 File: imagens/desenho_conjunto_estavel_1-4.jpg Graphic file (type jpg)
 <use imagens/desenho_conjunto_estavel_1-4.jpg>
 Package pdftex.def Info: imagens/desenho_conjunto_estavel_1-4.jpg  used on inpu
 t line 148.
 (pdftex.def)             Requested size: 193.47577pt x 162.99962pt.
-[16 <./imagens/desenho_conjunto_estavel_1-4.jpg>]
-<imagens/desenho_conjunto_instavel_1-4.png, id=218, 1606.0pt x 1346.02875pt>
+[17 <./imagens/desenho_conjunto_estavel_1-4.jpg>]
+<imagens/desenho_conjunto_instavel_1-4.png, id=228, 1606.0pt x 1346.02875pt>
 File: imagens/desenho_conjunto_instavel_1-4.png Graphic file (type png)
 <use imagens/desenho_conjunto_instavel_1-4.png>
 Package pdftex.def Info: imagens/desenho_conjunto_instavel_1-4.png  used on inp
 ut line 158.
 (pdftex.def)             Requested size: 241.84842pt x 202.69661pt.
- [17 <./imagens/desenho_conjunto_instavel_1-4.png>]
-<imagens/desenho_conjunto_estavel_dois_pontos.png, id=224, 1606.0pt x 1363.0925
+ [18 <./imagens/desenho_conjunto_instavel_1-4.png>]
+<imagens/desenho_conjunto_estavel_dois_pontos.png, id=235, 1606.0pt x 1363.0925
 pt>
 File: imagens/desenho_conjunto_estavel_dois_pontos.png Graphic file (type png)
 <use imagens/desenho_conjunto_estavel_dois_pontos.png>
 Package pdftex.def Info: imagens/desenho_conjunto_estavel_dois_pontos.png  used
  on input line 185.
 (pdftex.def)             Requested size: 290.22105pt x 246.32362pt.
- [18 <./imagens/desenho_conjunto_estavel_dois_pontos.png>] [19]) (capitulos/cap
-itulo4FamiliaLogistica.tex [20]
+ [19 <./imagens/desenho_conjunto_estavel_dois_pontos.png>] [20]) (capitulos/cap
+itulo4FamiliaLogistica.tex [21]
 Cap\'{\i }tulo 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 15--18
 
  []
 
-[21
+[22
 
-] [22] [23] [24] [25] [26] [27]) (capitulos/capitulo5DinamicaSimbolica.tex
-[28]
+] [23] [24] [25] [26] [27] [28]) (capitulos/capitulo5DinamicaSimbolica.tex
+[29]
 Cap\'{\i }tulo 5.
-[29
+[30
 
-] [30] [31]
+] [31] [32]
 Overfull \hbox (3.79497pt too wide) in paragraph at lines 94--95
 []\OT1/cmr/m/n/12 Mas, nem to-dos os pon-tos $^^F[]$ s~ao peri^^Sodicos ou even
 -tu-al-mente peri^^Sodicos. Qual-quer sequ^encia
  []
 
-[32]) (capitulos/capitulo6ConjugacaoTopologica.tex [33]
+[33]) (capitulos/capitulo6ConjugacaoTopologica.tex [34]
 Cap\'{\i }tulo 6.
-[34
+[35
 
-] [35] [36] [37] [38]) (capitulos/capitulo7Caos.tex [39]
+] [36] [37] [38] [39]) (capitulos/capitulo7Caos.tex [40]
 Cap\'{\i }tulo 7.
-[40
+[41
 
-] [41]) (IC.bbl [42]) [43
+] [42]) (IC.bbl [43]) [44
 
 ] (IC.aux)
  ***********
@@ -1098,11 +1104,11 @@ Package rerunfilecheck Info: File `IC.out' has not changed.
 (rerunfilecheck)             Checksum: AD9C068EE9C220D3FD0D2A5B9214075F;2543.
  ) 
 Here is how much of TeX's memory you used:
- 33836 strings out of 467871
- 798132 string characters out of 5417887
- 1429212 words of memory out of 5000000
- 62002 multiletter control sequences out of 15000+600000
- 639817 words of font info for 84 fonts, out of 8000000 for 9000
+ 33842 strings out of 467871
+ 798194 string characters out of 5417887
+ 1429226 words of memory out of 5000000
+ 62004 multiletter control sequences out of 15000+600000
+ 639986 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,20n,118p,997b,2428s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Cyborg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
@@ -1124,12 +1130,13 @@ ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cyborg/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Cyborg/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/User
 s/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pf
-b><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sy
-mbols/msam10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/symbols/msbm10.pfb>
-Output written on IC.pdf (44 pages, 806794 bytes).
+b><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmtt12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/symbols/msam10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on IC.pdf (45 pages, 817924 bytes).
 PDF statistics:
- 517 PDF objects out of 1000 (max. 8388607)
- 151 named destinations out of 1000 (max. 500000)
+ 532 PDF objects out of 1000 (max. 8388607)
+ 154 named destinations out of 1000 (max. 500000)
  155 words of extra memory for PDF output out of 10000 (max. 10000000)
 
