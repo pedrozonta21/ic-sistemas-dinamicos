@@ -39,20 +39,18 @@
 	\end{proposicao}
 	
 	\begin{prova}
-		Temos $d[s,t] \geq 0$ para qualquer $s,t \in \Sigma_2$, e $d(s,t)=0$ se, e somente se, $s_i=t_i, \forall i$. Se tratando de valor absoluto, temos que $|s_i-t_i|=|t_i-s_i|$, então $d[s,t] = d[t,s]$. Por fim, se $r,s \text{ e } t \in \Sigma_2$, temos que $|r_i-t_i|\leq|r_i-s_i|+|s_i-t_i|$. Desse modo, concluímos que $d[r,t]\leq d[r,s]+d[s,t]$.
+		Temos $d[s,t] \geq 0$ para qualquer $s,t \in \Sigma_2$, e $d[s,t]=0$ se, e somente se, $s_i=t_i, \forall i$. Se tratando de valor absoluto, temos que $|s_i-t_i|=|t_i-s_i|$, então $d[s,t] = d[t,s]$. Por fim, se $r,s \text{ e } t \in \Sigma_2$, temos que $|r_i-t_i|\leq|r_i-s_i|+|s_i-t_i|$. Desse modo, concluímos que $d[r,t]\leq d[r,s]+d[s,t]$.
 	\end{prova}
 	
 	Essa métrica $d$ nos permite decidir quais subconjuntos de $\Sigma_2$ são abertos e quais são fechados, bem como quais sequências estão próximas uma das outras.
 	
 	\begin{teorema}
-		\textbf{Teorema da Proximidade}: Seja $s,t \in \Sigma_2$ e suponha $s_i=t_i$ para $i=0,1,...,n$. Então $d[s,t] \leq \frac{1}{2^n}$. Por outro lado, se $d[s,t]<\frac{1}{2^n}$, então $s_i=t_i$ para $i\leq n$.
+		\textbf{(Teorema da Proximidade)} Seja $s,t \in \Sigma_2$ e suponha $s_i=t_i$ para $i=0,1,...,n$. Então $d[s,t] \leq \frac{1}{2^n}$. Por outro lado, se $d[s,t]<\frac{1}{2^n}$, então $s_i=t_i$ para $i\leq n$.
 	\end{teorema}
 	
 	\begin{prova}
 		Se $s_i=t_i$ para $i\leq n$, então
-		$$d[s,t]=\sum_{i=0}^{n}\frac{|s_i-t_i|}{2^i} + \sum_{i=n+1}^{\infty}\frac{|s_i-t_i|}{2^i} \leq \underbrace{\sum_{i=n+1}^{\infty}\frac{1}{2^i}}_{\text{P.G. de razão 1/2}}$$
-		$$d[s,t]=\sum_{i=0}^{n}\frac{|s_i-t_i|}{2^i} + \sum_{i=n+1}^{\infty}\frac{|s_i-t_i|}{2^i} \leq \frac{1}{2^n}$$
-		Consequentemente, se $d[s,t] < \frac{1}{2}$, então $s_i=t_i, \forall i\leq n$.
+		$$d[s,t]=\sum_{i=0}^{n}\frac{|s_i-t_i|}{2^i} + \sum_{i=n+1}^{\infty}\frac{|s_i-t_i|}{2^i} \leq \underbrace{\sum_{i=n+1}^{\infty}\frac{1}{2^i}}_{\text{P.G. de razão 1/2}} = \frac{1}{2^n}$$
 		
 		Por outro lado, se $s_j \neq t_j$ para algum $j\leq n$, então devemos ter
 		$$d[s,t] = \frac{|s_0 - t_0|}{2^0} + \dots + \frac{|s_j - t_j|}{2^j} + \dots \geq \frac{|s_j - t_j|}{2^j} \geq \frac{1}{2^n}$$
