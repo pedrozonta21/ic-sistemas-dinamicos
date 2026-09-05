@@ -58,58 +58,59 @@
 	\begin{exemplo}
 		Cada um dos mapas na figura ... satisfaz $f(0) = 0$ e $f'(0)=1$, mas cada um possui um retrato de fase diferente próximo de $0$. em a), o mapa $f(x)=x+x^3$ tem um ponto repulsor em $0$. Em b), o mapa $f(x)=x-x^3$ tem um ponto fixo atrator em $0$. Já em c), o mapa $f(x)=x+x^2$ possui um ponto repulsor à direita mas atrator à esquerda. Um ponto fixo $p$ com $|f'(p)|=1$ é chamado de neutro ou indiferente.
 		\begin{center}
-		\begin{tikzpicture}[
-			line/.style={thick},
-			dot/.style={circle, fill=black, inner sep=0pt, minimum size=4pt},
-			arrow/.style={->, >={Stealth[length=2.5mm, width=2mm]}, thick}
-			]
-			
-			% ================= ITEM A: Ambos para fora (repulsor) =================
-			\begin{scope}[shift={(0, 2.4)}]
-				\node[anchor=east] at (-4.2, 0) {\textit{a)}};
-				\draw[line] (-4.2, 0) -- (4.2, 0);
-				\node[dot] at (0,0) {};
+			\begin{tikzpicture}[
+				line/.style={thick},
+				dot/.style={circle, fill=black, inner sep=0pt, minimum size=4pt},
+				arrow/.style={->, >={Stealth[length=2.5mm, width=2mm]}, thick}
+				]
 				
-				% Esquerda: arcos apontando para a esquerda (<-)
-				\draw[arrow] (-0.3, 0) to[out=130, in=50] (-1.5, 0);
-				\draw[arrow] (-1.5, 0) to[out=130, in=50] (-3.2, 0);
+				% ================= ITEM A: Ambos para fora (repulsor) =================
+				\begin{scope}[shift={(0, 2.4)}]
+					\node[anchor=east] at (-4.2, 0) {\textit{a)}};
+					\draw[line] (-4.2, 0) -- (4.2, 0);
+					\node[dot] at (0,0) {};
+					
+					% Esquerda: arcos apontando para a esquerda (<-)
+					\draw[arrow] (-0.3, 0) to[out=130, in=50] (-1.5, 0);
+					\draw[arrow] (-1.5, 0) to[out=130, in=50] (-3.2, 0);
+					
+					% Direita: arcos apontando para a direita (->)
+					\draw[arrow] (0.3, 0) to[out=50, in=130] (1.5, 0);
+					\draw[arrow] (1.5, 0) to[out=50, in=130] (3.2, 0);
+				\end{scope}
 				
-				% Direita: arcos apontando para a direita (->)
-				\draw[arrow] (0.3, 0) to[out=50, in=130] (1.5, 0);
-				\draw[arrow] (1.5, 0) to[out=50, in=130] (3.2, 0);
-			\end{scope}
-			
-			% ================= ITEM B: Ambos para dentro (atrator) =================
-			\begin{scope}[shift={(0, 1.2)}]
-				\node[anchor=east] at (-4.2, 0) {\textit{b)}};
-				\draw[line] (-4.2, 0) -- (4.2, 0);
-				\node[dot] at (0,0) {};
+				% ================= ITEM B: Ambos para dentro (atrator) =================
+				\begin{scope}[shift={(0, 1.2)}]
+					\node[anchor=east] at (-4.2, 0) {\textit{b)}};
+					\draw[line] (-4.2, 0) -- (4.2, 0);
+					\node[dot] at (0,0) {};
+					
+					% Esquerda: arcos apontando para a direita (->)
+					\draw[arrow] (-3.2, 0) to[out=50, in=130] (-1.5, 0);
+					\draw[arrow] (-1.5, 0) to[out=50, in=130] (-0.3, 0);
+					
+					% Direita: arcos apontando para a esquerda (<-)
+					\draw[arrow] (3.2, 0) to[out=130, in=50] (1.5, 0);
+					\draw[arrow] (1.5, 0) to[out=130, in=50] (0.3, 0);
+				\end{scope}
 				
-				% Esquerda: arcos apontando para a direita (->)
-				\draw[arrow] (-3.2, 0) to[out=50, in=130] (-1.5, 0);
-				\draw[arrow] (-1.5, 0) to[out=50, in=130] (-0.3, 0);
+				% ================= ITEM C: Da esquerda para a direita =================
+				\begin{scope}[shift={(0, 0)}]
+					\node[anchor=east] at (-4.2, 0) {\textit{c)}};
+					\draw[line] (-4.2, 0) -- (4.2, 0);
+					\node[dot] at (0,0) {};
+					
+					% Esquerda: arcos apontando para a direita (->)
+					\draw[arrow] (-3.2, 0) to[out=50, in=130] (-1.5, 0);
+					\draw[arrow] (-1.5, 0) to[out=50, in=130] (-0.3, 0);
+					
+					% Direita: arcos apontando para a direita (->)
+					\draw[arrow] (0.3, 0) to[out=50, in=130] (1.5, 0);
+					\draw[arrow] (1.5, 0) to[out=50, in=130] (3.2, 0);
+				\end{scope}
 				
-				% Direita: arcos apontando para a esquerda (<-)
-				\draw[arrow] (3.2, 0) to[out=130, in=50] (1.5, 0);
-				\draw[arrow] (1.5, 0) to[out=130, in=50] (0.3, 0);
-			\end{scope}
-			
-			% ================= ITEM C: Da esquerda para a direita =================
-			\begin{scope}[shift={(0, 0)}]
-				\node[anchor=east] at (-4.2, 0) {\textit{c)}};
-				\draw[line] (-4.2, 0) -- (4.2, 0);
-				\node[dot] at (0,0) {};
-				
-				% Esquerda: arcos apontando para a direita (->)
-				\draw[arrow] (-3.2, 0) to[out=50, in=130] (-1.5, 0);
-				\draw[arrow] (-1.5, 0) to[out=50, in=130] (-0.3, 0);
-				
-				% Direita: arcos apontando para a direita (->)
-				\draw[arrow] (0.3, 0) to[out=50, in=130] (1.5, 0);
-				\draw[arrow] (1.5, 0) to[out=50, in=130] (3.2, 0);
-			\end{scope}
-			
-		\end{tikzpicture}
+			\end{tikzpicture}
+			\captionof{figure}{Retrato de fase de a)$f(x)=x+x^3$, b) $f(x)=x-x^3$, c)$f(x)=x+x^2$.}
 		\end{center}
 	\end{exemplo}
 	
