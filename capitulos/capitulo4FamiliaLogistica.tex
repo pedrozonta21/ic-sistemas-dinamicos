@@ -100,9 +100,10 @@
 			p_\mu < F_\mu(x) < x, \quad p_\mu<x<\frac{1}{2}
 		\end{array}
 		\]
-		Assim, se $0<x<p_\mu<x'\leq\frac{1}{2}$, devemos ter $F_\mu^n(x)<F_\mu^{n+1}(x)<p_\mu<F_\mu^{n+1}(x')<F_\mu^n(x')$ para todo inteiro positivo $n$. Como as órbitas $(F_\mu^n(x))_n$ e $(F_\mu^n(x'))_n$ são sequências monótonas e limitadas, elas convergem para o ponto fixo $p_\mu$. Já para $x\in[\frac{1}{2},1]$, temos que $F_\mu(x)<\frac{1}{2}$, caindo no caso que acabamos de verificar.
+		Assim, se $0<x<p_\mu<x'\leq\frac{1}{2}$, devemos ter $F_\mu^n(x)<F_\mu^{n+1}(x)<p_\mu<F_\mu^{n+1}(x')<F_\mu^n(x')$ para todo inteiro positivo $n$. Como as órbitas $(F_\mu^n(x))_n$ e $(F_\mu^n(x'))_n$ são sequências monótonas e limitadas, elas convergem para o ponto fixo $p_\mu$. Já para $x\in[\frac{1}{2},1]$, temos que $F_\mu(x)<\frac{1}{2}$, caindo no caso que acabamos de verificar. É possível visualizar essa dinâmica na Figura \ref{convergenciaParaPmu}.
 		
-		\begin{center}
+		\begin{figure}[H]
+			\centering
 			\begin{tikzpicture}[x=10cm, y=3cm]
 				
 				% ==========================================================
@@ -147,10 +148,11 @@
 				\draw[->, thick, >=stealth] (0.6, 0.3) to[bend right=35] (0.4, 0.3);
 				
 			\end{tikzpicture}
-			\captionof{figure}{Ilustração da conversão para $p_\mu$ com $1<\mu<2$.}
-		\end{center}
+			\caption{Ilustração da conversão para $p_\mu$ com $1<\mu<2$.}
+			\label{convergenciaParaPmu}
+		\end{figure}
 		
-		O caso $2<\mu<3$ é mais complexo de ser analisado. Para esses valores de $\mu$, temos a localização do ponto fixo $p_\mu$ sendo $\frac{1}{2}<p_\mu<\frac{2}{3}$, ou seja, à direita do ponto crítico $\frac{1}{2}$, no lado onde a função é estritamente decrescente. Seja $\hat{p_\mu}$ o único ponto pertencente ao intervalo $(0, \frac{1}{2})$, onde a função $F_\mu$ é estritamente crescente, de modo que $F_\mu(\hat{p_\mu}) = p_\mu$.
+		O caso $2<\mu<3$ é mais difícil de ser analisado. Para esses valores de $\mu$, temos a localização do ponto fixo $p_\mu$ sendo $\frac{1}{2}<p_\mu<\frac{2}{3}$, ou seja, à direita do ponto crítico $\frac{1}{2}$, no lado onde a função é estritamente decrescente. Seja $\hat{p_\mu}$ o único ponto pertencente ao intervalo $(0, \frac{1}{2})$, onde a função $F_\mu$ é estritamente crescente, de modo que $F_\mu(\hat{p_\mu}) = p_\mu$.
 		
 		\begin{center}
 			\begin{tikzpicture}[x=10cm, y=2cm]
