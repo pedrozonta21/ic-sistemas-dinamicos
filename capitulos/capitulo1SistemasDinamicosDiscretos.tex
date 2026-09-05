@@ -3,6 +3,10 @@
 \begin{document}
 	\chapter{Sistemas dinâmicos discretos}
 	
+	O objetivo deste capítulo é trazer exemplos de sistemas dinâmicos discretos para mostrar como eles ocorrem. Primeiramente, o termo "discreto" se refere à forma como o tempo é tratado: ele avança em passos contáveis $(n=0,1,2,3,...)$. Dado um valor inicial $x$, as iteradas da função exponencial, isto é,
+	$$x, e^x, e^{e^x}, e^{e^{e^{x}}}, ...$$
+	formam um exemplo de um sistema dinâmico discreto.
+	
 	\section{Exemplos de sistemas dinâmicos discretos}
 	
 	\begin{definicao}
@@ -23,6 +27,18 @@
 	\end{enumerate}
 	
 	Assim sendo, um sistema dinâmico mais robusto que contempla um crescimento/decrescimento com mais variáveis é dado por $f(x) = kx(1 - L)$, onde $k \in \mathbb{R}$ e $L$ é o limite populacional suportado pelo sistema. Nesse caso, utilizamos L como proporção. Esse formato de sistema dinâmico é denominado família logística.
+	
+	\begin{exemplo}
+		Vamos assumir que $L = 1$ seja o valor limite. Neste caso, não estamos falando agora sobre populações inteiras, mas sim sobre uma porcentagem da população. $P_n$ representa a porcentagem da população limite na geração $n$. Assume-se, então, que a população satisfaça a seguinte equação de diferenças:
+		$$P_{n+1} = kP_n(1 - P_n),$$
+		onde $k \in \mathbb{R}$.Podemos escrever $x = P_0$ e $f(x) = kx(1 - x)$. Então teremos:
+		\begin{align*}
+			P_1 &= f(x) \\
+			P_2 &= f(f(x)) \\
+			P_3 &= f(f(f(x))),
+		\end{align*}
+		e assim por diante.
+	\end{exemplo}
 	
 	\begin{exemplo}\label{exemplo1DeSistemaDinamico}
 		Seja $f(x) = 3.12x(1 - x)$. Tomando uma condição inicial $x_0 = 0.33$ (33\% da capacidade limite), as iteradas em $f$ nos dá a população em cada geração.
