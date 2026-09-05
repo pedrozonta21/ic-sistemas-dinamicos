@@ -69,20 +69,20 @@
 		A aplicação shift $\sigma:\Sigma_2 \rightarrow \Sigma_2$ é dado por $\sigma(s_0s_1s_2...)=(s_1s_2s_3...).$
 	\end{definicao}
 	
-	A aplicação \textit{shift} elimina a primeira entrada de uma sequência, deslocando todas as demais entradas para a esquerda. Claramente, $\sigma$ é uma função sobrejetora, mas não não é injetora, visto que $\sigma(0s_1s_2s_3...)=\sigma(1s_1s_2s_3...)=(s_1s_2s_3...)$ para qualquer sequência $s_1s_2s_3... \in \Sigma_2$. Além disso, na métrica definida acima, $\sigma$ é uma função contínua.
+	A aplicação \textit{shift} elimina a primeira entrada de uma sequência, deslocando todas as demais entradas para a esquerda. Claramente, $\sigma$ é uma função sobrejetora, mas não não é injetora, visto que $\sigma(0s_1s_2s_3...)=\sigma(1s_1s_2s_3...)=(s_1s_2s_3...)$ para qualquer sequência $(s_1s_2s_3...) \in \Sigma_2$. Além disso, na métrica definida acima, $\sigma$ é uma função contínua.
 	
 	\begin{proposicao}
 		$\sigma:\Sigma_2 \rightarrow \Sigma_2$ é contínua.
 	\end{proposicao}
 	
 	\begin{prova}
-		Seja $\epsilon > 0$ e $s=(s_0s_1s_2...)$. Tomemos $n$ tal que $\frac{1}{2^n}<\epsilon$. Seja $\delta=\frac{1}{2^{n+1}}$.\\
+		Seja $\epsilon > 0$ e $s=(s_0s_1s_2...) \in \Sigma_2$. Tomemos $n$ tal que $\frac{1}{2^n}<\epsilon$. Seja $\delta=\frac{1}{2^{n+1}}$.\\
 		Queremos $d[s,t]<\delta \implies d[\sigma(s),\sigma(t)] \leq \frac{1}{2^n} < \epsilon$. Se $t=(t_0t_1t_2...)$ satisfaz $d[s,t] < \delta$, então pela métrica $d$, $s_i = t_i$ para $i\leq n+1$.
 		
 		$$d[s,t] < \frac{1}{2^{n+1}} \implies \underbrace{d[\sigma(s),\sigma(t)] \leq \frac{1}{2^n} < \epsilon}_{\parbox{6cm}{\centering \small Como $\sigma$ retira a primeira entrada, temos agora $s_i=t_i$ para $i \le n$, tornando a desigualdade válida pelo Teorema da Proximidade.}}$$
 	\end{prova}
 	
-	No próximo capítulo, mostraremos que o mapa shift é um modelo exato para o mapa logístico $F_\mu$ quando $\mu>4$. Por enquanto estamos mostrando que a dinâmica de $\sigma$ pode ser totalmente compreendida estudando as sequências. Por exemplo, pontos periódicos são representados por sequências que se repetem, da forma $s=(s_0...s_{n-1}s_0...s_{n-1}...).$. Por isso que existem exatamente $2^n$ pontos periódicos em $\sigma$, cada um gerado por uma das $2^n$ sequências finitas de 0s e 1s de tamanho $n$.
+	No próximo capítulo, mostraremos que a aplicação \textit{shift} é um modelo exato para o mapa logístico $F_\mu$ quando $\mu>4$. Por enquanto estamos mostrando que a dinâmica de $\sigma$ pode ser totalmente compreendida estudando as sequências. Por exemplo, pontos periódicos são representados por sequências que se repetem, da forma $s=(s_0...s_{n-1}s_0...s_{n-1}...).$. Por isso que existem exatamente $2^n$ pontos periódicos em $\sigma$, cada um gerado por uma das $2^n$ sequências finitas de 0s e 1s de tamanho $n$.
 
 	\vspace{-\baselineskip}
 	Pontos eventualmente periódicos também são fáceis de reconhecer. Uma sequência da forma $(s_0...s_n111)$ é eventualmente fixa, enquanto para $\sigma$, qualquer sequência que eventualmente se repete se torna eventualmente periódica.
