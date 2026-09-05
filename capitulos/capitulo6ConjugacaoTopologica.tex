@@ -72,7 +72,7 @@
 		Portanto, $S$ é de fato um homeomorfismo.
 	\end{prova}
 	
-	O teorema acima mostra que, como conjuntos, $\Lambda$ e $\Sigma_2$ são os mesmos. Mais importante, a aplicação $S$ dá uma equivalência entre as dinâmicas de $F$ e $\simga$.
+	O teorema acima mostra que, como conjuntos, $\Lambda$ e $\Sigma_2$ são os mesmos. Mais importante, a aplicação $S$ dá uma equivalência entre as dinâmicas de $F$ e $\sigma$.
 	
 	\begin{definicao}
 		Sejam $f: A \rightarrow A$ e $g: B \rightarrow B$ duas funções. Dizemos que $f$ e $g$ são topologicamente conjugadas se existe um homeomorfismo $h: A \rightarrow B$ tal que $h \circ f = g \circ h$. A equação $h \circ f = g \circ h$ é dita equação de conjugação e o homeomorfismo $h$ é dito conjugação topológica.
@@ -80,6 +80,8 @@
 	
 	\begin{exemplo}
 		Se $c<\frac{1}{4}$ e $\mu>1$, então as funções $Q_c:\mathbb{R}\to\mathbb{R}$ e $F_\mu:\mathbb{R}\to\mathbb{R}$, definidas por $Q_c = x^2 + c$ e $F_\mu(x)=\mu\/x(1-x)$ são topologicamente conjugadas pela função $h:\mathbb{R}\to\mathbb{R}$ definida por $h(x)=ax+b$.
+		
+		De fato, $Q_c \circ h(x)=(ax+b)^2+c$ e $h \circ F_\mu(x)=a(\mu\/x(1-x))+b$.
 	\end{exemplo}
 	
 	Funções que são topologicamente conjugados são completamente equivalentes em termos de dinâmica. Pontos periódicos e fixos, órbitas e densidade são preservados na transição. Desse modo, estudar a dinâmica em $g$ é a mesma coisa que estudar a dinâmica em $f$.
@@ -94,7 +96,7 @@
 	\begin{prova}
 		Um ponto $x$ em $\Lambda$ pode ser definido pela sequência aninhada de intervalos
 		$$ \bigcap_{n \ge 0} I_{s_0 s_1 \dots s_n} $$
-		determinada pelo itinerário $S(x)$. Por definição, sabemos que:
+		determinada pelo itinerário $S(x)$. Sabemos que:
 		$$ I_{s_0 \dots s_n} = I_{s_0} \cap F_\mu^{-1}(I_{s_1}) \cap F_\mu^{-2}(I_{s_2}) \cap \dots \cap F_\mu^{-n}(I_{s_n}) $$
 		
 		Aplicando a função $F_\mu$ a ambos os lados da igualdade, temos
