@@ -30,6 +30,66 @@
 			
 			Primeiramente, observe que se $J \subset I$ é um intervalo fechado, então $F^{-1}(J)$ consiste de 2 subintervalos, um em $I_0$ e outro em $I_1$. Ver Figura...
 			
+			\begin{figure}
+				\centering
+				\begin{tikzpicture}[scale=1.2, >=Stealth]
+					
+					% Definição dos pontos dos intervalos
+					\def\ymin{1.3}
+					\def\ymax{2.8}
+					\def\xone{0.323}   % Interseção ymin (ramo esquerdo)
+					\def\xtwo{0.794}   % Interseção ymax (ramo esquerdo)
+					\def\xthree{3.206} % Interseção ymax (ramo direito)
+					\def\xfour{3.677}  % Interseção ymin (ramo direito)
+					
+					% Pontos médios dos intervalos no eixo X
+					\def\midleft{0.558}
+					\def\midright{3.441}
+					
+					% Eixos cartesianos
+					\draw[thick, ->] (0, -0.3) -- (0, 4.5) node[above] {$y$};
+					\draw[thick, ->] (-0.3, 0) -- (4.3, 0) node[right] {$x$};
+					
+					% Reta y = x (cinza)
+					\draw[thick, gray!60] (0,0) -- (3.8, 3.8);
+					
+					% Parábola F_mu (azul)
+					\draw[very thick, blue!80!black, domain=0:4, samples=100] plot (\x, {1.1*\x*(4-\x)});
+					
+					% Linhas de projeção TRACEJADAS
+					\draw[dashed, gray!70, thick] (0, \ymin) -- (\xfour, \ymin);
+					\draw[dashed, gray!70, thick] (0, \ymax) -- (\xthree, \ymax);
+					
+					\draw[dashed, gray!70, thick] (\xone, \ymin) -- (\xone, 0);
+					\draw[dashed, gray!70, thick] (\xtwo, \ymax) -- (\xtwo, 0);
+					\draw[dashed, gray!70, thick] (\xthree, \ymax) -- (\xthree, 0);
+					\draw[dashed, gray!70, thick] (\xfour, \ymin) -- (\xfour, 0);
+					
+					% Destaque do intervalo J no eixo Y (vermelho)
+					\draw[ultra thick, red!80!black] (0, \ymin) -- (0, \ymax);
+					\node[left=2pt, red!80!black, font=\bfseries] at (0, {(\ymin + \ymax)/2}) {$J$};
+					
+					% Destaque dos dois intervalos pré-imagem em F_mu^{-1}(J) no eixo X (vermelho)
+					\draw[ultra thick, red!80!black] (\xone, 0) -- (\xtwo, 0);
+					\draw[ultra thick, red!80!black] (\xthree, 0) -- (\xfour, 0);
+					
+					% Delimitadores verticais nos intervalos do eixo X
+					\draw[thick, red!80!black] (\xone, 0.08) -- (\xone, -0.08);
+					\draw[thick, red!80!black] (\xtwo, 0.08) -- (\xtwo, -0.08);
+					\draw[thick, red!80!black] (\xthree, 0.08) -- (\xthree, -0.08);
+					\draw[thick, red!80!black] (\xfour, 0.08) -- (\xfour, -0.08);
+					
+					% Rótulo F_mu^{-1}(J) centralizado abaixo dos eixos
+					\node[font=\bfseries, red!80!black] (labelF) at (2, -1.0) {$F_\mu^{-1}(J)$};
+					
+					% Setas curvas longas e completas saindo do texto até os dois intervalos
+					\draw[->, thick, red!80!black] (labelF.west) to[out=150, in=-70] (\midleft, -0.08);
+					\draw[->, thick, red!80!black] (labelF.east) to[out=30, in=-110] (\midright, -0.08);
+					
+				\end{tikzpicture}
+				\caption{A pré-imagem de J.}
+			\end{figure}
+			
 			Dado $s=(s_0s_1s_2...)\in\Sigma_2$, vamos encontrar $x\in\Lambda$ tal que $S(x)=s$. Para isso, defina
 			$$I_{s_0s_1...s_n}=\{x\in I : x \in I_{s_0}, F(x) \in I_{s_1},...,F^n(x) \in I_{s_n}\} = I_{s_0} \cap F^{-1}(I_{s_1}) \cap ... \cap F^{-n}(I_{s_n}).$$
 			
@@ -133,7 +193,7 @@
 	\begin{exemplo}
 		Seja $D : S^1 \to S^1$ a aplicação de duplicação no círculo unitário, dada por $D(\theta) = 2\theta$. Assim, $D$ simplesmente duplica o ângulo de qualquer ponto que esteja em $S^1$. E seja $Q_{-2}(x) = x^2 - 2$ onde $x \in [-2, 2]$. Então, $h : S^1 \to [-2, 2]$ dada por $h(\theta) = 2\cos(\theta)$, projeta o círculo de forma "dois-para-um" sobre $[-2, 2]$ (exceto nos dois pontos onde o círculo intercepta a reta real).  Ou seja, dois pontos gerados pelo ângulo $\theta$ acabam sendo levados em um único ponto na reta real, conforme ilustrado pela Figura \ref{semiConjugacao}.
 		
-		\begin{figure}
+		\begin{figure}[H]
 			\centering
 			\begin{tikzpicture}[scale=1.3]
 				% Eixos X e Y
