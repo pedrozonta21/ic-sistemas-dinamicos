@@ -35,7 +35,8 @@
 \newenvironment{prova}
 {\par\noindent\textbf{Prova:}\ }
 {\hfill$\square$\par}
-
+\usepackage{tocloft}
+\setlength{\cftbeforetoctitleskip}{-1cm} % Reduz o espaço acima do título "Sumário"
 
 \begin{document} 
 	
@@ -73,7 +74,7 @@
 	\vspace*{0.75\textheight}
 	\pagenumbering{arabic} 
 	
-	
+	\newpage
 	\tableofcontents
 	
 	\newpage

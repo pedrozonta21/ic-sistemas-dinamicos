@@ -111,7 +111,7 @@
 		2.  Seja $s=(s_0s_1s_2...) \in \Sigma_2$ qualquer e considere a sequência $(\alpha_n)_{n\geq1} \cup Per(\sigma)$ definida por $\alpha_1=(s_0s_1s_0s_1...), \alpha_2=(s_0s_1s_2s_0s_1s_2...), ..., \alpha_n=(s_0s_1...s_ns_0s_1...s_n...)$. Dado $\epsilon>0$, seja $k$ tal que $\frac{1}{2^k}<\epsilon$. Daí, pela Proposição \ref{proposicaoMetrica}, se $n>k$, então $d[s, \alpha_n]\leq d[s, \alpha_k]<\frac{1}{2^k}<\epsilon$. Logo, $\alpha_n \to s$ quando $n \to +\infty$.
 		
 		3. Em $\Sigma_2$ considere a sequência
-		$$s^* = (\underbrace{0 \; 1}_{\text{1 bloco}} \quad \underbrace{00 \; 01 \; 10 \; 11}_{\text{2 blocos}} \quad \underbrace{000 \; 001 \; 011...}_{\text{3 blocos}} \quad \underbrace{...}_{...})$$.
+		$$s^* = (\underbrace{0 \; 1}_{\text{1 bloco}} \quad \underbrace{00 \; 01 \; 10 \; 11}_{\text{2 blocos}} \quad \underbrace{000 \; 001 \; 011...}_{\text{3 blocos}} \quad \underbrace{...}_{...}).$$
 		Essa sequência $s^*$ é construída listando sucessivamente todas as sequências possíveis de 0s e 1s de tamanho $1,2,3,..,n,n+1,n+2, etc$.
 		Assim, dada uma sequência qualquer $t=(t_0t_1t_2...)$ e $\epsilon>0$, sejam $n>0$ tal que $\frac{1}{2^n}<\epsilon$ e $m>n$ tal que os $n+1$ primeiros termos de $\sigma^m(s^*)$ sejam iguais aos $n+1$ primeiros termos de $t$. Daí, pela Proposição \ref{proposicaoMetrica}, temos $d[t, \sigma^n(s^*)]<\frac{1}{2^n} < \epsilon$.
 	\end{prova}

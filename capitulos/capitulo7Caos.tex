@@ -46,17 +46,13 @@
 	\end{teorema}
 	
 	\begin{prova}
-		Para mostrar que os pontos periódicos são densos, vamos nos aproveitar da conjugação topológica da aplicação \textit{shift}. Seja $s \in \Sigma_2$. Dado $\epsilon>0$, queremos $p \in Per(\sigma)$ tal que $d[s,p]<\epsilon$. Tomemos $n$ tal que $\frac{1}{2^n}<\epsilon$ e $p$ sendo construído com um bloco de $s$ de tamanho $n$.
-		$$p = s_0s_1...s_{n-1}s_0s_1...s_{n-1}...$$
-		$$d[s,p]=\sum_{i=n+1}^{\infty} \dfrac{|s_i-p_i|}{2^i} \leq \sum_{i=n+1}^{\infty} \dfrac{1}{2^i}=\sum_{i=n+1}^{\infty}\frac{1}{2^i} = \frac{1}{2^n}$$
-		mas, pelo Teorema da Proximidade,
-		$$d[s,p]\leq \frac{1}{2^n}<\epsilon$$
-		e portanto, os pontos periódicos são densos em $\Sigma_2$, e pela conjugação topológica, também são densos em $\Lambda$.
 		
-		A órbita densa foi provada na Proposição \ref{propriedadesDeSigma}.
-		Como existe uma órbita densa para $\sigma$ em $\Sigma_2$, $\sigma$ é topologicamente transitivo, e por consequência, $F_\mu$.
+		1. Sabemos que $F_\mu$ é conjugada topologicamente a $\sigma$ por $S$ e que $Per(\sigma)$ é denso em $\Sigma_2$. Logo, $Per(\sigma)$ é denso em $\Lambda$.
 		
-		A dependência sensível nas condições iniciais foi mostrada no Exemplo $\ref{mapaLogisticoSensivel}$.
+		2. A órbita densa foi provada na Proposição \ref{propriedadesDeSigma}.
+		Como existe uma órbita densa para $\sigma$ em $\Sigma_2$ e $\sigma$ é topologicamente transitivo, segue que $F_\mu$ é topologicamente transitiva.
+		
+		3. A dependência sensível nas condições iniciais foi mostrada no Exemplo $\ref{mapaLogisticoSensivel}$.
 	\end{prova}
 	
 	\begin{teorema}

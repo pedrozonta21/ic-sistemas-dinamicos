@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.4)  2 SEP 2026 11:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.4)  5 SEP 2026 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -836,53 +836,101 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip75
 )
+(C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
+raryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen285
+\pgfarrowlength=\dimen286
+\pgfarrowwidth=\dimen287
+\pgfarrowlinewidth=\dimen288
+)
 \c@definicao=\count339
 \c@exemplo=\count340
 \c@proposicao=\count341
 \c@teorema=\count342
 
+(C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
+Package: tocloft 2026-08-21 v3.0b parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 64.
+\cftparskip=\skip76
+\cftbeforetoctitleskip=\skip77
+\cftaftertoctitleskip=\skip78
+\cftbeforepartskip=\skip79
+\cftpartnumwidth=\skip80
+\cftpartindent=\skip81
+\cftbeforechapskip=\skip82
+\cftchapindent=\skip83
+\cftchapnumwidth=\skip84
+\cftbeforesecskip=\skip85
+\cftsecindent=\skip86
+\cftsecnumwidth=\skip87
+\cftbeforesubsecskip=\skip88
+\cftsubsecindent=\skip89
+\cftsubsecnumwidth=\skip90
+\cftbeforesubsubsecskip=\skip91
+\cftsubsubsecindent=\skip92
+\cftsubsubsecnumwidth=\skip93
+\cftbeforeparaskip=\skip94
+\cftparaindent=\skip95
+\cftparanumwidth=\skip96
+\cftbeforesubparaskip=\skip97
+\cftsubparaindent=\skip98
+\cftsubparanumwidth=\skip99
+\cftbeforeloftitleskip=\skip100
+\cftafterloftitleskip=\skip101
+\cftbeforefigskip=\skip102
+\cftfigindent=\skip103
+\cftfignumwidth=\skip104
+\c@lofdepth=\count343
+\c@lotdepth=\count344
+\cftbeforelottitleskip=\skip105
+\cftafterlottitleskip=\skip106
+\cftbeforetabskip=\skip107
+\cfttabindent=\skip108
+\cfttabnumwidth=\skip109
+)
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
 ftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count343
+\l__color_backend_stack_int=\count345
 ) (IC.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 8.
 )
 \openout1 = `IC.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count344
-\scratchdimen=\dimen285
+\scratchcounter=\count346
+\scratchdimen=\dimen289
 \scratchbox=\box69
-\nofMPsegments=\count345
-\nofMParguments=\count346
+\nofMPsegments=\count347
+\nofMParguments=\count348
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count347
-\MPscratchDim=\dimen286
-\MPnumerator=\count348
-\makeMPintoPDFobject=\count349
+\MPscratchCnt=\count349
+\MPscratchDim=\dimen290
+\MPnumerator=\count350
+\makeMPintoPDFobject=\count351
 \everyMPtoPDFconversion=\toks49
 )
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
@@ -898,24 +946,24 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-Package hyperref Info: Link coloring OFF on input line 38.
+Package hyperref Info: Link coloring OFF on input line 41.
 (IC.out) (IC.out)
 \@outlinefile=\write4
 \openout4 = `IC.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
 
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 65.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
 
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 65
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 68
 .
 
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
@@ -928,25 +976,23 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.74 	\tableofcontents
-                       [1] (IC.toc [2
-
-])
+l.77 	\newpage
+               [1] (IC.toc)
 \tf@toc=\write5
 \openout5 = `IC.toc'.
 
- [3] [4]
-(capitulos/capitulo1SistemasDinamicosDiscretos.tex [5]
+ [2] [3]
+(capitulos/capitulo1SistemasDinamicosDiscretos.tex [4]
 Cap\'{\i }tulo 1.
+[5
 
-Overfull \hbox (10.31609pt too wide) in paragraph at lines 25--26
+]
+Overfull \hbox (10.31609pt too wide) in paragraph at lines 29--30
 []\OT1/cmr/m/n/12 Assim sendo, um sis-tema din^amico mais ro-busto que con-tem-
 pla um cres-ci-mento/decrescimento
  []
 
-[6
-
-]) (capitulos/capitulo2DefinicoesElementares.tex [7]
+[6]) (capitulos/capitulo2DefinicoesElementares.tex [7]
 Cap\'{\i }tulo 2.
 
 Overfull \hbox (24.06902pt too wide) in paragraph at lines 6--6
@@ -954,145 +1000,136 @@ Overfull \hbox (24.06902pt too wide) in paragraph at lines 6--6
 din^amicos
  []
 
-<imagens/desenho_eventualmente_periodico.png, id=150, 959.08313pt x 399.74344pt
->
-File: imagens/desenho_eventualmente_periodico.png Graphic file (type png)
-<use imagens/desenho_eventualmente_periodico.png>
-Package pdftex.def Info: imagens/desenho_eventualmente_periodico.png  used on i
-nput line 31.
-(pdftex.def)             Requested size: 483.69684pt x 201.6035pt.
 [8
 
-] [9 <./imagens/desenho_eventualmente_periodico.png>]
-<imagens/desenho_orbita_x3.png, id=172, 461.92575pt x 431.211pt>
+] [9]
+<imagens/desenho_orbita_x3.png, id=152, 461.92575pt x 431.211pt>
 File: imagens/desenho_orbita_x3.png Graphic file (type png)
 <use imagens/desenho_orbita_x3.png>
-Package pdftex.def Info: imagens/desenho_orbita_x3.png  used on input line 64.
-(pdftex.def)             Requested size: 290.22105pt x 270.934pt.
+Package pdftex.def Info: imagens/desenho_orbita_x3.png  used on input line 93.
+(pdftex.def)             Requested size: 241.84842pt x 225.76408pt.
  [10 <./imagens/desenho_orbita_x3.png>]
-<imagens/desenho_orbita_inversa_x3.png, id=182, 508.90125pt x 472.76625pt>
+<imagens/desenho_orbita_inversa_x3.png, id=165, 508.90125pt x 472.76625pt>
 File: imagens/desenho_orbita_inversa_x3.png Graphic file (type png)
 <use imagens/desenho_orbita_inversa_x3.png>
 Package pdftex.def Info: imagens/desenho_orbita_inversa_x3.png  used on input l
-ine 78.
+ine 107.
 (pdftex.def)             Requested size: 314.39998pt x 292.08768pt.
-) (capitulos/capitulo3Hiperbolicidade.tex [11 <./imagens/desenho_orbita_inversa
-_x3.png>]
+ [11 <./imagens/desenho_orbita_inversa_x3.png>]) (capitulos/capitulo3Hiperbolic
+idade.tex [12]
 Cap\'{\i }tulo 3.
-[12
+[13
 
-] [13]
-<imagens/desenho_familia_quadratica_com_parametro.png, id=204, 682.04813pt x 21
+] [14]
+<imagens/desenho_familia_quadratica_com_parametro.png, id=199, 682.04813pt x 21
 9.06844pt>
 File: imagens/desenho_familia_quadratica_com_parametro.png Graphic file (type p
 ng)
 <use imagens/desenho_familia_quadratica_com_parametro.png>
 Package pdftex.def Info: imagens/desenho_familia_quadratica_com_parametro.png  
-used on input line 88.
+used on input line 125.
 (pdftex.def)             Requested size: 435.32419pt x 139.82558pt.
- [14]
-<imagens/desenho_quadratica_1-4.png, id=212, 307.1475pt x 304.88907pt>
-File: imagens/desenho_quadratica_1-4.png Graphic file (type png)
-<use imagens/desenho_quadratica_1-4.png>
-Package pdftex.def Info: imagens/desenho_quadratica_1-4.png  used on input line
- 108.
-(pdftex.def)             Requested size: 145.11052pt x 144.04224pt.
  [15 <./imagens/desenho_familia_quadratica_com_parametro.png>]
-<imagens/desenho_conjunto_estavel_1-4.jpg, id=220, 1606.0pt x 1353.055pt>
+Overfull \hbox (2.89941pt too wide) in paragraph at lines 133--134
+[]\OT1/cmr/bx/it/12 (Fam^^S^^Plia Quadr^^Satica) \OT1/cmr/m/it/12 To-me-mos o s
+is-tema din^amico $\OT1/cmr/m/n/12 (\U/msb/m/n/12 R\OML/cmm/m/it/12 ; f\OT1/cmr
+/m/n/12 )$\OT1/cmr/m/it/12 , onde $\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cm
+m/m/it/12 x; ^^V\OT1/cmr/m/n/12 ) =
+ []
+
+<imagens/desenho_conjunto_estavel_1-4.jpg, id=209, 1606.0pt x 1353.055pt>
 File: imagens/desenho_conjunto_estavel_1-4.jpg Graphic file (type jpg)
 <use imagens/desenho_conjunto_estavel_1-4.jpg>
 Package pdftex.def Info: imagens/desenho_conjunto_estavel_1-4.jpg  used on inpu
-t line 116.
-(pdftex.def)             Requested size: 290.22105pt x 244.50975pt.
-
-[16 <./imagens/desenho_quadratica_1-4.png>]
-<imagens/desenho_conjunto_instavel_1-4.png, id=227, 1606.0pt x 1346.02875pt>
+t line 148.
+(pdftex.def)             Requested size: 193.47577pt x 162.99962pt.
+[16 <./imagens/desenho_conjunto_estavel_1-4.jpg>]
+<imagens/desenho_conjunto_instavel_1-4.png, id=218, 1606.0pt x 1346.02875pt>
 File: imagens/desenho_conjunto_instavel_1-4.png Graphic file (type png)
 <use imagens/desenho_conjunto_instavel_1-4.png>
 Package pdftex.def Info: imagens/desenho_conjunto_instavel_1-4.png  used on inp
-ut line 125.
-(pdftex.def)             Requested size: 290.22105pt x 243.24004pt.
- [17 <./imagens/desenho_conjunto_estavel_1-4.jpg>] [18 <./imagens/desenho_conju
-nto_instavel_1-4.png>]
-<imagens/desenho_conjunto_estavel_dois_pontos.png, id=239, 1606.0pt x 1363.0925
+ut line 158.
+(pdftex.def)             Requested size: 241.84842pt x 202.69661pt.
+ [17 <./imagens/desenho_conjunto_instavel_1-4.png>]
+<imagens/desenho_conjunto_estavel_dois_pontos.png, id=224, 1606.0pt x 1363.0925
 pt>
 File: imagens/desenho_conjunto_estavel_dois_pontos.png Graphic file (type png)
 <use imagens/desenho_conjunto_estavel_dois_pontos.png>
 Package pdftex.def Info: imagens/desenho_conjunto_estavel_dois_pontos.png  used
- on input line 151.
-(pdftex.def)             Requested size: 386.95894pt x 328.41763pt.
- [19 <./imagens/desenho_conjunto_estavel_dois_pontos.png>] [20])
-(capitulos/capitulo4FamiliaLogistica.tex [21]
+ on input line 185.
+(pdftex.def)             Requested size: 290.22105pt x 246.32362pt.
+ [18 <./imagens/desenho_conjunto_estavel_dois_pontos.png>] [19]) (capitulos/cap
+itulo4FamiliaLogistica.tex [20]
 Cap\'{\i }tulo 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 15--18
 
  []
 
-[22
+[21
 
-] [23] [24] [25] [26] [27] [28]) (capitulos/capitulo5DinamicaSimbolica.tex
-[29]
+] [22] [23] [24] [25] [26] [27]) (capitulos/capitulo5DinamicaSimbolica.tex
+[28]
 Cap\'{\i }tulo 5.
-[30
+[29
 
-] [31] [32]
-Overfull \hbox (3.79497pt too wide) in paragraph at lines 89--90
+] [30] [31]
+Overfull \hbox (3.79497pt too wide) in paragraph at lines 94--95
 []\OT1/cmr/m/n/12 Mas, nem to-dos os pon-tos $^^F[]$ s~ao peri^^Sodicos ou even
 -tu-al-mente peri^^Sodicos. Qual-quer sequ^encia
  []
 
-[33]) (capitulos/capitulo6ConjugacaoTopologica.tex [34]
+[32]) (capitulos/capitulo6ConjugacaoTopologica.tex [33]
 Cap\'{\i }tulo 6.
-[35
+[34
 
-] [36] [37] [38]) (capitulos/capitulo7Caos.tex [39]
+] [35] [36] [37] [38]) (capitulos/capitulo7Caos.tex [39]
 Cap\'{\i }tulo 7.
 [40
 
-] [41] [42]) [43] (IC.aux)
+] [41]) (IC.bbl [42]) [43
+
+] (IC.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
 Package rerunfilecheck Info: File `IC.out' has not changed.
-(rerunfilecheck)             Checksum: 355C65E3A02CD0A541D1139A95D8EFF0;3072.
+(rerunfilecheck)             Checksum: AD9C068EE9C220D3FD0D2A5B9214075F;2543.
  ) 
 Here is how much of TeX's memory you used:
- 32883 strings out of 467871
- 778507 string characters out of 5417887
- 1405033 words of memory out of 5000000
- 61057 multiletter control sequences out of 15000+600000
- 643088 words of font info for 96 fonts, out of 8000000 for 9000
+ 33836 strings out of 467871
+ 798132 string characters out of 5417887
+ 1429212 words of memory out of 5000000
+ 62002 multiletter control sequences out of 15000+600000
+ 639817 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,118p,993b,2352s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,20n,118p,997b,2428s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Cyborg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
 m1200.pk><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmbsy10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmbx12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Cyborg/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/Cyborg/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Cyborg/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/User
-s/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pf
-b><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmmi6.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmmi8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmmib10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Cyborg/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Cyborg/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Cyborg/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Cyb
-org/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/U
-sers/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmsy8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmti12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/symbols/msam10.pfb><C:/Users/Cyborg/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on IC.pdf (44 pages, 844614 bytes).
+onts/cm/cmbx12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmbxti10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Cyborg/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Cyborg/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Cyborg/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users
+/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+<C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr17.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Cyborg/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Cyborg/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Cyborg/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/User
+s/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pf
+b><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sy
+mbols/msam10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/symbols/msbm10.pfb>
+Output written on IC.pdf (44 pages, 806794 bytes).
 PDF statistics:
- 522 PDF objects out of 1000 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
- 197 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 517 PDF objects out of 1000 (max. 8388607)
+ 151 named destinations out of 1000 (max. 500000)
+ 155 words of extra memory for PDF output out of 10000 (max. 10000000)
 

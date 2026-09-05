@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.4)  2 SEP 2026 16:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.4)  5 SEP 2026 16:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -840,15 +840,63 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip75
 )
+(C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
+raryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen285
+\pgfarrowlength=\dimen286
+\pgfarrowwidth=\dimen287
+\pgfarrowlinewidth=\dimen288
+)
 \c@definicao=\count339
 \c@exemplo=\count340
 \c@proposicao=\count341
 \c@teorema=\count342
-))
+
+(C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
+Package: tocloft 2026-08-21 v3.0b parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 64.
+\cftparskip=\skip76
+\cftbeforetoctitleskip=\skip77
+\cftaftertoctitleskip=\skip78
+\cftbeforepartskip=\skip79
+\cftpartnumwidth=\skip80
+\cftpartindent=\skip81
+\cftbeforechapskip=\skip82
+\cftchapindent=\skip83
+\cftchapnumwidth=\skip84
+\cftbeforesecskip=\skip85
+\cftsecindent=\skip86
+\cftsecnumwidth=\skip87
+\cftbeforesubsecskip=\skip88
+\cftsubsecindent=\skip89
+\cftsubsecnumwidth=\skip90
+\cftbeforesubsubsecskip=\skip91
+\cftsubsubsecindent=\skip92
+\cftsubsubsecnumwidth=\skip93
+\cftbeforeparaskip=\skip94
+\cftparaindent=\skip95
+\cftparanumwidth=\skip96
+\cftbeforesubparaskip=\skip97
+\cftsubparaindent=\skip98
+\cftsubparanumwidth=\skip99
+\cftbeforeloftitleskip=\skip100
+\cftafterloftitleskip=\skip101
+\cftbeforefigskip=\skip102
+\cftfigindent=\skip103
+\cftfignumwidth=\skip104
+\c@lofdepth=\count343
+\c@lotdepth=\count344
+\cftbeforelottitleskip=\skip105
+\cftafterlottitleskip=\skip106
+\cftbeforetabskip=\skip107
+\cfttabindent=\skip108
+\cfttabnumwidth=\skip109
+)))
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
 ftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count343
+\l__color_backend_stack_int=\count345
 ) (capitulo2DefinicoesElementares.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 8.
@@ -877,16 +925,16 @@ LaTeX Font Info:    ... okay on input line 3.
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count344
-\scratchdimen=\dimen285
+\scratchcounter=\count346
+\scratchdimen=\dimen289
 \scratchbox=\box69
-\nofMPsegments=\count345
-\nofMParguments=\count346
+\nofMPsegments=\count347
+\nofMParguments=\count348
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count347
-\MPscratchDim=\dimen286
-\MPnumerator=\count348
-\makeMPintoPDFobject=\count349
+\MPscratchCnt=\count349
+\MPscratchDim=\dimen290
+\MPnumerator=\count350
+\makeMPintoPDFobject=\count351
 \everyMPtoPDFconversion=\toks49
 )
 (C:\Users\Cyborg\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
@@ -934,38 +982,38 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 
 {C:/Users/Cyborg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-<../imagens/desenho_orbita_x3.png, id=49, 461.92575pt x 431.211pt>
+<../imagens/desenho_orbita_x3.png, id=44, 461.92575pt x 431.211pt>
 File: ../imagens/desenho_orbita_x3.png Graphic file (type png)
 <use ../imagens/desenho_orbita_x3.png>
 Package pdftex.def Info: ../imagens/desenho_orbita_x3.png  used on input line 9
-5.
-(pdftex.def)             Requested size: 290.22105pt x 270.934pt.
+3.
+(pdftex.def)             Requested size: 241.84842pt x 225.76408pt.
 
-[3]
-<../imagens/desenho_orbita_inversa_x3.png, id=59, 508.90125pt x 472.76625pt>
+[3 <../imagens/desenho_orbita_x3.png>]
+<../imagens/desenho_orbita_inversa_x3.png, id=57, 508.90125pt x 472.76625pt>
 File: ../imagens/desenho_orbita_inversa_x3.png Graphic file (type png)
 <use ../imagens/desenho_orbita_inversa_x3.png>
 Package pdftex.def Info: ../imagens/desenho_orbita_inversa_x3.png  used on inpu
-t line 109.
+t line 107.
 (pdftex.def)             Requested size: 314.39998pt x 292.08768pt.
- [4 <../imagens/desenho_orbita_x3.png>] [5 <../imagens/desenho_orbita_inversa_x
-3.png>] (capitulo2DefinicoesElementares.aux)
+ [4 <../imagens/desenho_orbita_inversa_x3.png>] [5] (capitulo2DefinicoesElement
+ares.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
 Package rerunfilecheck Info: File `capitulo2DefinicoesElementares.out' has not 
 changed.
-(rerunfilecheck)             Checksum: CDD19394D1C11588D19CE653FE86D145;778.
+(rerunfilecheck)             Checksum: BD84BFEF1B2EBF142EC1BDEC357593C8;571.
  ) 
 Here is how much of TeX's memory you used:
- 31694 strings out of 467871
- 750198 string characters out of 5417887
- 1243939 words of memory out of 5000000
- 60028 multiletter control sequences out of 15000+600000
+ 32332 strings out of 467871
+ 763911 string characters out of 5417887
+ 1262212 words of memory out of 5000000
+ 60659 multiletter control sequences out of 15000+600000
  635063 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,8n,135p,777b,741s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,8n,135p,777b,743s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Cyborg\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
 m1200.pk><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmbx12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -980,10 +1028,11 @@ b><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmsy10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmti12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on capitulo2DefinicoesElementares.pdf (5 pages, 219324 bytes).
+onts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Cyborg/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on capitulo2DefinicoesElementares.pdf (5 pages, 230406 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 47 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 138 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 500000)
+ 39 words of extra memory for PDF output out of 10000 (max. 10000000)
 

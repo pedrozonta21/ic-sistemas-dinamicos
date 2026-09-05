@@ -33,17 +33,17 @@
 				arrow/.style={->, >=stealth, thick}
 				]
 				
-				% Nós da linha horizontal
+				% Nós da linha horizontal (espaçamento expandido)
 				\node[dot, label=above:{$x_0$}] (n1) at (0, 0) {};
-				\node[dot, label=above:{$f(x_0)$}] (n2) at (1.8, 0) {};
-				\node[dot, label=above:{$\dots$}] (n3) at (3.6, 0) {};
-				\node[dot, label=above:{$f^n(x_0) = f^{n+i}(x_0)$}] (n4) at (5.4, 0) {};
-				\node[dot, label=above:{$f^{n+1}(x_0)$}] (n5) at (7.8, 0) {};
+				\node[dot, label=above:{$f(x_0)$}] (n2) at (2.5, 0) {};
+				\node[dot, label=above:{$\dots$}] (n3) at (5.0, 0) {};
+				\node[dot, label=above:{$f^n(x_0) = f^{n+i}(x_0)$}] (n4) at (8.5, 0) {};
+				\node[dot, label=above:{$f^{n+1}(x_0)$}] (n5) at (12.0, 0) {};
 				
-				% Nós do ciclo
-				\node[dot, label=right:{$f^{n+2}(x_0)$}] (n6) at (7.8, -1.8) {};
-				\node[dot, label=below:{$\dots$}] (n7) at (6.6, -3.0) {};
-				\node[dot, label=left:{$f^{n+(i-1)}(x_0)$}] (n8) at (5.4, -1.8) {};
+				% Nós do ciclo (alinhados com o novo espaçamento)
+				\node[dot, label=right:{$f^{n+2}(x_0)$}] (n6) at (12.0, -2.2) {};
+				\node[dot, label=below:{$\dots$}] (n7) at (10.25, -3.8) {};
+				\node[dot, label=left:{$f^{n+(i-1)}(x_0)$}] (n8) at (8.5, -2.2) {};
 				
 				% Setas da linha horizontal
 				\draw[arrow] (n1) -- (n2);
@@ -53,8 +53,8 @@
 				
 				% Setas do ciclo
 				\draw[arrow] (n5) -- (n6);
-				\draw[arrow, rounded corners=8pt] (n6) |- (n7);
-				\draw[arrow, rounded corners=8pt] (n7) -| (n8);
+				\draw[arrow, rounded corners=10pt] (n6) |- (n7);
+				\draw[arrow, rounded corners=10pt] (n7) -| (n8);
 				\draw[arrow] (n8) -- (n4);
 				
 			\end{tikzpicture}
@@ -83,8 +83,6 @@
 	
 	Essas definições introduzidas até aqui são utilizadas no estudo das órbitas dos pontos $x \in \mathbb{X}$ de um sistema dinâmico $(X, f)$.
 	
-	\section{Visão Geométrica de Órbitas}
-	
 	Uma forma de analisar a órbitas dos pontos de uma função é através de estudos por meio de seu gráfico. Ao traçar a reta diagonal $y = x$, podemos aplicar uma técnica chamada retrato de fase, que auxilia a entender o comportamento assintótico dos pontos e a identificar os pontos fixos (que são aqueles onde a reta intersecta o gráfico). Para aplicar essa técnica, traçamos uma linha vertical no ponto inicial $(x_0, x_0)$ até encontrar o gráfico no ponto $(x_0, f(x_0))$. Então, agora fazemos uma linha horizontal iniciando em $(x_0, f(x_0))$ indo até encontrar a diagonal em $(f(x_0), f(x_0))$. Repetimos nesse momento a tração da linha vertical, e após isso a da linha horizontal, sucessivamente.
 	
 	\begin{exemplo}\label{exemploSistemaDinamicoX^3}
@@ -92,7 +90,7 @@
 		
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.6\textwidth]{imagens/desenho_orbita_x3.png}
+			\includegraphics[width=0.5\textwidth]{imagens/desenho_orbita_x3.png}
 			\caption{Análise da órbita pelo gráfico da função $f(x) = x^3$.}
 		\end{figure}
 		
