@@ -18,7 +18,7 @@
 	Intuitivamente, uma aplicação apresenta dependência sensível às condições iniciais se, para cada ponto $x$ em $J$, existirem pontos arbitrariamente próximos de $x$ cujas órbitas acabam se afastando da órbita de $x$ por pelo menos $\delta$ sob a iteração de $f$. Vale ressaltar que nem todos os pontos próximos de $x$ precisam necessariamente se afastar de $x$ durante a iteração, mas deve haver pelo menos um ponto nessas condições em qualquer vizinhança de $x$
 	
 	\begin{exemplo}\label{mapaLogisticoSensivel}
-		O mapa logístico $F_\mu$ com $\mu>2+\sqrt{5}$ possui dependência sensível às condições iniciais em $\Lambda$. Basta escolher $\delta$ menor do que o comprimento de $A_0$. Seja $x,y \in \Lambda$. Se $x \neq y$, então $S(x) \neq S(y)$, e portanto o itinerário de $x$ deve divergir do itinerário de $y$ em pelo menos uma entrada da sequência, digamos no índice $k$. Mas isso significa que $F_\mu^k(x)$ e $F_\mu^k(y)$ estão em lados opostos de $A_0$, então
+		O mapa logístico $F_\mu$ com $\mu>2+\sqrt{5}$ possui dependência sensível às condições iniciais em $\Lambda$. Basta escolher $\delta$ menor do que o comprimento de $A_0$,onde $A_0$ é o intervalo aberto entre $I_0$ e $I_1$. Seja $x,y \in \Lambda$. Se $x \neq y$, então $S(x) \neq S(y)$, e portanto o itinerário de $x$ deve divergir do itinerário de $y$ em pelo menos uma entrada da sequência, digamos no índice $k$. Mas isso significa que $F_\mu^k(x)$ e $F_\mu^k(y)$ estão em lados opostos de $A_0$, então
 		$$|F_\mu^k(x)-F_\mu^k(y)| > \delta$$.
 	\end{exemplo}
 	
