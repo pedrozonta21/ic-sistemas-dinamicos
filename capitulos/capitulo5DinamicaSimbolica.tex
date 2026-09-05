@@ -54,14 +54,14 @@
 		
 		Por outro lado, se $s_j \neq t_j$ para algum $j\leq n$, então devemos ter
 		$$d[s,t] = \frac{|s_0 - t_0|}{2^0} + \dots + \frac{|s_j - t_j|}{2^j} + \dots \geq \frac{|s_j - t_j|}{2^j} \geq \frac{1}{2^n}$$
-		$$d[s,t] \geq \frac{1}{2^j} \geq \frac{1}{2^n}$$
+		$$d[s,t] \geq \frac{1}{2^j} \geq \frac{1}{2^n}.$$
 		
-		Isso completa a prova.
+		Assim, se $d[s,t]<\frac{1}{2^n}$, então devemos ter $s_i=t_i$, para $i\leq n$.
 	\end{prova}
 	
 	Esse resultado se faz importante por nos dar o poder de decidir rapidamente se duas sequências estão ou não próximas uma da outra. Intuitivamente, essa análise mostra que duas sequências estão próximas em $\Sigma_2$ desde que as suas primeiras entradas coincidam. Quando mais esses primeiros índices coincidem, mais próximas estão essas duas sequências.
 	
-	\section{O Mapa \textit{Shift}}
+	\section{A aplicação \textit{Shift}}
 	
 	Neste momento, iremos definir o fator mais importante em dinâmica simbólica: o mapa \textit{shift} em $\Sigma_2$.
 	
