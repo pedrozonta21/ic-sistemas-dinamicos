@@ -9,7 +9,7 @@
 		$f:J\rightarrow J$ é dita topologicamente transitiva se, para algum par de conjuntos abertos $U, V \subset J$, existe um $k>0$ tal que $f^k(U) \cap V \neq \emptyset$
 	\end{definicao}
 	
-	Intuitivamente, um mapa topologicamente transitivo possui pontos que eventualmente se movem sob iterações de uma pequena vizinhança arbitrária para outra. Consequentemente, o sistema dinâmico não pode ser decomposto em dois conjuntos abertos disjuntos invariantes.
+	Intuitivamente, um mapa topologicamente transitivo possui pontos que eventualmente se movem sob iterações de uma pequena vizinhança arbitrária para outra. Consequentemente, o sistema dinâmico não pode ser decomposto em dois conjuntos abertos disjuntos invariantes. Note que, se a função possui uma órbita densa, então é claramente topologicamente transitiva.
 	
 	\begin{definicao}
 		$f: J \rightarrow J$ possui dependência sensível nas condições iniciais em $J$ se existe $\delta > 0$ tal que, para algum $x\in J$ e uma vizinhança N de $x$, existem $y \in N$ e $n\geq 0$ tal que $|f^(x)-f^n(y)| > \delta$.
@@ -77,58 +77,5 @@
 		Para provar a dependência sensível, notamos que qualquer vizinhança $U$ de $x \in I$ se ``eleva'' a $\hat{U}$ em $S^1$. Existe $n$ tal que $D^n(\hat{U})$ cobre $S^1$, logo $F_4^n(U)$ também cobre $I$. Assim, existem pontos em $U$ que se afastam de $x$ em pelo menos $\delta = \frac{1}{2}$, pois um ponto está distante pelo menos essa distância de uma das extremidades. 
 		
 		Finalmente, a densidade de pontos periódicos para $D$ implica que existe um ponto periódico de $D$ em $\hat{U}$. A projeção deste ponto em $U$ é periódica sob $F_4$.
-		
-		\begin{center}
-			\begin{tikzpicture}[scale=1.4, >=stealth]
-				
-				% --- EIXO DO INTERVALO [0,1] ---
-				\draw[thick, ->] (-0.5, 0) -- (6.5, 0) node[right] {$\mathbb{R}$};
-				\draw[ultra thick] (0.5, 0) -- (5.5, 0);
-				\draw[thick] (0.5, 0.1) -- (0.5, -0.1) node[below] {$0$};
-				\draw[thick] (5.5, 0.1) -- (5.5, -0.1) node[below] {$1$};
-				
-				% Intervalo aberto U em [0,1]
-				\draw[red, ultra thick] (1.8, 0) -- (3.6, 0);
-				\node[red, font=\boldmath] at (1.8, 0) {$($};
-				\node[red, font=\boldmath] at (3.6, 0) {$)$};
-				\node[red, below=3pt] at (2.3, 0) {$U$};
-				
-				% Ponto x em U
-				\coordinate (Xstar) at (2.8, 0);
-				\filldraw[blue] (Xstar) circle (2pt) node[below=8pt, text=blue] {$x = h(\theta)$};
-				
-				% Loop de periodicidade em x
-				\draw[blue, thick, ->] (2.8, 0.12) arc (-90:180:0.25) node[above left, font=\scriptsize] {$F_4^n(x) = x$};
-				
-				% --- CÍRCULO S^1 ---
-				\coordinate (Center) at (3, 3.8);
-				\def\R{1.6}
-				\draw[thick] (Center) circle (\R);
-				\node at (Center) {$S^1$};
-				
-				% Elevação de U para o arco U_hat em S^1 (parte superior do círculo)
-				% x = 1.8 => cos = (1.8-3)/1.6 = -0.75 => angle approx 138.6 deg
-				% x = 3.6 => cos = (3.6-3)/1.6 =  0.375 => angle approx 67.97 deg
-				\draw[red, ultra thick] (Center) ++(68:\R) arc (68:139:\R);
-				\node[red, above=8pt] at (3, {3.8 + \R}) {$\hat{U} = h^{-1}(U)$};
-				
-				% Ponto periódico theta* em U_hat (x = 2.8 => cos = -0.2/1.6 = -0.125 => angle approx 97.18 deg)
-				\coordinate (ThetaStar) at ({3 + \R*cos(97)}, {3.8 + \R*sin(97)});
-				\filldraw[blue] (ThetaStar) circle (2pt) node[above left=1pt, text=blue] {};
-				
-				% Loop de periodicidade em theta
-				\draw[blue, thick, ->] (ThetaStar) ++(0.08, 0.08) arc (0:270:0.23) node[above right=5pt, font=\scriptsize] {$D^n(\theta) = \theta$};
-				
-				% --- PROJEÇÃO h (LINHAS TRACEJADAS) ---
-				% Projeção das extremidades do intervalo
-				\draw[dashed, red, thick, ->] ({3 + \R*cos(68)}, {3.8 + \R*sin(68)}) -- (3.6, 0.1);
-				\draw[dashed, red, thick, ->] ({3 + \R*cos(139)}, {3.8 + \R*sin(139)}) -- (1.8, 0.1);
-				
-				% Linha de projeção do ponto theta para x
-				\draw[dashed, blue, thick, ->] (ThetaStar) -- (Xstar) node[midway, right=2pt, font=\small] {$h = h_2 \circ h_1$};
-				
-			\end{tikzpicture}
-			\captionof{figure}{Ilustração da projeção em $F_4$.}
-		\end{center}
 	\end{prova}
 \end{document}	
