@@ -270,11 +270,11 @@
         $$\lim_{n \rightarrow \infty} F_\mu^n(x)=p_\mu.$$
 	\end{prova}
 	
+	Pelo que foi demonstrado até agora, se $1<\mu<3$, $F_\mu$ possui apenas dois pontos fixos e todos os outros pontos em $I$ convergem para $p_\mu$.
+	
 	Quando $\mu > 3$, pontos periódicos de período $2$ surgem, tornando a dinâmica de $F_\mu$ mais complicada. Conforme o valor do parâmetro aumenta, a complexidade também cresce, de modo que o retrato de fase começa a perder a sua eficiência no que diz respeito a nossa visualização.
 	
-	\section{O Caso do Conjunto de Cantor}
-	
-	Nesta seção, estudaremos o caso $\mu>4$. Para facilitar a leitura, vamos escrever $F$ em vez de $F_\mu$. Vimos anteriormente que a dinâmica que possui mais riqueza de informações acontece no intervalo unitário $I$. Note que, se $\mu > 4$, teremos como máximo da função o $F$ o valor $\frac{\mu}{4}$, que por sua vez é maior do que um. Isso nos leva a perceber a existência de pontos que saem do intervalo unitário após a primeira iterada de $F$, e com isso, esses pontos eventualmente são levados para $-\infty$ por $F^n$, como visto na Proposição \ref{proposicaoQueLevaParaMenosInfinito}. Vamos denotar o conjunto desses pontos que saem de $I$ após a primeira iterada de $F$ como $A_0$. $A_0$ é um intervalo aberto centrado em $\frac{1}{2}$ e tem como propriedade o fato de, se $x \in A_0$, então $F(x) > 1$, e por consequência, $F^2(x) < 0$ e $F^n(x) \rightarrow \infty$.
+	\textbf{Observação:} A partir de agora, estudaremos o caso $\mu>4$. Para facilitar a leitura, vamos escrever $F$ em vez de $F_\mu$. Vimos anteriormente que a dinâmica que possui mais riqueza de informações acontece no intervalo unitário $I$. Note que, se $\mu > 4$, teremos como máximo da função o $F$ o valor $\frac{\mu}{4}$, que por sua vez é maior do que um. Isso nos leva a perceber a existência de pontos que saem do intervalo unitário após a primeira iterada de $F$, e com isso, esses pontos eventualmente são levados para $-\infty$ por $F^n$, como visto na Proposição \ref{proposicaoQueLevaParaMenosInfinito}. Vamos denotar o conjunto desses pontos que saem de $I$ após a primeira iterada de $F$ como $A_0$. $A_0$ é um intervalo aberto centrado em $\frac{1}{2}$ e tem como propriedade o fato de, se $x \in A_0$, então $F(x) > 1$, e por consequência, $F^2(x) < 0$ e $F^n(x) \rightarrow \infty$.
 	
 	Seja $A_1 = \{x \in I | F(x) \in A_0\}$. Se $x\in A_1$ então $F^2(x) > 1$, e como no caso anterior, $F^n(x) \rightarrow \infty$. Desse modo, podemos definir $A_n = \{x\in I|F^n(x) \in A_0\}$, ou seja, $A_n$ consiste de todos os pontos que escapam de $I$ na $(n+1)$-ésima iteração. Uma vez mapeado os pontos que saem do intervalo unitário e vão para $-\infty$, nos resta estudar o comportamento dos pontos que nunca saem de $I$, pontos esses que estão em um conjunto $\Lambda$ dado por
 	$$\Lambda = I - \left(\bigcup_{n=0}^{\infty} A_n\right).$$
@@ -347,12 +347,12 @@
 	Vale ressaltar que a disposição desses intervalos depende da variação do parâmetro $\mu$, que rege a posição do gráfico. Já que $A_0$ tem como propriedade $F(x) > 1$, podemos definir exatamente as fronteiras de $A_0$ em função de $\mu$:
 	
 	$$\mu\/x(1-x) > 1 \implies x^2-x+\frac{1}{\mu}<0$$
-	$$Por Bhaskara: x_1 = \dfrac{1+ \sqrt{1-\frac{4}{\mu}}}{2}, x_2 = \dfrac{1- \sqrt{1-\frac{4}{\mu}}}{2}$$
-	$$A_0 = \left(\dfrac{1- \sqrt{1-\frac{4}{\mu}}}{2}, \dfrac{1+ \sqrt{1-\frac{4}{\mu}}}{2}\right)$$
+	$$\implies x_1 = \dfrac{1+ \sqrt{1-\frac{4}{\mu}}}{2}, x_2 = \dfrac{1- \sqrt{1-\frac{4}{\mu}}}{2}$$
+	$$\text{ou seja, } A_0 = \left(\dfrac{1- \sqrt{1-\frac{4}{\mu}}}{2}, \dfrac{1+ \sqrt{1-\frac{4}{\mu}}}{2}\right)$$
 	
 	Note que $F(I_0) = F(I_1) = I$, logo, há um par de subintervalos em ambos os lados de modo que $F$ os mapeia até $A_0$. Esses dois subintervalos são precisamente o conjunto $A_1$.
 	
-	Considere agora $I-(A_0 \cup A_1)$. Esse resultado consiste de 4 intervalos fechados e mapeia cada um deles em $I_0$ ou $I_1$, que por sua vez tem como imagem justamente o intervalo $I$. Portanto, existe, em cada um desses 4 intervalos, outro subintervalo que é levado até $A_0$ por $F^2$. O conjunto desses subintervalos é chamado de $A_2$.
+	Considere agora $I-(A_0 \cup A_1)$. Esse resultado consiste de 4 intervalos fechados onde $F$ leva cada um deles em $I_0$ ou $I_1$, que por sua vez tem como imagem justamente o intervalo $I$. Portanto, $F^2$ leva de forma bijetiva sobre cada um desses 4 intervalos, sobre $A_0$. O conjunto desses subintervalos é chamado de $A_2$.
 	
 	A construção de $\Lambda$ nos remete à construção clássica do conjunto de Cantor de terços médios: $\Lambda$ é obtido removendo-se sucessivamente intervalos abertos das partes centrais de um conjunto de intervalos fechados.
 	
