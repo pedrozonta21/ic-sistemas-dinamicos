@@ -1,15 +1,15 @@
 \babel@toc {brazil}{}\relax 
-\contentsline {chapter}{\numberline {1}Sistemas dinâmicos discretos}{6}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Exemplos de sistemas dinâmicos discretos}{6}{section.1.1}%
-\contentsline {chapter}{\numberline {2}Definições elementares}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Definições elementares na teoria dos sistemas dinâmicos discretos}{9}{section.2.1}%
-\contentsline {chapter}{\numberline {3}Hiperbolicidade}{14}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Uma ideia sobre Bifurcação}{16}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Família Logística}{22}{chapter.4}%
-\contentsline {section}{\numberline {4.1}O Caso do Conjunto de Cantor}{26}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Dinâmica Simbólica}{30}{chapter.5}%
-\contentsline {section}{\numberline {5.1}O Espaço de Sequências}{30}{section.5.1}%
-\contentsline {section}{\numberline {5.2}A aplicação \textit {Shift}}{32}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conjugação Topológica}{35}{chapter.6}%
-\contentsline {section}{\numberline {6.1}O Mapa Itinerário}{35}{section.6.1}%
-\contentsline {chapter}{\numberline {7}Caos}{41}{chapter.7}%
+\contentsline {chapter}{\numberline {1}Sistemas dinâmicos discretos}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Exemplos de sistemas dinâmicos discretos}{5}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Definições elementares}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Definições elementares na teoria dos sistemas dinâmicos discretos}{8}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Hiperbolicidade}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Uma ideia sobre Bifurcação}{15}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Família Logística}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}O Caso do Conjunto de Cantor}{25}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Dinâmica Simbólica}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}O Espaço de Sequências}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}A aplicação \textit {Shift}}{31}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conjugação Topológica}{34}{chapter.6}%
+\contentsline {section}{\numberline {6.1}O Mapa Itinerário}{34}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Caos}{40}{chapter.7}%
