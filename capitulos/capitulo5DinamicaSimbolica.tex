@@ -16,7 +16,7 @@
 	Os elementos de $\Sigma_2$ são sequências de inteiros, como por exemplo (000...), (010101...) ou (011010...). Podemos transformar $\Sigma_2$ em um espaço métrico. Para duas sequências $s=(s_0s_1s_2...)$ e $t=(t_0t_1t_2...)$, definimos a distância entre elas por
 	$$d[s, t] = \sum_{i=0}^{\infty} \dfrac{|s_i - t_i|}{2^i}$$
 	
-	Sendo $|s_i-t_i|$ 0 ou 1, essa série infinita é dominada pela série geométrica 
+	Sendo $|s_i-t_i|=$ 0 ou 1, essa série infinita é dominada pela série geométrica 
 	$$\sum_{i=0}^{\infty} \dfrac{1}{2^i} = 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + ... = 2$$
 	e portanto converge.
 	
@@ -24,6 +24,8 @@
 		Se $\textbf{s}=(000...)$ e $\textbf{t}=(111...)$, então $d[s,t]=2$. Se $\textbf{r}=(1010...)$, então
 		$$d[s, r] = \sum_{i=0}^{\infty} \dfrac{1}{2^{2i}}= \frac{1}{1-\frac{1}{4}} = \frac{4}{3}$$
 	\end{exemplo}
+	
+	
 	
 	\begin{proposicao}
 		d é uma métrica em $\Sigma_2$.
