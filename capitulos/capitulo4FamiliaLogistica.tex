@@ -152,9 +152,10 @@
 			\label{convergenciaParaPmu}
 		\end{figure}
 		
-		O caso $2<\mu<3$ é mais difícil de ser analisado. Para esses valores de $\mu$, temos a localização do ponto fixo $p_\mu$ sendo $\frac{1}{2}<p_\mu<\frac{2}{3}$, ou seja, à direita do ponto crítico $\frac{1}{2}$, no lado onde a função é estritamente decrescente. Seja $\hat{p_\mu}$ o único ponto pertencente ao intervalo $(0, \frac{1}{2})$, onde a função $F_\mu$ é estritamente crescente, de modo que $F_\mu(\hat{p_\mu}) = p_\mu$.
+		O caso $2<\mu<3$ é mais difícil de ser analisado. Para esses valores de $\mu$, temos a localização do ponto fixo $p_\mu$ sendo $\frac{1}{2}<p_\mu<\frac{2}{3}$, ou seja, à direita do ponto crítico $\frac{1}{2}$, no lado onde a função é estritamente decrescente. Seja $\hat{p_\mu}$ o único ponto pertencente ao intervalo $(0, \frac{1}{2})$, onde a função $F_\mu$ é estritamente crescente, de modo que $F_\mu(\hat{p_\mu}) = p_\mu$. Ver a Figura \ref{pEmP}.
 		
-		\begin{center}
+		\begin{figure}[H]
+			\centering
 			\begin{tikzpicture}[x=10cm, y=2cm]
 				
 				% Eixo principal do intervalo [0, 1]
@@ -169,27 +170,26 @@
 				\node at (0.25, -0.45) {$F_\mu$ crescente};
 				\node at (0.75, -0.45) {$F_\mu$ decrescente};
 				
-				% Ponto na primeira metade (ex: 0.25)
-				\coordinate (P1) at (0.25, 0);
+				% Ponto na primeira metade (simétrico em 0.3)
+				\coordinate (P1) at (0.3, 0);
 				\fill (P1) circle (1.5pt);
-				\node[above left] at (P1) {$\hat{p}_\mu$};
+				\node[above] at (P1) {$\hat{p}_\mu$};
 				
-				% Ponto na segunda metade, especificamente entre 1/2 (0.5) e 2/3 (~0.667)
-				% Escolhido 0.6 para satisfazer a condição
-				\coordinate (P2) at (0.6, 0);
+				% Ponto na segunda metade (movido para a direita em 0.7)
+				\coordinate (P2) at (0.7, 0);
 				\fill (P2) circle (1.5pt);
-				\node[above right] at (P2) {$p_\mu$};
+				\node[above] at (P2) {$p_\mu$};
 				
 				% Seta curva saindo do primeiro ponto e indo para o segundo
-				% O "bend left=55" cria um arco suave por cima da linha
-				\draw[->, thick, >=stealth] (P1) to[bend left=55] (P2);
+				\draw[->, thick, >=stealth] (P1) to[bend left=50] (P2);
 				
 			\end{tikzpicture}
-			\captionof{figure}{Mapeamento de $\hat{p_\mu}$ em $p_\mu$.}
-		\end{center}
+			\caption{Mapeamento de $\hat{p_\mu}$ em $p_\mu$.}
+			\label{pEmP}
+		\end{figure}
 		
 		Tomemos o intervalo $[\hat{p_\mu}, p_\mu]$. Como esse intervalo possui o ponto crítico que leva ao valor máximo de $F_\mu$, que ocorre em $F_\mu(\frac{1}{2}) = \frac{\mu}{4}$, temos que 
-		$F_\mu([\hat{p_\mu}, p_\mu]) = [p_\mu, \frac{\mu}{4}]$. Essa imagem está no lado estritamente decrescente, logo, $F_\mu([p_\mu, \frac{\mu}{4}]) = [F_\mu(\frac{\mu}{4}), p_\mu]$.\\
+		$F_\mu([\hat{p_\mu}, p_\mu]) = [p_\mu, \frac{\mu}{4}]$. Essa imagem está do lado estritamente decrescente, logo, $F_\mu([p_\mu, \frac{\mu}{4}]) = [F_\mu(\frac{\mu}{4}), p_\mu]$.\\
 		Para entender melhor a localização de $[F_\mu(\frac{\mu}{4}), p_\mu]$, temos
 		$$F_\mu\left(\dfrac{\mu}{4}\right) = \dfrac{\mu^2(4-\mu)}{16}$$
 		e analisando $g(\mu) = \mu^2(4-\mu)$, obtemos pela sua derivada que $g$ é estritamente crescente para $\mu \in (2, \frac{8}{3})$. Logo, como $g(2) = 8$, teremos $g(\mu) > 8$ e por consequência,
