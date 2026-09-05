@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.4)  5 SEP 2026 17:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.4)  5 SEP 2026 17:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -972,6 +972,11 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 [1
 
 {C:/Users/Cyborg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
+
+ []
+
+
 Overfull \hbox (7.7058pt too wide) in paragraph at lines 83--86
 \OT1/cmr/m/n/12 pode ser aces-sado usando o link []$\OT1/cmtt/m/n/12 https : / 
 / github . com / pedrozonta21 / ic-[]sistemas-[]dinamicos$[]\OT1/cmr/m/n/12 .
@@ -1009,13 +1014,13 @@ din^amicos
 [9
 
 ] [10]
-<imagens/desenho_orbita_x3.png, id=163, 461.92575pt x 431.211pt>
+<imagens/desenho_orbita_x3.png, id=162, 461.92575pt x 431.211pt>
 File: imagens/desenho_orbita_x3.png Graphic file (type png)
 <use imagens/desenho_orbita_x3.png>
 Package pdftex.def Info: imagens/desenho_orbita_x3.png  used on input line 93.
 (pdftex.def)             Requested size: 241.84842pt x 225.76408pt.
  [11 <./imagens/desenho_orbita_x3.png>]
-<imagens/desenho_orbita_inversa_x3.png, id=176, 508.90125pt x 472.76625pt>
+<imagens/desenho_orbita_inversa_x3.png, id=175, 508.90125pt x 472.76625pt>
 File: imagens/desenho_orbita_inversa_x3.png Graphic file (type png)
 <use imagens/desenho_orbita_inversa_x3.png>
 Package pdftex.def Info: imagens/desenho_orbita_inversa_x3.png  used on input l
@@ -1027,7 +1032,7 @@ Cap\'{\i }tulo 3.
 [14
 
 ] [15]
-<imagens/desenho_familia_quadratica_com_parametro.png, id=209, 682.04813pt x 21
+<imagens/desenho_familia_quadratica_com_parametro.png, id=208, 682.04813pt x 21
 9.06844pt>
 File: imagens/desenho_familia_quadratica_com_parametro.png Graphic file (type p
 ng)
@@ -1043,21 +1048,21 @@ is-tema din^amico $\OT1/cmr/m/n/12 (\U/msb/m/n/12 R\OML/cmm/m/it/12 ; f\OT1/cmr
 m/m/it/12 x; ^^V\OT1/cmr/m/n/12 ) =
  []
 
-<imagens/desenho_conjunto_estavel_1-4.jpg, id=219, 1606.0pt x 1353.055pt>
+<imagens/desenho_conjunto_estavel_1-4.jpg, id=218, 1606.0pt x 1353.055pt>
 File: imagens/desenho_conjunto_estavel_1-4.jpg Graphic file (type jpg)
 <use imagens/desenho_conjunto_estavel_1-4.jpg>
 Package pdftex.def Info: imagens/desenho_conjunto_estavel_1-4.jpg  used on inpu
 t line 148.
 (pdftex.def)             Requested size: 193.47577pt x 162.99962pt.
 [17 <./imagens/desenho_conjunto_estavel_1-4.jpg>]
-<imagens/desenho_conjunto_instavel_1-4.png, id=228, 1606.0pt x 1346.02875pt>
+<imagens/desenho_conjunto_instavel_1-4.png, id=227, 1606.0pt x 1346.02875pt>
 File: imagens/desenho_conjunto_instavel_1-4.png Graphic file (type png)
 <use imagens/desenho_conjunto_instavel_1-4.png>
 Package pdftex.def Info: imagens/desenho_conjunto_instavel_1-4.png  used on inp
 ut line 158.
 (pdftex.def)             Requested size: 241.84842pt x 202.69661pt.
  [18 <./imagens/desenho_conjunto_instavel_1-4.png>]
-<imagens/desenho_conjunto_estavel_dois_pontos.png, id=235, 1606.0pt x 1363.0925
+<imagens/desenho_conjunto_estavel_dois_pontos.png, id=234, 1606.0pt x 1363.0925
 pt>
 File: imagens/desenho_conjunto_estavel_dois_pontos.png Graphic file (type png)
 <use imagens/desenho_conjunto_estavel_dois_pontos.png>
@@ -1104,10 +1109,10 @@ Package rerunfilecheck Info: File `IC.out' has not changed.
 (rerunfilecheck)             Checksum: AD9C068EE9C220D3FD0D2A5B9214075F;2543.
  ) 
 Here is how much of TeX's memory you used:
- 33842 strings out of 467871
- 798194 string characters out of 5417887
- 1429226 words of memory out of 5000000
- 62004 multiletter control sequences out of 15000+600000
+ 33843 strings out of 467871
+ 798219 string characters out of 5417887
+ 1428212 words of memory out of 5000000
+ 62005 multiletter control sequences out of 15000+600000
  639986 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,20n,118p,997b,2428s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1134,9 +1139,9 @@ b><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmtt12.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/symbols/msam10.pfb><C:/Users/Cyborg/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on IC.pdf (45 pages, 817924 bytes).
+Output written on IC.pdf (45 pages, 817798 bytes).
 PDF statistics:
- 532 PDF objects out of 1000 (max. 8388607)
+ 531 PDF objects out of 1000 (max. 8388607)
  154 named destinations out of 1000 (max. 500000)
  155 words of extra memory for PDF output out of 10000 (max. 10000000)
 
