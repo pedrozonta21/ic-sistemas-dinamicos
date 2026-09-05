@@ -22,6 +22,8 @@
 \usepackage{subfiles}
 \usepackage{pgfplots}
 \usepackage{capt-of}
+\usepackage{hyperref}
+\usetikzlibrary{arrows.meta}
 \pgfplotsset{compat=1.18, width=10cm} 
 
 \newcommand{\ru}{\rule{3mm}{3mm}}
@@ -70,39 +72,35 @@
 	\vspace*{0.75\textheight}
 	\pagenumbering{arabic} 
 	
-	\chapter*{Plano de Trabalho:}
-	
-	\begin{center}
-		\begin{tabular}{|c|l|} \hline
-			& {\bf Uma Introdução a Sistemas Dinâmicos Caóticos} \\ \hline
-			01 & Exemplos de sistemas dinâmicos \\ \hline
-			02 & Definições elementares na teoria dos sistemas dinâmicos discretos \\ \hline
-			03 & Hiperbolicidade \\ \hline
-			04 & A família quadrática \\ \hline
-			05 & Dinâmica simbólica \\ \hline
-			06 & Conjugação topológica \\ \hline
-			07 & Caos \\ \hline
-		\end{tabular}
-	\end{center}
+	\tableofcontents
 	
 	\newpage
 	{\LARGE\textbf{Resumo}}
 	
-	Neste projeto, inicialmente estudaremos exemplos de sistemas dinâmicos para entendermos sua aplicabilidade e como um sistema desse tipo pode ser analisado. Essa análise será explanada posteriormente pelo estudo do comportamento assintótico da função que rege o sistema, que significa analisar o que acontece com o sistema com o passar do tempo.
+	Neste trabalho, estudaremos algumas noções básicas dos sistemas dinâmicos discretos, como hiperbolicidade, dinâmica simbólica, conjugação topológica e caos. Em particular, veremos algumas propriedades dinâmicas e topológicas da família logística $f_\mu$, onde $f_\mu:\mathbb{R}\to\mathbb{R}$ é a função definida por $f_\mu(x)=\mu\/x(1-x)$ e $\mu \in \mathbb{R_+}$ é um parâmetro real positivo.
 	
-	Posteriormente, investigaremos a dinâmica simbólica e o comportamento do mapa logístico no conjunto de Cantor $\Lambda$. Analisaremos a aplicação de itinerário $S: \Lambda \to \Sigma_2$, demonstrando a continuidade e a existência de um homeomorfismo entre o espaço do conjunto de Cantor e o espaço de sequências $\Sigma_2$.
-	
-	Em seguida, aprofundaremos a análise do conceito de caos segundo a definição de Devaney. Para facilitar esse estudo, utilizaremos ferramentas de conjugação e semi-conjugação topológica, permitindo relacionar sistemas com modelos mais viáveis de se estudar.
-	
+	\newpage
 	{\LARGE\textbf{Introdução}}
 	
-	A análise inicial de um sistema dinâmico consiste em investigar o comportamento assintótico de sua função, o que permite prever e descrever o destino das órbitas iteradas e a estabilidade de seus pontos. Algumas funções demonstram que pequenas variações em constantes ou entradas podem gerar resultados de extrema imprevisibilidade.
+	Um sistema dinâmico discreto é dado por um par $(X, f)$ onde $X$ é um conjunto não vazio e $f \colon X \to X$ é uma aplicação, chamada de dinâmica. Um dos interesses da área de sistemas dinâmicos é o estudo assintótico das órbitas dos pontos $x$ de $X$, isto é, o comportamento dos conjuntos $\mathcal{O}(x) = \{f^n(x), n \in \mathbb{N}\}$. Tal estudo pode ser feito de maneira topológica, colocando uma topologia sobre $X$ e considerando $f$ contínua ($(X, f)$ é chamado sistema dinâmico topológico), ou de maneira probabilística ou de medida colocando uma $\sigma$-álgebra sobre $X$ e considerando $f$ mensurável.
 	
-	Nesse contexto, o este trabalho apoia-se na análise de sistemas dinâmicos discretos, com foco na família logística $F_{\mu}(x) = \mu x(1-x)$. O estudo demonstra que a alteração do parâmetro $\mu$ dita mudanças na estrutura e na dinâmica do sistema, alterando o surgimento, o desaparecimento e o comportamento de pontos fixos e periódicos, o que caracteriza o fenômeno das bifurcações. Ao longo dos capítulos, explora-se como as bifurcações alteram a estabilidade do sistema, classificando os pontos em atratores ou repulsores.
+	Uma classe importante de sistemas dinâmicos discretos são os sistemas dinâmicos simbólicos. Um sistema dinâmico simbólico é um par $(X, f)$ onde $X$ é um subconjunto fechado de $A^{\mathbb{N}}$ (conjunto das sequências (palavras infinitas) cujos termos pertencem a um conjunto finito $A$ (alfabeto)) e $f$ é uma aplicação de $X$ em $X$.
 	
-	Conforme a complexidade do sistema aumenta, especialmente quando os parâmetros de entrada levam pontos para fora do domínio $[0,1]$, a pesquisa foca no comportamento do mapa logístico restrito ao conjunto de Cantor $\Lambda$. Como alternativa para a inviabilidade de analisar algebricamente essas iterações de forma direta na função $F_\mu$, introduzimos a dinâmica simbólica estruturada sobre o espaço de sequências $\Sigma_2$. Essa abordagem permite modelar as órbitas do sistema por meio de sequências infinitas de 0s e 1s, estabelecendo um modelo exato, equivalente e mais viável para descrever a rica estrutura do mapa logístico.
+	Um outro exemplo interessante na área de sistemas dinâmicos discretos é o par $(X, f)$ onde $X = \mathbb{R}^d$ ou $\mathbb{C}^d$, com $d \ge 1$, e $f \colon X \to X$ é uma função polinomial de grau $k \ge 2$. Para compreender o sistema dinâmico $(X, f)$, é importante estudar propriedades do conjunto $K(f)$ (conjunto de Julia cheio) dos pontos $z$ em $X$ tais que a sequência $(f^n(z))_{n \ge 0}$ é limitada, onde
+	\[
+	f^n = \underbrace{f \circ \dots \circ f}_{n \text{ vezes}}
+	\]
+	é a $n$-ésima iterada da função $f$.
 	
-	Para garantir a validade formal desse modelo, o projeto utiliza os conceitos de semi-conjugação e conjugação topológica. O trabalho demonstra a existência de um homeomorfismo entre o espaço do conjunto de Cantor $\Lambda$ e o espaço de sequências $\Sigma_2$ por meio da aplicação de itinerário e da utilização do mapa \textit{shift}. Essa equivalência topológica preserva propriedades entre os mapas conjugados e permite uma análise do caos. Apoiados na definição de Devaney, concluímos que o mapa logístico é caótico, o qual se baseia em três pilares essenciais: a dependência sensível às condições iniciais, a transitividade topológica e a densidade dos pontos periódicos.
+	Um dos primeiros a estudar as propriedades de $K(f)$ e sua fronteira (chamada conjunto de Julia de $f$) no caso $X = \mathbb{C}$ e $d = 1$ foi Gaston Julia em 1915. Independentemente com Pierre Fatou, eles introduziram também os métodos iterativos no estudo dos sistemas dinâmicos. Os conjuntos de Julia foram usados em vários domínios, como Sistemas Dinâmicos, Teoria dos Números, Análise Funcional, Probabilidade e Processos Estocásticos, entre outros.
+	
+	Neste trabalho, estudaremos propriedades dinâmicas e topológicas da família logística $f_\mu:\mathbb{R}\to\mathbb{R}$ definida por $f_\mu(x)=\mu\/x(1-x)$, onde $\mu \in \mathbb{R_+}$ é um parâmetro real positivo. Tais estudos demonstrarão que pequenas variações no parâmetro $\mu$ podem gerar resultados de extrema imprevisibilidade.
+	
+	De fato, verificamos que a alteração do parâmetro $\mu$ dita mudanças na estrutura e na dinâmica do sistema, alterando o surgimento e a estabilidade de pontos fixos e periódicos.
+	
+	Para viabilizar o estudo dos conjuntos de Julia de $f_\mu$, estudaremos a dinâmica da aplicação \textit{shift} $\sigma:\Sigma_2\to\Sigma_2$, definida no espaço das sequências infinitas de 0's e 1's e provaremos que tal sistema dinâmico é topologicamente conjugado à $f_\mu$, visto que sistemas dinâmicos topologicamente conjugados possuem as mesmas propriedades dinâmicas.
+	
+	Por fim, estudaremos a caoticidade do mapa logístico $f_\mu$ e provaremos a existência de órbitas de um sistema dinâmico que exibem total imprevisibilidade, o que também chamaremos e definiremos como caos.
 
 	
 	\subfile{capitulos/capitulo1SistemasDinamicosDiscretos.tex}
