@@ -56,10 +56,10 @@
 	\textbf{Observação:} Pontos periódicos de período $n$ apresentam comportamento similar ao do ponto fixo repulsor, quando $|(f^n)'(p)| >1$. De modo geral, o comportamento em uma vizinhança de um ponto periódico hiperbólico depende da derivada desse ponto. Isso não ocorre quanto o ponto é não-hiperbólico, como podemos ver no seguinte exemplo.
 	
 	\begin{exemplo}
-		Cada um dos mapas na Figura \ref{tresRetratosDeFases} satisfaz $f(0) = 0$ e $f'(0)=1$, mas cada um possui um retrato de fase diferente próximo de $0$. em a), o mapa $f(x)=x+x^3$ tem um ponto repulsor em $0$. Em b), o mapa $f(x)=x-x^3$ tem um ponto fixo atrator em $0$. Já em c), o mapa $f(x)=x+x^2$ possui um ponto repulsor à direita mas atrator à esquerda. Um ponto fixo $p$ com $|f'(p)|=1$ é chamado de neutro ou indiferente.
+		Cada um dos mapas na Figura \ref{tresRetratosDeFases} satisfaz $f(0) = 0$ e $f'(0)=1$, mas cada um possui retrato de fase diferente próximo de $0$. em a), o mapa $f(x)=x+x^3$ tem um ponto repulsor em $0$. Em b), o mapa $f(x)=x-x^3$ tem um ponto fixo atrator em $0$. Já em c), o mapa $f(x)=x+x^2$ possui um ponto repulsor à direita mas atrator à esquerda. Um ponto fixo $p$ com $|f'(p)|=1$ é chamado de neutro ou indiferente.
 
-		\begin{center}
-			\begin{figure}
+			\begin{figure}[H]
+				\centering
 				\begin{tikzpicture}[
 					line/.style={thick},
 					dot/.style={circle, fill=black, inner sep=0pt, minimum size=4pt},
@@ -115,7 +115,6 @@
 				\caption{Retrato de fase de a)$f(x)=x+x^3$, b) $f(x)=x-x^3$, c)$f(x)=x+x^2$.}
 				\label{tresRetratosDeFases}
 			\end{figure}
-		\end{center}
 	\end{exemplo}
 	
 	\section{Uma ideia sobre Bifurcação}
