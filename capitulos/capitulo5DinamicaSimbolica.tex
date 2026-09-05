@@ -34,7 +34,7 @@
 		\end{enumerate}
 	\end{definicao}
 	
-	\begin{proposicao}
+	\begin{proposicao}\label{proposicaoMetrica}
 		d é uma métrica em $\Sigma_2$.
 	\end{proposicao}
 	
@@ -77,7 +77,7 @@
 	
 	\begin{prova}
 		Seja $\epsilon > 0$ e $s=(s_0s_1s_2...) \in \Sigma_2$. Tomemos $n$ tal que $\frac{1}{2^n}<\epsilon$. Seja $\delta=\frac{1}{2^{n+1}}$.\\
-		Se $t=(t_0t_1t_2...)$ satisfaz $d[s,t] < \delta$, então pela métrica $d$, $s_i = t_i$ para $i\leq n+1$.
+		Se $t=(t_0t_1t_2...)$ satisfaz $d[s,t] < \delta$, então pela Proposição \ref{proposicaoMetrica}, $d$, $s_i = t_i$ para $i\leq n+1$.
 		
 		$$d[s,t] < \frac{1}{2^{n+1}} \implies \underbrace{d[\sigma(s),\sigma(t)] \leq \frac{1}{2^n} < \epsilon}_{\parbox{6cm}{\centering \small Como $\sigma$ retira a primeira entrada, temos agora $s_i=t_i$ para $i \le n$, tornando a desigualdade válida pelo Teorema da Proximidade.}}$$
 	\end{prova}
