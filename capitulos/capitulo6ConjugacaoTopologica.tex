@@ -21,19 +21,19 @@
 	
 	\begin{prova}
 		\begin{itemize}
-			\item injetora:
+			\item $S$ é injetora:
 			
 			Seja $x,y \in \Lambda$, com $x<y$. Supondo $S(x) = S(y) = s_0s_1... \in \Sigma_2$, temos que $F_\mu^n(x), F_\mu^n(y) \in I_{s_n}, \forall n\geq0$.\\
 			$[x,y] \subset I_{s_0}$ e $F$ é monótona em $I_{s_0} \implies F_\mu^n([x,y]) \subset I_{s_n}$ e $F$ é monótona em $I_{s_n}$.\\
 			Logo, $[x,y] \in \Lambda$. Mas isso contradiz o fato de $\Lambda$ não possui intervalos, portanto $S$ é injetora.
 			
-			\item sobrejetora:
+			\item $S$ é sobrejetora:
 			
 			Seja 
 			$$I_{s_0s_1...} = \bigcap_{n=0}^{\infty} I_{s_0 s_1 \dots s_n} = I_{s_0} \cap F_\mu^{-1}(I_{s_1...s_n}).$$
 			Se $x \in I_{s_0s_1...}$, então, por definição, $x \in I_{s_0}, F_\mu(x) \in I_{s_1},...,F_\mu^n(x) \in I_{s_n}$. Logo, $S(x) = s_0s_1s_2...$ e portanto $S$ é sobrejetora.
 			
-			\item contínua:
+			\item $S$ é contínua:
 			
 			Tomemos $x \in \Lambda$ e supomos que $S(x) = s_0s_1s_2 \dots$. Seja $\epsilon > 0$ e $n$ tal que $\frac{1}{2^n} < \epsilon$. Considere os subintervalos fechados $I_{t_0t_1\dots t_n}$ para todas as combinações possíveis $t_0t_1 \dots t_n$. 
 			
