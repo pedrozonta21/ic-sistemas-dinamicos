@@ -9,13 +9,11 @@
 	
 	Precisamos de um ``espaço" no qual nossa função equivalente irá trabalhar. Os pontos nesse espaço serão sequências infinitas de 0s e 1s. Não estaremos preocupados com a convergência dessas sequências. Em vez disso, a maior dificuldade aqui é imaginar uma sequência infinita que representa um único ponto no espaço.
 	
-	\begin{definicao}
-		$\Sigma_2 = \{s=(s_0s_1s_2...)|s_j=0 \text{ ou } 1\}$.
-	\end{definicao}
-	
+	Considere o espaço das sequências infintas de 0a e 1s
+		$$\Sigma_2 = \{s=(s_0s_1s_2...)|s_j=0 \text{ ou } 1\}.$$
 	$\Sigma_2$ é chamado de espaço de sequências sobre os dois símbolos 0 e 1. De modo mais genérico, podemos considerar o espaço $\Sigma_n$ consistindo de sequências infinitas dos inteiros que vão de 0 até $n-1$.
 	
-	Os elementos de $\Sigma_2$ são infinitos textos de inteiros, como por exemplo (000...), (010101...) ou (011010...). Podemos transformar $\Sigma_2$ em um espaço métrico. Para duas sequências $s=(s_0s_1s_2...)$ e $t=(t_0t_1t_2...)$, definimos a distância entre elas por
+	Os elementos de $\Sigma_2$ são sequências de inteiros, como por exemplo (000...), (010101...) ou (011010...). Podemos transformar $\Sigma_2$ em um espaço métrico. Para duas sequências $s=(s_0s_1s_2...)$ e $t=(t_0t_1t_2...)$, definimos a distância entre elas por
 	$$d[s, t] = \sum_{i=0}^{\infty} \dfrac{|s_i - t_i|}{2^i}$$
 	
 	Sendo $|s_i-t_i|$ 0 ou 1, essa série infinita é dominada pela série geométrica 
