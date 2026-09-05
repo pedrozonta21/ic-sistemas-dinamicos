@@ -18,15 +18,15 @@
 	\end{prova}
 	
 	\begin{proposicao}\label{proposicaoQueLevaParaMenosInfinito}
-		Suponha $\mu > 1$. Se $x<0$, então $F_\mu^n(x) \rightarrow -\infty$ quando $n \rightarrow +\infty$. De modo similar, se $x>1$, $F_\mu^n(x) \rightarrow -\infty$ quando $n \rightarrow +\infty$.
+		Suponha $\mu > 1$. Se $x<0$, então $F_\mu^n(x) \rightarrow -\infty$ quando $n \rightarrow +\infty$. De modo similar, se $x>1$, então $F_\mu^n(x) \rightarrow -\infty$ quando $n \rightarrow +\infty$.
 	\end{proposicao}
 	
 	\begin{prova}
-		Seja $x<0$ e $x_n=F_\mu^n(x)$. Isso nos leva a $\mu\/x(1-x) - x <0 \implies F_\mu^n(x) < x$. Desse modo podemos construir uma sequência de pontos decrescentes: 
+		Seja $x<0$ e $x_n=F_\mu^n(x)$. Daí, $F_\mu(x)=\mu\/x(1-x)<x$ e, portanto $F_\mu^n(x) < x$. Desse modo podemos construir uma sequência de pontos decrescentes: 
 		$$x < 0 \implies x_1 < x < 0 \implies x_2 < x_1 < x < 0 \implies ... \implies ...<x_n<...<x_1<x<0$$
-		Por ser monótona decrescente, a sequência converge para $-\infty$. Portanto, para $x<0$, temos que $F_\mu^n(x) \rightarrow -\infty$ quando $n \rightarrow \infty$.
+		Por ser monótona decrescente, a sequência converge para $-\infty$, pois, caso contrário, teríamos $F_\mu^n(x) \to p <0$ e pela continuidade de $F_\mu$ e unicidade do limite de $((F_\mu^n(x)))_n$, teríamos que $p$ é um ponto fixo negativo de $F_\mu$, o que não é verdade. Portanto, para $x<0$, temos que $F_\mu^n(x) \rightarrow -\infty$ quando $n \rightarrow \infty$.
 		\\
-		Seja $x>1$. Temos que, para este caso, $\mu\/x(1-x) < 0 \implies F_\mu(x) < 0$, nos levando ao caso anterior. Portanto, para $x>1$, temos que $F_\mu^n(x) \rightarrow -\infty$ quando $n \rightarrow \infty$.
+		 Por outro lado, seja $x>1$. Temos que, para este caso, $\mu\/x(1-x) < 0 \implies F_\mu(x) < 0$, nos levando ao caso anterior. Portanto, para $x>1$, temos que $F_\mu^n(x) \rightarrow -\infty$ quando $n +\rightarrow \infty$.
 	\end{prova}
 	
 	\begin{center}
