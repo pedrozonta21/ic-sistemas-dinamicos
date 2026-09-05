@@ -97,16 +97,11 @@
 		\[
 		\begin{array}{ll}
 			x<F_\mu(x) < p_\mu, \quad 0 < x < p_\mu \\[2ex]
-			F_\mu(x) < x, \quad x > p & \qquad\qquad F_\mu(x) < p, \quad 0 < x < p
+			p_\mu < F_\mu(x) < x, \quad p_\mu<x<\frac{1}{2}
 		\end{array}
 		\]
-		assim,
-		$$|F_\mu(x) - p_\mu| < |x - p_\mu|$$ 
-		$$|F_\mu^2(x) - p_\mu| < |F_\mu(x) - p_\mu| < |x - p_\mu|$$ 
-		$$...$$
-		$$|F_\mu^n(x) - p_\mu| <...< |x - p_\mu|$$
-		se $x \neq p_\mu$. Já para $x \in [\frac{1}{1},1)$, temos que $F_\mu(x) < \frac{1}{2}$, caindo no caso que acabamos de verificar. Esse resultado nos leva à conclusão de que $|F_\mu^n(x) - p_\mu| \rightarrow 0$ quando $n \rightarrow \infty$. Desse modo, 
-		$$F_\mu^n(x) \rightarrow p_\mu$$ quando $n \rightarrow \infty$.
+		Assim, se $0<x<p_\mu<x'\leq\frac{1}{2}$, devemos ter $F_\mu^n(x)<F_\mu^{n+1}(x)<p_\mu<F_\mu^{n+1}(x')<F_\mu^n(x')$ para todo inteiro positivo $n$. Como as órbitas $(F_\mu^n(x))_n$ e $(F_\mu^n(x'))_n$ são sequências monótonas e limitadas, elas convergem para o ponto fixo $p_\mu$. Já para $x\in[\frac{1}{2},1]$, temos que $F_\mu(x)<\frac{1}{2}$, caindo no caso que acabamos de verificar.
+		
 		\begin{center}
 			\begin{tikzpicture}[x=10cm, y=3cm]
 				
